@@ -1,263 +1,508 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ===================================================
+   1. VARIABLES GLOBALES & RESET GENERAL
+   =================================================== */
+:root {
+    --color-primary: #0D6EFD;
+    --color-primary-dark: #0A58CA;
+    --color-primary-light: #DCEEFF;
+    --color-secondary: #20C997;
+    --color-secondary-dark: #198754;
+    --color-accent: #00B4D8;
+    --white: #FFFFFF;
+    --black: #111827;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-500: #64748B;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --bg-body: #F7FAFD;
+    --bg-section: #FFFFFF;
+    --bg-light: #F8FBFF;
+    --bg-dark: #0F172A;
+    --text-title: #0F172A;
+    --text-body: #475569;
+    --container: 1280px;
+    --shadow-md: 0 8px 20px rgba(0,0,0,.10);
+    --shadow-lg: 0 15px 35px rgba(0,0,0,.15);
+    --shadow-card: 0 10px 35px rgba(13,110,253,.08);
+    --transition: .30s ease;
+    --z-header: 1000;
 }
 
-body{
-
-    font-family:'Poppins',sans-serif;
-    color:#333;
-    background:#f5f9fc;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img{
-
-    max-width:100%;
-
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-body);
+    background: var(--bg-body);
+    line-height: 1.7;
 }
 
-.contenedor{
-
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-
-}
-
-header{
-
-    background:#ffffff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
-}
-
-header .contenedor{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:80px;
-
-}
-
-.logo img{
-
-    height:60px;
-
-}
-
-nav ul{
-
-    display:flex;
-    list-style:none;
-    gap:35px;
-
-}
-
-nav a{
-
-    text-decoration:none;
-    color:#234;
-    font-weight:500;
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:#00a8e8;
-
-}
-
-.activo{
-
-    color:#00a8e8;
-
-}
-
-.btn-cita{
-
-    text-decoration:none;
-    background:#00a8e8;
-    color:white;
-    padding:12px 25px;
-    border-radius:30px;
-    transition:.3s;
-
-}
-
-.btn-cita:hover{
-
-    background:#0284c7;
-
-}
-
-.menu-mobile{
-
-    display:none;
-    font-size:30px;
-    cursor:pointer;
-
-}
-/*
-.hero{
-
-    background:url("../img/hero.jpg") center center/cover;
-    height:90vh;
-    position:relative;
-
-}*/
-
-.overlay{
-
-    width:100%;
-    height:100%;
-    background:rgba(0,52,89,.60);
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-}
-
-.hero-contenido{
-
-    text-align:center;
-    color:white;
-
-}
-
-.hero h1{
-
-    font-size:55px;
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    font-size:22px;
-    margin-bottom:35px;
-
-}
-
-.btn-principal{
-
-    display:inline-block;
-    background:#00a8e8;
-    color:white;
-    text-decoration:none;
-    padding:16px 40px;
-    border-radius:40px;
-
-}
-
-.btn-principal:hover{
-
-    background:#0284c7;
-
-}
-
-.bienvenida{
-
-    padding:80px 0;
-    text-align:center;
-
-}
-
-.bienvenida h2{
-
-    color:#003459;
-    margin-bottom:25px;
-
-}
-
-footer{
-
-    background:#003459;
-    color:white;
-
-}
-
-.footer-grid{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:50px;
-    padding:50px 0;
-
-}
-
-footer h3{
-
-    margin-bottom:20px;
-
-}
-
-footer p{
-
-    margin-bottom:10px;
-
-}
-
-.copyright{
-
-    text-align:center;
-    padding:20px;
-    background:#01263f;
-
-}
-
-/*=================================================
-BOTÓN FLOTANTE DE WHATSAPP (CON ICONO REAL SVG)
-=================================================*/
-.btn-whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366; /* Verde característico de WhatsApp */
-    color: white;              /* Rellena el icono SVG con color blanco gracias a 'currentColor' */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-    z-index: 9999;             /* Se mantiene visible por encima de capas superiores */
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
-    text-decoration: none;
-}
-
-/* Tamaño controlado del icono vectorial */
-.whatsapp-icon-svg {
-    width: 34px;
-    height: 34px;
+img {
+    max-width: 100%;
     display: block;
 }
 
-/* Efectos de interactividad premium */
-.btn-whatsapp:hover {
-    background-color: #128C7E; /* Verde oscuro en hover */
-    transform: scale(1.1) translateY(-5px); /* Efecto de rebote ligero hacia arriba */
+.container, .contenedor {
+    width: 90%;
+    max-width: var(--container);
+    margin: auto;
 }
 
-/* Ajuste fino para dispositivos móviles */
+/* ===================================================
+   2. BOTÓN FLOTANTE DE WHATSAPP (GLOBAL)
+   =================================================== */
+.btn-whatsapp {
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #25D366 !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999999 !important;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none !important;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a !important;
+}
+
+.btn-whatsapp svg.whatsapp-icon-svg {
+    width: 34px !important;
+    height: 34px !important;
+    fill: #ffffff !important;
+    display: block !important;
+}
+
+/* ===================================================
+   3. TOPBAR & HEADER (ESCRITORIO)
+   =================================================== */
+.topbar {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--white);
+    font-size: .90rem;
+    padding: 10px 0;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topbar-left, .topbar-right {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.topbar span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,.95);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-header);
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-md);
+}
+
+.header-container {
+    max-width: var(--container);
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 88px;
+    width: auto;
+    transition: var(--transition);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-title);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: .3s;
+}
+
+nav ul li a:hover::after { width: 100%; }
+nav ul li a:hover { color: var(--color-secondary); }
+
+.btn-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 30px;
+    border-radius: 50px;
+    background: var(--color-secondary);
+    color: var(--white) !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    transform: translateY(-3px);
+    background: var(--color-secondary-dark);
+}
+
+.menu-toggle { display: none; }
+
+/* ===================================================
+   4. HERO SECTOR
+   =================================================== */
+.hero {
+    position: relative;
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(9,45,88,.78), rgba(13,110,253,.68)), url("../img/hero.jpg") center center / cover no-repeat;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-content { color: var(--white); }
+
+.hero-badge {
+    display: inline-flex;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    background: rgba(255,255,255,.18);
+    backdrop-filter: blur(10px);
+    font-size: .92rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,.92);
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.stat { display: flex; flex-direction: column; }
+.stat-number { font-size: 2.3rem; font-weight: 700; }
+
+.doctor-card {
+    background: rgba(255,255,255,.95);
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: var(--shadow-lg);
+}
+
+.doctor-image {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid var(--color-primary-light);
+}
+
+.doctor-image img { width: 100%; height: 100%; object-fit: cover; }
+.doctor-card h3 { text-align: center; color: var(--text-title); font-size: 1.5rem; margin-bottom: 8px;}
+.doctor-card .doctor-specialty { text-align: center; color: var(--color-primary); font-weight: 600; margin-bottom: 25px; }
+
+.doctor-info div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 12px;
+}
+
+/* ===================================================
+   5. SERVICIOS & ENFERMEDADES
+   =================================================== */
+.servicios, .enfermedades {
+    padding: 120px 0;
+    background: var(--bg-light);
+}
+
+.section-header {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.section-subtitle {
+    display: inline-block;
+    padding: 10px 22px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: 50px;
+    font-size: .90rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-title { font-size: 2.8rem; color: var(--text-title); margin-bottom: 20px; font-weight: 700; }
+
+.services-grid, .enfermedades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.service-card, .enfermedad-card {
+    background: var(--white);
+    border-radius: 22px;
+    padding: 40px 35px;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.service-card:hover, .enfermedad-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+}
+
+.service-list {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0 30px;
+}
+
+.service-btn, .btn-principal {
+    display: inline-flex;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: var(--color-primary);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.enfermedad-card { padding: 0; overflow: hidden; }
+.enfermedad-img { height: 230px; overflow: hidden; }
+.enfermedad-img img { width:100%; height:100%; object-fit:cover; transition:.5s; }
+.enfermedad-card:hover img { transform: scale(1.08); }
+.enfermedad-content { padding: 30px; }
+
+.services-bottom { margin-top: 70px; text-align: center; }
+.services-bottom a {
+    display: inline-flex;
+    padding: 16px 34px;
+    border-radius: 50px;
+    background: var(--color-secondary);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===================================================
+   6. BOOKING & CALL TO ACTION (CTA)
+   =================================================== */
+.booking-section { padding: 100px 0; background: var(--bg-light); }
+.booking-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; }
+.booking-box { background: var(--white); padding: 50px; border-radius: 24px; box-shadow: var(--shadow-card); }
+.booking-list { display: flex; flex-direction: column; gap: 30px; margin: 30px 0; }
+.booking-item { display: flex; gap: 20px; }
+.booking-number { min-width: 50px; width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; justify-content: center; align-items: center; font-size: 20px; font-weight: 700; }
+
+.booking-button { display: inline-block; background: var(--color-primary); color: white; text-decoration: none; padding: 16px 36px; border-radius: 50px; font-weight: 600; }
+.booking-image { position: relative; }
+.booking-image img { width: 100%; border-radius: 24px; box-shadow: var(--shadow-md); }
+.doctor-badge { position: absolute; bottom: -20px; right: -20px; background: var(--white); padding: 25px; border-radius: 18px; box-shadow: var(--shadow-lg); }
+
+.cta { padding: 110px 0; background: linear-gradient(135deg, var(--color-primary), #004a99); text-align: center; color: var(--white); }
+.cta h2 { font-size: 3rem; margin-bottom: 25px; }
+.cta .btn-primary { display: inline-flex; padding: 18px 42px; border-radius: 50px; background: var(--white); color: var(--color-primary); text-decoration: none; font-weight: 600; }
+
+/* ===================================================
+   7. SITE FOOTER
+   =================================================== */
+.site-footer { background: var(--bg-dark); color: rgba(255, 255, 255, 0.75); padding: 70px 0 0; }
+.footer-grid-container { display: flex; justify-content: space-between; gap: 40px; padding-bottom: 50px; }
+.footer-column { flex: 1; min-width: 250px; }
+.site-footer h3 { color: var(--white); margin-bottom: 25px; font-size: 1.25rem; }
+.social-links { display: flex; flex-direction: column; gap: 12px; }
+.social-links a { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
+.footer-btn-cita { display: inline-block; background: var(--color-primary); color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: 600; margin-top: 15px; }
+.footer-bottom { background: rgba(0, 0, 0, 0.2); padding: 25px 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+
+/* ===================================================
+   8. MEDIA QUERIES (SISTEMA ADAPTATIVO MÓVIL)
+   =================================================== */
+@media (max-width: 992px) {
+    .header-container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0 20px !important;
+        height: 80px !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    nav {
+        display: none !important;
+        width: 100% !important;
+        position: absolute !important;
+        top: 80px !important;
+        left: 0 !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+        z-index: 9998 !important;
+        padding: 20px 0 !important;
+    }
+
+    nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    nav.active { display: block !important; }
+    .btn-header { display: none !important; }
+
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: 30px !important;
+        height: 22px !important;
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        z-index: 99999 !important;
+    }
+
+    .menu-toggle span {
+        display: block !important;
+        width: 100% !important;
+        height: 3px !important;
+        background-color: #003459 !important;
+        border-radius: 3px !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .hero-grid, .services-grid, .enfermedades-grid, .booking-grid, .footer-grid-container {
+        grid-template-columns: 1fr !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .booking-image { order: -1; max-width: 600px; margin: 0 auto; }
+    .doctor-badge { right: 20px; bottom: 20px; }
+}
+
 @media (max-width: 576px) {
+    .topbar { display: none !important; }
+    .logo img { height: 50px !important; }
+    .hero h1 { font-size: 2.5rem !important; }
+    .section-title, .cta h2 { font-size: 2rem !important; }
+    .booking-box { padding: 30px 20px; }
+    .booking-item { flex-direction: column; align-items: center; text-align: center; }
+    .booking-button { width: 100%; text-align: center; }
+
     .btn-whatsapp {
-        bottom: 20px;
-        right: 20px;
-        width: 54px;
-        height: 54px;
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 56px !important;
+        height: 56px !important;
     }
-    
-    .whatsapp-icon-svg {
-        width: 30px;
-        height: 30px;
-    }
+    .btn-whatsapp svg.whatsapp-icon-svg { width: 30px !important; height: 30px !important; }
 }
