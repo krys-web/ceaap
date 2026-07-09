@@ -458,7 +458,7 @@ nav ul li a:hover { color: var(--color-secondary); }
     nav.active { display: block !important; }
     .btn-header { display: none !important; }
 
-    .menu-toggle {
+.menu-toggle {
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -470,13 +470,27 @@ nav ul li a:hover { color: var(--color-secondary); }
         z-index: 99999 !important;
     }
 
-    .menu-toggle span {
+.menu-toggle span {
         display: block !important;
         width: 100% !important;
         height: 3px !important;
-        background-color: #003459 !important;
+        background-color: #003459 !important; /* Color de tus líneas */
         border-radius: 3px !important;
-        transition: all 0.3s ease !important;
+        transition: all 0.3s ease !important; /* Esto hace que la animación sea suave */
+        transform-origin: left center !important; /* Punto de pivote para la rotación */
+    }
+
+.menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(-2px) !important;
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        width: 0% !important;
+        opacity: 0 !important; /* Desaparece la línea del medio */
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(2px) !important;
     }
 
     .hero-grid, .services-grid, .enfermedades-grid, .booking-grid, .footer-grid-container {
