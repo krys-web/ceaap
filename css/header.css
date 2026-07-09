@@ -1,0 +1,381 @@
+/*==================================================
+HEADER
+Consultorio Médico Respiratorio
+==================================================*/
+
+/*-------------------------
+TOP BAR
+--------------------------*/
+
+.topbar {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--white);
+    font-size: .90rem;
+    padding: 10px 0;
+
+}
+
+.topbar .container{
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:0 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.topbar-left,
+.topbar-right{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.topbar span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:rgba(255,255,255,.95);
+
+}
+
+.topbar i{
+
+    color:#ffffff;
+
+}
+
+/*-------------------------
+HEADER
+--------------------------*/
+
+header {
+width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-header);
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.85); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/*-------------------------
+HEADER SCROLL
+--------------------------*/
+
+header.scrolled {
+    top: 0;
+    background: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
+}
+
+/*-------------------------
+CONTENEDOR
+--------------------------*/
+
+.header-container{
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:18px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/*-------------------------
+LOGO
+--------------------------*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.logo img{
+
+    height: 88px;
+
+    width:auto;
+
+    transition:var(--transition);
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-text h2 {
+    color: var(--text-title); /* Antes: var(--white) */
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    color: var(--gray-500); /* Antes: rgba(255,255,255,.85) */
+    font-size: .82rem;
+}
+
+/* Cambia colores cuando hace scroll */
+
+header.scrolled .logo-text h2{
+
+    color:var(--text-title);
+
+}
+
+header.scrolled .logo-text span{
+
+    color:var(--gray-500);
+
+}
+
+/*-------------------------
+NAV
+--------------------------*/
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav ul li{
+
+    position:relative;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-title); 
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    padding-bottom: 5px;
+}
+
+/* Línea inferior */
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-secondary);
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--color-secondary);
+
+}
+
+/* Scroll */
+
+header.scrolled nav ul li a{
+
+    color:var(--gray-700);
+
+}
+
+header.scrolled nav ul li a:hover{
+
+    color:var(--color-primary);
+
+}
+
+/*-------------------------
+BOTÓN
+--------------------------*/
+
+.btn-header{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    background:var(--color-secondary);
+
+    color:var(--white);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-card);
+
+}
+
+.btn-header:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--color-secondary-dark);
+
+}
+
+/*-------------------------
+MENU HAMBURGUESA
+--------------------------*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:rgba(255,255,255,.15);
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    background: var(--black);
+    transition: .3s;
+}
+
+/* Scroll */
+
+header.scrolled .menu-toggle{
+
+    background:var(--color-primary);
+
+}
+
+/*-------------------------
+EFECTOS
+--------------------------*/
+
+header:hover{
+
+    backdrop-filter:blur(12px);
+
+}
+
+/*-------------------------
+ANIMACIÓN
+--------------------------*/
+
+@keyframes fadeHeader{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+header{
+
+    animation:fadeHeader .6s ease;
+
+}
