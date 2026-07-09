@@ -39,14 +39,6 @@
 <a class="logo">
 
 <img src="img/logo.png">
-<!--
-<div class="logo-text">
-
-<h2>Especialistas</h2>
-
-<span>ALERGIA, ASMA Y PIEL</span>
-
-</div> -->
 
 </a>
 
@@ -54,9 +46,9 @@
 
 <ul>
 
-<li><a href="#">Inicio</a></li>
+<li><a href="index.html">Inicio</a></li>
 
-<li><a href="#">Enfermedades</a></li>
+<li><a href="enfermedades.html">Enfermedades</a></li>
 
 <li><a href="#">Exámenes</a></li>
 
@@ -89,88 +81,99 @@ Agendar cita
 </header>
 
 <section class="hero">
-
     <div class="container">
-
         <div class="hero-grid">
-
             <div class="hero-content">
-
                 <span class="hero-badge">
-                    Especialistas en Enfermedades Respiratorias
+                    Especialistas en Salud Integral
                 </span>
-
                 <h1>
                     Cuidamos tu salud respiratoria con tecnología y experiencia.
                 </h1>
-
                 <p>
                     Diagnóstico, tratamiento y seguimiento integral de enfermedades respiratorias
                     para niños y adultos, con atención presencial y telemedicina.
                 </p>
-
                 <div class="hero-stats">
-
                     <div class="stat">
                         <span class="stat-number">20+</span>
                         <span class="stat-label">Años de experiencia</span>
                     </div>
-
                     <div class="stat">
                         <span class="stat-number">15.000+</span>
                         <span class="stat-label">Pacientes atendidos</span>
                     </div>
-
                     <div class="stat">
                         <span class="stat-number">98%</span>
                         <span class="stat-label">Satisfacción</span>
                     </div>
-
                 </div>
-
             </div>
 
-            <div class="hero-card">
-
-                <div class="doctor-card">
-
-                    <div class="doctor-image">
-                        <img src="img/doctor.png" alt="libio-vera">
-                    </div>
-
-                    <h3>Dr. Libio Vera</h3>
-
-                    <p class="doctor-specialty">
-                        Alergólogo e Inmunólogo, Pediatra
-                    </p>
-
-                    <div class="doctor-info">
-
-                        <div>
-                            <span>Experiencia</span>
-                            <strong>20 años</strong>
-                        </div>
-
-                        <div>
-                            <span>Consultas</span>
-                            <strong>15.000+</strong>
-                        </div>
-
-                        <div>
-                            <span>Modalidad</span>
-                            <strong>Presencial y Virtual</strong>
-                        </div>
-
-                    </div>
-
+            <!-- Contenedor de Tarjetas con Selector Integrado -->
+            <div class="hero-cards-wrapper">
+                <div class="hero-tabs">
+                    <button class="tab-btn active" data-tab="respiratorio">Salud Respiratoria</button>
+                    <button class="tab-btn" data-tab="nutricion">Nutrición & Naturopatía</button>
                 </div>
 
+                <!-- Tarjeta 1: Neumología (Actual) -->
+                <div class="hero-card active" id="tab-respiratorio">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="img/doctor.png" alt="Dr. Libio Vera">
+                        </div>
+                        <h3>Dr. Libio Vera</h3>
+                        <p class="doctor-specialty">
+                            Alergólogo e Inmunólogo, Pediatra
+                        </p>
+                        <div class="doctor-info">
+                            <div>
+                                <span>Experiencia</span>
+                                <strong>20 años</strong>
+                            </div>
+                            <div>
+                                <span>Consultas</span>
+                                <strong>15.000+</strong>
+                            </div>
+                            <div>
+                                <span>Modalidad</span>
+                                <strong>Presencial y Virtual</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Nutrición y Naturopatía (Nueva) -->
+                <div class="hero-card card-naturopatia" id="tab-nutricion">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="img/doctora-nutri.png" alt="Nutrición Natural">
+                        </div>
+                        <h3>Narcisa Gonzáles</h3>
+                        <p class="doctor-specialty">
+                            Dietética y Nutrición Natural
+                        </p>
+                        <div class="doctor-info">
+                            <div>
+                                <span>Enfoque</span>
+                                <strong>100% Orgánico</strong>
+                            </div>
+                            <div>
+                                <span>Tratamientos</span>
+                                <strong>Personalizados</strong>
+                            </div>
+                            <div>
+                                <span>Modalidad</span>
+                                <strong>Presencial y Virtual</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-
     </div>
-
 </section>
 
 <section class="servicios">
@@ -693,6 +696,7 @@ FOOTER (PIE DE PÁGINA)
     <div class="footer-bottom">
         <div class="container">
             <p>&copy; 2026 CEAAP S.A. Todos los derechos reservados.</p>
+            <p>Diseñado por: KRYSWEB <a href="https://www.krysweb.com/">Visitar Sitio.</a></p>
         </div>
     </div>
 </footer>
