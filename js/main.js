@@ -147,3 +147,34 @@ document.addEventListener('DOMContentLoaded', () => {
         serviciosObserver.observe(serviciosSection);
     }
 });
+
+// ===================================================
+// Animación de la sección Enfermedades al entrar en el Visor
+// ===================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const enfermedadesSection = document.querySelector('.enfermedades');
+    const enfermedadCards = document.querySelectorAll('.enfermedades .enfermedad-card');
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.1 // Se activa cuando el 10% de la sección es visible
+    };
+
+    const enfermedadesObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Activa la animación al entrar
+                enfermedadCards.forEach(card => card.classList.add('animate-visible'));
+            } else {
+                // Elimina la clase para permitir que se reinicie al volver a entrar
+                enfermedadCards.forEach(card => card.classList.remove('animate-visible'));
+            }
+        });
+    }, observerOptions);
+
+    if (enfermedadesSection) {
+        // Preparamos las tarjetas con el estado inicial oculto
+        enfermedadCards.forEach(card => card.classList.add('animate-prepare'));
+        enfermedadesObserver.observe(enfermedadesSection);
+    }
+});
