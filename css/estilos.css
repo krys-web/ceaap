@@ -139,7 +139,7 @@ header.scrolled {
 .header-container {
     max-width: var(--container);
     margin: auto;
-    padding: 18px 25px;
+    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,7 +153,7 @@ header.scrolled {
 }
 
 .logo img {
-    height: 88px;
+    height: 60px;
     width: auto;
     transition: var(--transition);
 }
@@ -419,7 +419,46 @@ nav ul li a:hover { color: var(--color-secondary); }
 .footer-grid-container { display: flex; justify-content: space-between; gap: 40px; padding-bottom: 50px; }
 .footer-column { flex: 1; min-width: 250px; }
 .site-footer h3 { color: var(--white); margin-bottom: 25px; font-size: 1.25rem; }
-.social-links { display: flex; flex-direction: column; gap: 12px; }
+.social-links { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px;
+}
+.social-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px; 
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-item svg {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efectos al pasar el cursor (Hover) */
+.social-item:hover {
+    color: var(--white);
+    transform: translateX(6px); /* El enlace se desliza ligeramente a la derecha */
+}
+
+.social-item:hover svg {
+    transform: scale(1.15); /* El icono crece sutilmente */
+}
+
+/* Colores de marca opcionales al hacer hover (le da un toque muy premium) */
+.social-item[aria-label="Facebook"]:hover svg { 
+    color: #1877F2; 
+}
+.social-item[aria-label="Instagram"]:hover svg { 
+    color: #E1306C; 
+}
+.social-item[aria-label="TikTok"]:hover svg { 
+    color: #00F2FE; 
+}
 .social-links a { color: rgba(255, 255, 255, 0.8); text-decoration: none; }
 .footer-btn-cita { display: inline-block; background: var(--color-primary); color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: 600; margin-top: 15px; }
 .footer-bottom { background: rgba(0, 0, 0, 0.2); padding: 25px 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); }
@@ -633,19 +672,17 @@ nav ul li a:hover { color: var(--color-secondary); }
 /* Estado inicial oculto */
 .animate-prepare {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
-                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    will-change: transform, opacity;
+    transform: translateY(60px) scale(0.95); 
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Estado cuando el elemento se vuelve visible */
 .animate-visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1); 
 }
 
-/* Efecto escalonado (Stagger): Cada elemento aparece un poco después que el anterior */
+
 .hero-content h1.animate-prepare {
     transition-delay: 0.1s;
 }
@@ -677,4 +714,42 @@ nav ul li a:hover { color: var(--color-secondary); }
 
 .servicios .service-card:nth-child(3).animate-prepare {
     transition-delay: 0.5s;
+}
+
+/* Efecto escalonado para las tarjetas de enfermedades */
+.enfermedades .enfermedad-card:nth-child(1).animate-prepare {
+    transition-delay: 0.1s;
+}
+
+.enfermedades .enfermedad-card:nth-child(2).animate-prepare {
+    transition-delay: 0.2s;
+}
+
+.enfermedades .enfermedad-card:nth-child(3).animate-prepare {
+    transition-delay: 0.3s;
+}
+
+.enfermedades .enfermedad-card:nth-child(4).animate-prepare {
+    transition-delay: 0.4s;
+}
+
+.enfermedades .enfermedad-card:nth-child(5).animate-prepare {
+    transition-delay: 0.5s;
+}
+
+.enfermedades .enfermedad-card:nth-child(6).animate-prepare {
+    transition-delay: 0.6s;
+}
+
+@media (max-width: 992px) {
+    /* Ajuste para que el contenedor de contacto se apile verticalmente */
+    .contacto-section .container {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+}
+
+.contacto-section {
+    /* Ajusta este valor según la altura real de tu header */
+    padding-top: 150px !important; 
 }
