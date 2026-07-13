@@ -980,3 +980,33 @@ nav ul li a:hover { color: var(--color-secondary); }
         padding: 60px 0 !important; 
     }
 }
+
+
+/* Responsividad para tarjetas de equipo*/
+
+@media (max-width: 576px) {
+    /* 1. Reducir el tamaño de la tarjeta principal */
+    .flip-card {
+        width: 100% !important; /* Asegura que la tarjeta no supere el ancho disponible */
+        max-width: 280px;      /* Tamaño máximo reducido para móviles */
+        height: 350px !important; /* Ajuste proporcional de altura */
+        margin: 0 auto 20px auto; /* Centrado y margen inferior */
+    }
+
+    /* 2. Reducir elementos internos: Imagen */
+    .flip-card-inner .flip-card-front img {
+        height: 150px !important; /* Reducción de la altura de la imagen */
+        object-fit: cover;        /* Mantiene la proporción sin deformar */
+    }
+
+    /* 3. Reducir elementos internos: Texto y Títulos */
+    .flip-card-front h3, .flip-card-back h3 {
+        font-size: 1.1rem !important; /* Fuente más pequeña */
+        margin: 10px 0 !important;
+    }
+
+    .flip-card-front p, .flip-card-back p {
+        font-size: 0.85rem !important; /* Ajuste para que el texto quepa mejor */
+        padding: 0 10px !important;
+    }
+}
