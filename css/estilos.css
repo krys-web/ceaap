@@ -753,3 +753,95 @@ nav ul li a:hover { color: var(--color-secondary); }
     /* Ajusta este valor según la altura real de tu header */
     padding-top: 150px !important; 
 }
+
+#examenes-grid-unique { display: flex; flex-direction: column; gap: 50px; }
+
+.exam-card-unique { 
+    display: flex; align-items: center; gap: 40px; background: #fff; 
+    border-radius: 20px; overflow: hidden; padding: 30px; /* Más espacio interno */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; 
+}
+
+.exam-img-unique img { 
+    width: 100%; height: auto; border-radius: 15px; display: block; 
+}
+
+/* Posicionamiento intercalado */
+.exam-card-unique.img-right { flex-direction: row-reverse; }
+
+.exam-img-unique { flex: 1; }
+.exam-content-unique { flex: 1; }
+
+/* Animación: Estado inicial */
+.exam-card-unique.animate-prepare { opacity: 0; }
+.exam-card-unique.img-left.animate-prepare { transform: translateX(-100px); }
+.exam-card-unique.img-right.animate-prepare { transform: translateX(100px); }
+
+/* Animación: Estado visible */
+.exam-card-unique.animate-visible { opacity: 1; transform: translateX(0); }
+
+.btn-agendar-unique { 
+    display: inline-block; padding: 12px 25px; background: var(--color-primary); 
+    color: white; border-radius: 30px; text-decoration: none; margin-top: 15px; 
+}
+
+.examenes-page { padding: 120px 20px !important; }
+
+@media (max-width: 768px) {
+    /* Permitir que el contenedor ocupe el ancho total con poco margen */
+    .examenes-page { padding: 60px 15px !important; }
+
+    #examenes-grid-unique { gap: 30px; }
+
+    .exam-card-unique {
+        flex-direction: column !important; /* Apilado vertical */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .exam-img-unique, .exam-content-unique {
+        width: 100%; /* Ocupan todo el ancho */
+    }
+
+    .exam-img-unique img {
+        border-radius: 15px; /* Bordes redondeados consistentes */
+    }
+
+    /* Reset de animaciones para móvil si es necesario */
+    .exam-card-unique.img-left.animate-prepare, 
+    .exam-card-unique.img-right.animate-prepare {
+        transform: translateY(50px); /* Entrada vertical suave en móviles */
+    }
+}
+
+/*PARA LA SECCION RESPONSIVA DE CELULARES DE CONTACTO*/
+@media (max-width: 768px) {
+    .contacto-section .container {
+        grid-template-columns: 1fr !important; 
+        gap: 30px !important;
+        padding: 40px 20px !important;
+    }
+
+    .contacto-form {
+        padding: 25px !important; 
+    }
+
+    .contacto-info .mapa {
+        height: 200px !important; 
+    }
+}
+
+@media (max-width: 992px) {
+    .contacto-section .container {
+        grid-template-columns: 1fr !important; 
+        gap: 30px !important;                
+    }
+
+    .contacto-form, .contacto-info {
+        padding: 20px !important;             
+    }
+    
+    .mapa iframe {
+        width: 100% !important;             
+    }
+}
