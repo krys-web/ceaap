@@ -205,3 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 });
+
+
+function toggleDetail(element) {
+    // Busca el párrafo dentro de la tarjeta clicada
+    const detail = element.querySelector('.info-detail');
+    
+    // Alterna la visibilidad
+    if (detail.style.display === "none") {
+        detail.style.display = "block";
+    } else {
+        detail.style.display = "none";
+    }
+}
