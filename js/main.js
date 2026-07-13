@@ -178,3 +178,30 @@ document.addEventListener('DOMContentLoaded', () => {
         enfermedadesObserver.observe(enfermedadesSection);
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const examCards = document.querySelectorAll('.exam-card-unique');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Cuando entra en pantalla: quitamos 'prepare', ponemos 'visible'
+                entry.target.classList.remove('animate-prepare');
+                entry.target.classList.add('animate-visible');
+            } else {
+                // Cuando sale de pantalla: reiniciamos al estado inicial
+                entry.target.classList.remove('animate-visible');
+                entry.target.classList.add('animate-prepare');
+            }
+        });
+    }, { 
+        threshold: 0.1, // Se activa cuando al menos el 10% es visible
+        rootMargin: "0px 0px -50px 0px" // Ajuste fino para evitar disparos prematuros
+    });
+
+    examCards.forEach(card => {
+        // Estado inicial
+        card.classList.add('animate-prepare');
+        observer.observe(card);
+    });
+});
