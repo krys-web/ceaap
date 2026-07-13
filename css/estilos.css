@@ -585,6 +585,7 @@ nav ul li a:hover { color: var(--color-secondary); }
     font-size: 0.95rem;
     color: var(--text-body);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .enfermedad-content .service-btn {
