@@ -218,3 +218,20 @@ function toggleDetail(element) {
         detail.style.display = "none";
     }
 }
+
+/* animación para preguntas FAQS */
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isOpen = answer.style.maxHeight !== '0px' && answer.style.maxHeight !== '';
+        
+        // Cerrar todas las demás respuestas
+        document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
+        
+        // Abrir la seleccionada
+        if (!isOpen) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
