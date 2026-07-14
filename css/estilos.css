@@ -281,15 +281,19 @@ nav ul li a:hover { color: var(--color-secondary); }
 }
 
 .doctor-image {
-    width: 170px;
-    height: 170px;
+    width: 170px;         
+    height: 220px;        
     margin: 0 auto 25px;
-    border-radius: 50%;
+    border-radius: 15px;  
     overflow: hidden;
     border: 8px solid var(--color-primary-light);
 }
 
-.doctor-image img { width: 100%; height: 100%; object-fit: cover; }
+.doctor-image img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
 .doctor-card h3 { text-align: center; color: var(--text-title); font-size: 1.5rem; margin-bottom: 8px;}
 .doctor-card .doctor-specialty { text-align: center; color: var(--color-primary); font-weight: 600; margin-bottom: 25px; }
 
@@ -330,7 +334,7 @@ nav ul li a:hover { color: var(--color-secondary); }
 
 .services-grid, .enfermedades-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
 }
 
@@ -379,7 +383,12 @@ nav ul li a:hover { color: var(--color-secondary); }
 .enfermedad-img { height: 230px; overflow: hidden; }
 .enfermedad-img img { width:100%; height:100%; object-fit:cover; transition:.5s; }
 .enfermedad-card:hover img { transform: scale(1.08); }
-.enfermedad-content { padding: 30px; }
+.enfermedad-content {
+    padding: 30px;
+    display: flex;                
+    flex-direction: column;      
+    min-height: 200px;           
+}
 
 .services-bottom { margin-top: 70px; text-align: center; }
 .services-bottom a {
@@ -589,10 +598,12 @@ nav ul li a:hover { color: var(--color-secondary); }
 }
 
 .enfermedad-content .service-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Botón de ancho completo en la tarjeta para mejor UI/UX en dispositivos móviles */
+    display: inline-flex;         /* Cambiado a inline-flex para permitir alineación */
+    justify-content: center;      /* Ahora funcionará correctamente */
+    align-items: center;          /* Ahora funcionará correctamente */
+    margin-top: 20px;
+    padding: 12px 24px;           /* Ajusta el padding para un mejor tamaño */
+    width: auto;                  /* Ocupa el ancho necesario según el texto */
     text-align: center;
     transition: var(--transition);
 }
@@ -853,6 +864,14 @@ nav ul li a:hover { color: var(--color-secondary); }
     width: 100%;
     height: 300px;
     perspective: 1000px; /* Crea el efecto 3D */
+}
+
+.flip-card-front img {
+    width: 100%;           /* Ocupa el ancho del contenedor */
+    max-height: 150px;     /* Ajusta este valor según el tamaño que desees */
+    object-fit: contain;   /* Muestra la imagen completa sin recortarla */
+    margin-bottom: 10px;   /* Espaciado inferior */
+    display: block;
 }
 
 .flip-card-inner {
