@@ -150,12 +150,15 @@ header.scrolled {
     align-items: center;
     gap: 15px;
     text-decoration: none;
+    overflow: visible;
 }
 
 .logo img {
-    height: 60px;
+    height: 90px; 
     width: auto;
     transition: var(--transition);
+    position: relative; 
+    z-index: 10;
 }
 
 nav {
@@ -513,7 +516,7 @@ nav ul li a:hover { color: var(--color-secondary); }
     nav.active { display: block !important; }
     .btn-header { display: none !important; }
 
-.menu-toggle {
+    .menu-toggle {
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -525,42 +528,71 @@ nav ul li a:hover { color: var(--color-secondary); }
         z-index: 99999 !important;
     }
 
-.menu-toggle span {
+    .menu-toggle span {
         display: block !important;
         width: 100% !important;
         height: 3px !important;
-        background-color: #003459 !important; /* Color de tus líneas */
+        background-color: #003459 !important;
         border-radius: 3px !important;
-        transition: all 0.3s ease !important; /* Esto hace que la animación sea suave */
-        transform-origin: left center !important; /* Punto de pivote para la rotación */
+        transition: all 0.3s ease !important;
+        transform-origin: left center !important;
     }
 
-.menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translateY(-2px) !important;
-    }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translateY(-2px) !important; }
+    .menu-toggle.active span:nth-child(2) { width: 0% !important; opacity: 0 !important; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translateY(2px) !important; }
 
-    .menu-toggle.active span:nth-child(2) {
-        width: 0% !important;
-        opacity: 0 !important; /* Desaparece la línea del medio */
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translateY(2px) !important;
-    }
-
-    .hero-grid, .services-grid, .enfermedades-grid, .booking-grid, .footer-grid-container {
+    /* Corrección central: Unificación de grids */
+    .hero-grid, 
+    .services-grid, 
+    .enfermedades-grid, 
+    .booking-grid, 
+    .footer-grid-container {
+        display: grid !important;
         grid-template-columns: 1fr !important;
-        flex-direction: column !important;
         gap: 40px !important;
     }
 
     .booking-image { order: -1; max-width: 600px; margin: 0 auto; }
     .doctor-badge { right: 20px; bottom: 20px; }
+
+    /* Asegurar visibilidad de la sección */
+    .enfermedades {
+        display: block !important;
+        padding: 60px 0 !important;
+    }
+    
+    .contacto-section .container {
+        grid-template-columns: 1fr !important; 
+        gap: 30px !important;                
+    }
+
+    .contacto-form, .contacto-info {
+        padding: 20px !important;             
+    }
+    
+    .mapa iframe {
+        width: 100% !important;             
+    }
+
+    .enfermedades-grid {
+        display: grid !important; /* Mantiene la cuadrícula */
+        grid-template-columns: 1fr !important; /* Una sola columna */
+        gap: 20px !important;
+        padding: 0 20px !important; /* Agrega un poco de aire a los lados */
+        width: 100% !important;
+    }
+    
+    .enfermedad-card {
+        display: block !important; /* Asegura que la tarjeta se muestre */
+        width: 100% !important;
+        height: auto !important; /* Permite que el contenido dicte la altura */
+    }
 }
 
 @media (max-width: 576px) {
     .topbar { display: none !important; }
-    .logo img { height: 50px !important; }
+    .logo img { height: 60px !important; }
     .hero h1 { font-size: 2.5rem !important; }
     .section-title, .cta h2 { font-size: 2rem !important; }
     .booking-box { padding: 30px 20px; }
@@ -993,6 +1025,16 @@ nav ul li a:hover { color: var(--color-secondary); }
         grid-template-columns: 1fr !important; 
         gap: 20px !important;
     }
+
+    .enfermedades-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .enfermedad-card {
+        height: auto !important; 
+    }
 }
 
 @media (max-width: 576px) {
@@ -1029,4 +1071,32 @@ nav ul li a:hover { color: var(--color-secondary); }
         font-size: 0.85rem !important; /* Ajuste para que el texto quepa mejor */
         padding: 0 10px !important;
     }
+}
+
+/* IMPLEMENTACIÓN ANIMACIÓN DE LOGO */
+
+@keyframes pulseLogo {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.logo img {
+    height: 90px; 
+    width: auto;
+    transition: var(--transition);  
+    animation: pulseLogo 2s ease-in-out 1; 
+}
+
+/* ANIMACIÓN PARA PREGUNTAS FAQS */
+.faq-section { padding: 80px 0; background: var(--bg-light); }
+.faq-container { max-width: 800px; margin: 0 auto; }
+.faq-item { background: white; margin-bottom: 15px; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow-card); }
+.faq-question { width: 100%; padding: 20px; border: none; background: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 20px; color: var(--gray-600); }
+.faq-answer p { padding-bottom: 20px; }
+
+/* Ajuste de tamaño para el título de la sección FAQ */
+.faq-section .section-title {
+    font-size: 2rem;
 }
