@@ -45,17 +45,24 @@
 <nav>
 
 <ul>
-
-<li><a href="index.html">Inicio</a></li>
-
-<li><a href="enfermedades.html">Enfermedades</a></li>
-
-<li><a href="examenes.html">Exámenes</a></li>
-
-<li><a href="telemedicina.html">Telemedicina</a></li>
-
-<li><a href="contacto.html">Contacto</a></li>
-
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="enfermedades.html">Enfermedades</a></li>
+    <li class="has-submenu">
+        <a href="examenes.html">Exámenes ▾</a>
+        <ul class="submenu">
+            <li><a href="examenes.html#inmunoterapia">Inmunoterapia Alergeno Específica</a></li>
+            <li><a href="examenes.html#test-cutaneo">Test Cutáneo para Alergias</a></li>
+            <li><a href="examenes.html#test-alimentos">Test cutáneo con alimentos frescos</a></li>
+            <li><a href="examenes.html#patch-test">Prueba de parche (Patch Test)</a></li>
+            <li><a href="examenes.html#dermatitis">Test de Parche para Dermatitis de Contacto</a></li>
+            <li><a href="examenes.html#hielo">Test de cubo de hielo para urticaria por frío</a></li>
+            <li><a href="examenes.html#suero">Test de suero autólogo para urticaria crónica</a></li>
+            <li><a href="examenes.html#medicamentos">Alergia a los medicamentos</a></li>
+            <li><a href="examenes.html#tolerancia">Prueba de tolerancia oral para alergias</a></li>
+        </ul>
+    </li>
+    <li><a href="telemedicina.html">Telemedicina</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
 </ul>
 
 </nav>
@@ -87,12 +94,14 @@ Agendar cita
                 <h1>
                     Centro de Alergias e Inmunología
                 </h1>
-                <p>
-                    Diagnóstico preciso. Tratamiento integral.
-                    Equipo multidisciplinario de especialistas en alergología, dermatología, 
-                    inmunología y nutrición. Atendemos adultos y niños con tecnología 
-                    diagnóstica avanzada.
-                </p>
+                <div class="hero-description-box">
+                        <p>
+                            Diagnóstico preciso. Tratamiento integral.
+                            Equipo multidisciplinario de especialistas en alergología, dermatología, 
+                            inmunología y nutrición. Atendemos adultos y niños con tecnología 
+                            diagnóstica avanzada.
+                        </p>
+                </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">20+</span>
@@ -107,6 +116,16 @@ Agendar cita
                         <span class="stat-label">Satisfacción</span>
                     </div>
                 </div>
+
+                <div class="hero-cta">
+                    <a href="agenda.html" class="btn-primary">
+                    <span>📅</span> Agendar Cita
+                    </a>
+                    <a href="telemedicina.html" class="btn-secondary">
+                    <span>💻</span> Telemedicina
+                    </a>
+                </div>
+
             </div>
 
             <!-- Contenedor de Tarjetas con Selector Integrado -->
@@ -116,7 +135,7 @@ Agendar cita
                     <button class="tab-btn" data-tab="nutricion">Nutrición & Naturopatía</button>
                 </div>
 
-                <!-- Tarjeta 1: Neumología (Actual) -->
+                <!-- Tarjeta 1: -->
                 <div class="hero-card active" id="tab-respiratorio">
                     <div class="doctor-card">
                         <div class="doctor-image">
@@ -147,7 +166,7 @@ Agendar cita
                 <div class="hero-card card-naturopatia" id="tab-nutricion">
                     <div class="doctor-card">
                         <div class="doctor-image">
-                            <img src="img/doctor2.png" alt="Nutrición Natural">
+                            <img src="img/doctor3.jpeg" alt="Nutrición Natural">
                         </div>
                         <h3>Estefanía González de Vera</h3>
                         <p class="doctor-specialty">
@@ -175,6 +194,131 @@ Agendar cita
     </div>
 </section>
 
+<!-- Sección Nosotros -->
+<section class="nosotros-section" id="nosotros">
+        <div class="nosotros-header">
+            <h2 class="pildora-principal">Sobre Nosotros</h2>
+        </div>
+    <div class="container nosotros-grid">
+        <div class="nosotros-image">
+            <img src="img/nosotros.jpeg" alt="Nuestro equipo médico">
+        </div>
+        <div class="nosotros-content">
+            <div class="scrolling-text-container" id="text-container">
+                <div class="scrolling-text">
+
+                    <div class="info-item">
+                        <h4 class="pildora-doctor">Dr. Libio Vera Vélez</h4>
+                        <p>Alergólogo de niños y adultos - Inmunólogo Clínico</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>Formación Académica y Formativa</h4>
+                        <p></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Médico Cirujano</h4>
+                        <p>Universidad de Guayaquil - Ecuador</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>Residencia en Pediatría</h4>
+                        <p>Hospital de Niños León Becerra - Guayaquil, Ecuador</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Formación Posbásica en Inmunología Pediátrica</h4>
+                        <p>Hospital de Pediatría Prof. Dr. Juan P. Garrahan - Buenos Aires, Argentina</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>Perfeccionamiento en Alergia</h4>
+                        <p>Hospital Italiano de Buenos Aires - Argentina</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Médico Especialista en Alergia e Inmunología</h4>
+                        <p>Sociedad Argentina de Alergia e Inmunopatología - Argentina</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Especialista en Inmunología Clínica</h4>
+                        <p>Universidad de Ciencias Empresariales y Sociales, UCES - Argentina</p>
+                        <p>Servicio de Inmunología, Hospital Durand - Buenos Aires</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Equipo Profesional</h4>
+                        <p>Nuestro equipo está formado por especialistas altamente capacitados en diversas áreas, comprometidos con la formación continua y el bienestar del paciente.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <p>=================================================</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4 class="pildora-doctor">Estefanía González de Vera</h4>
+                        <p>Dietética y Nutrición Natural</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Formación Académica y Formativa</h4>
+                        <p></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Instituto de Investigaciones Humanísticas, Buenos Aires, Argentina.</h4>
+                        <p>Consultor en PNL para la Salud - Mención Naturopatía 2004 - 2008</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>IATENA - Instituto Argentino de Terapias Naturales</h4>
+                        <p>Terapias Naturales 2022 - 2024.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Instituto Tecnológico Superior "Los Andes"</h4>
+                        <p>Medicina Ancestral 2020 - 2024.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Colegio de Médicos Naturistas Tradicionales y Alternativos del Ecuador</h4>
+                        <p>Naturopatía - Terapia Integral Complementaria 2020 - 2024 - 3240 horas.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>ACCESS / Ministerio de Salud Pública</h4>
+                        <p>Permiso para ejercicio de Terapias Alternativas en Naturopatía</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Experiencia Laboral</h4>
+                        <p></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Clínica Kenedy Alborada 2010 - 2023</h4>
+                        <p>Naturopatía Consultora en PNL para la salud (Programación Neurolingüística)</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Hosiptal Granados , Salinas 2010 - 2017</h4>
+                        <p>Medicina Natural, Integral y Alternativa</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Omhihospital 2023 (actualmente)</h4>
+                        <p>Asesora en ditética, medicina y nutrición natural</p>
+                        <p>Medicina Ancestral y Antienvejecimiento</p>
+                    </div>                 
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="servicios">
 
     <div class="container">
@@ -182,83 +326,60 @@ Agendar cita
         <div class="section-header">
 
             <span class="section-subtitle">
-                Nuestros áreas de especialización.
+                Nuestros servicios
             </span>
 
-            <h2 class="section-title">
-                Nuestros servicios a disponibilidad para cuidar tu salud
-            </h2>
-
-            <p class="section-description">
-                Brindamos diagnóstico, tratamiento y seguimiento de enfermedades respiratorias,
-                apoyados en tecnología moderna y atención personalizada.
-            </p>
+            <div class="description-box">
+                <p class="section-description">
+                    Brindamos diagnóstico, tratamiento y seguimiento de enfermedades respiratorias,
+                    apoyados en tecnología moderna y atención personalizada.
+                </p>
+            </div>
 
         </div>
 
         <div class="services-grid">
+
             <article class="service-card">
                 <span class="service-number">01</span>
                 <div class="service-icon">🫁</div>
                 <h3>Consulta Especializada</h3>
-                <p>
-                    Valoración integral por especialistas en enfermedades respiratorias.
-                </p>
+                <p>Valoración integral por expertos para un diagnóstico preciso.</p>
                 <ul class="service-list">
                     <li>✔ Diagnóstico personalizado</li>
                     <li>✔ Tratamiento integral</li>
                     <li>✔ Seguimiento médico</li>
                 </ul>
-                <a href="agenda.html" class="service-btn">
-                    Agendar cita
-                </a>
+                <a href="agenda.html" class="service-btn">Agendar cita</a>
             </article>
 
             <article class="service-card">
                 <span class="service-number">02</span>
                 <div class="service-icon">🩺</div>
                 <h3>Exámenes y Procedimientos</h3>
-                <p>
-                    Realizamos pruebas diagnósticas para evaluar la función pulmonar y el estado respiratorio.
-                </p>
+                <p>Evaluamos la función pulmonar y el estado respiratorio.</p>
                 <ul class="service-list">
-                    <li>✔ Espirometría</li>
-                    <li>✔ Alérgias</li>
-                    <li>✔ Cutáneas</li>
+                    <li>✔ Pruebas de Espirometría </li>
+                    <li>✔ Pruebas para Alérgias </li>
+                    <li>✔ Pruebas Cutáneas </li>
                 </ul>
-                <a href="examenes.html" class="service-btn">
-                    Más información
-                </a>
+                <a href="examenes.html" class="service-btn">Más información</a>
             </article>
 
             <article class="service-card">
                 <span class="service-number">03</span>
                 <div class="service-icon">💻</div>
                 <h3>Telemedicina</h3>
-                <p>
-                    Consulta médica desde cualquier lugar mediante videollamada segura.
-                </p>
+                <p>Consulta médica desde cualquier lugar mediante videollamada segura.</p>
                 <ul class="service-list">
                     <li>✔ Consulta virtual</li>
                     <li>✔ Recetas digitales</li>
                     <li>✔ Seguimiento remoto</li>
                 </ul>
-                <a href="telemedicina.html" class="service-btn">
+                <a href="agenda.html" class="service-btn">
                     Agendar cita
                 </a>
             </article>
-
-        </div>
-
-        <div class="services-bottom">
-
-            <p>
-                Nuestro equipo está listo para ayudarte a respirar mejor.
-            </p>
-
-            <a href="agenda.html">
-                Solicitar una cita
-            </a>
 
         </div>
 
@@ -280,7 +401,7 @@ Nuestras especialidades
 
 <h2 class="section-title">
 
-Atención especializada
+Nuestras áreas de especialización
 
 </h2>
 
@@ -453,187 +574,110 @@ RESERVA TU CONSULTA
 ====================================================== -->
 
 <section class="booking-section">
-
     <div class="container">
-
         <div class="booking-grid">
-
             <!--====================================
             INFORMACIÓN
             =====================================-->
 
             <div class="booking-content">
-
                 <div class="booking-box">
-
                     <span class="section-subtitle">
-
                         Agenda tu consulta
-
                     </span>
-
                     <h2 class="section-title">
-
                         Reserva tu consulta
                         en <span>3 sencillos pasos</span>
-
                     </h2>
-
                     <p class="booking-description">
-
                         Agenda una consulta presencial o por telemedicina
                         de forma rápida, sencilla y segura.
 
                         Nuestro sistema te permitirá visualizar únicamente
                         los horarios disponibles del especialista.
-
                     </p>
-
                     <!-- PASOS -->
-
                     <div class="booking-list">
-
                         <div class="booking-item">
-
                             <div class="booking-number">
-
                                 1
-
                             </div>
 
                             <div>
-
                                 <h3>
-
                                     Selecciona el especialista
-
                                 </h3>
-
                                 <p>
-
                                     Elige el médico de acuerdo con tu necesidad.
-
                                 </p>
-
                             </div>
-
                         </div>
 
                         <div class="booking-item">
-
                             <div class="booking-number">
-
                                 2
-
                             </div>
-
                             <div>
-
                                 <h3>
-
                                     Escoge la fecha y horario
-
                                 </h3>
-
                                 <p>
-
                                     Visualiza únicamente los horarios disponibles.
-
                                 </p>
-
                             </div>
-
                         </div>
 
                         <div class="booking-item">
-
                             <div class="booking-number">
-
                                 3
-
                             </div>
-
                             <div>
-
                                 <h3>
-
                                     Confirma tu cita
-
                                 </h3>
-
                                 <p>
 
                                     Recibirás la confirmación inmediata
                                     en tu correo electrónico.
 
                                 </p>
-
                             </div>
-
                         </div>
-
                     </div>
 
                     <a href="agenda.html" class="booking-button">
-
                         Agendar consulta
-
                     </a>
-
                 </div>
-
             </div>
 
             <!--====================================
             IMAGEN
             =====================================-->
-
             <div class="booking-image">
-
                 <img
-                    src="img/doctor-consulta.png"
+                    src="img/agendar-cita.png"
                     alt="Especialista en enfermedades respiratorias">
-
                 <div class="doctor-badge">
-
                     <h4>
-
                         Atención Disponible
-
                     </h4>
-
                     <p>
-
                         ✔ Consulta Presencial
-
                     </p>
-
                     <p>
-
                         ✔ Telemedicina
-
                     </p>
-
                     <p>
-
                         ✔ Lunes a Viernes
-
                     </p>
-
                     <strong>
-
                         08:00 - 18:00
-
                     </strong>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <section class="faq-section">
@@ -663,7 +707,7 @@ RESERVA TU CONSULTA
             <!-- Pregunta 5 -->
             <div class="faq-item">
                 <button class="faq-question">¿Cuándo debo consultar a un especialista?<span>+</span></button>
-                <div class="faq-answer"><p>Si buscas diagnóstico certero y tratamiento integral de alergias. Alergomed es un centro especializado.</p></div>
+                <div class="faq-answer"><p>Si buscas diagnóstico certero y tratamiento integral de alergias. Centro de Alergias e Inmunología es un centro especializado.</p></div>
             </div>
         </div>
     </div>
@@ -710,21 +754,15 @@ FOOTER (PIE DE PÁGINA)
     </div>
 </div>
 
-        <!-- Columna 2: Información de Contacto -->
+<!-- Columna 2: Información de Contacto -->
 <div class="footer-column footer-contact">
     <h3>Contacto</h3>
-    
-    <!-- Enlace a Google Maps -->
-    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6"target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📍 Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, Torre Medica II 6to piso consultorio #608 Guayaquil-Ecuador
     </a>
-    
-    <!-- Enlace directo a WhatsApp -->
-    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📞 +593 98 103 6255
     </a>
-    
     <p>✉ contacto@consultorio.com</p>
 </div>
 

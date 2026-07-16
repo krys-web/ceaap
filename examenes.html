@@ -44,18 +44,26 @@
 
 <nav>
 
+<!-- Dentro de tu <nav> en el header -->
 <ul>
-
-<li><a href="index.html">Inicio</a></li>
-
-<li><a href="enfermedades.html">Enfermedades</a></li>
-
-<li><a href="examenes.html">Exámenes</a></li>
-
-<li><a href="telemedicina.html">Telemedicina</a></li>
-
-<li><a href="contacto.html">Contacto</a></li>
-
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="enfermedades.html">Enfermedades</a></li>
+    <li class="has-submenu">
+        <a href="examenes.html">Exámenes ▾</a>
+        <ul class="submenu">
+            <li><a href="examenes.html#inmunoterapia">Inmunoterapia Alergeno Específica</a></li>
+            <li><a href="examenes.html#test-cutaneo">Test Cutáneo para Alergias</a></li>
+            <li><a href="examenes.html#test-alimentos">Test cutáneo con alimentos frescos</a></li>
+            <li><a href="examenes.html#patch-test">Prueba de parche (Patch Test)</a></li>
+            <li><a href="examenes.html#dermatitis">Test de Parche para Dermatitis de Contacto</a></li>
+            <li><a href="examenes.html#hielo">Test de cubo de hielo para urticaria por frío</a></li>
+            <li><a href="examenes.html#suero">Test de suero autólogo para urticaria crónica</a></li>
+            <li><a href="examenes.html#medicamentos">Alergia a los medicamentos</a></li>
+            <li><a href="examenes.html#tolerancia">Prueba de tolerancia oral para alergias</a></li>
+        </ul>
+    </li>
+    <li><a href="telemedicina.html">Telemedicina</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
 </ul>
 
 </nav>
@@ -82,87 +90,87 @@ Agendar cita
 
 <main class="examenes-page" style="padding: 120px 0;">
     <div class="container">
-        <h1 class="section-title" style="text-align: center; margin-bottom: 60px;">Nuestros Exámenes Médicos</h1>
+        <h1 class="section-title">Nuestros Exámenes Médicos</h1>
         
         <div id="examenes-grid-unique">
 
-            <article class="exam-card-unique img-left">
-                <div class="exam-img-unique"><img src="img/examenes/inmunoterapia.jpg" alt="Examen"></div>
+            <article id="inmunoterapia" class="exam-card-unique img-left">
+                <div class="exam-img-unique"><img src="img/examenes/examen-inmunoterapia.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Inmunoterapia Alergeno Específica</h3>
-                    <p>El Test de Inmunoterapia Alérgeno Específica (también conocido simplemente como el monitoreo o evaluación de la inmunoterapia con alérgenos o "vacunas para la alergia") sirve principalmente para tratar la causa subyacente de las alergias y evaluar la respuesta del sistema inmunitario, en lugar de solo enmascarar los síntomas con medicamentos. Este proceso es un enfoque terapéutico y de seguimiento.</p>
+                    <p>La inmunoterapia es una opción de tratamiento avanzada y efectiva para diversas alergias. En Alergomed, nos especializamos en proporcionar soluciones personalizadas para nuestros pacientes, garantizando una mejora significativa en su calidad de vida. Este artículo te proporcionará una visión detallada sobre la inmunoterapia, sus beneficios y cómo puede ayudarte a controlar tus alergias.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-right">
-                <div class="exam-img-unique"><img src="img/examenes/test-alergias.jpg" alt="Examen"></div>
+            <article id="test-cutaneo" class="exam-card-unique img-right">
+                <div class="exam-img-unique"><img src="img/examenes/examen-cutaneo.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Test Cutáneo para Alergias</h3>
-                    <p>El Test Cutáneo para Alergias, conocido comúnmente como Prick Test (prueba de punción cutánea), sirve principalmente para identificar qué sustancias específicas (alérgenos) desencadenan una reacción alérgica en una persona. A diferencia del tratamiento anterior, esta es la herramienta diagnóstica por excelencia en alergología</p>
+                    <p>Prick Test o Test Cutáneo para Alergias corresponde al examen de elección para el diagnóstico de alergias inmediatas (mediadas por IgE), como por ejemplo la rinitis alérgica, el asma alérgico, la urticaria o anafilaxia por alimentos y/o medicamentos, picaduras de abejas o avispas, etc. Es un procedimiento rápido, bien tolerado, que no requiere ayuno y se puede realizar en personas de todas las edades, desde niños pequeños hasta adultos mayores. Como requisito se necesita suspender los antialérgicos unos días antes y no aplicar crema en los brazos el día del examen. Consiste en colocar en el antebrazo pequeñas gotas de extractos estandarizados de alergenos inhalatorios y/o alimentarios, como también alimentos frescos y/o medicamentos. Posteriormente, se realiza un pequeño rasguño con una lanceta y se espera 15 minutos, observando y midiendo la aparición de una roncha o pápula.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-left">
-                <div class="exam-img-unique"><img src="img/examenes/test-cutaneo-alimentos.jpg" alt="Examen"></div>
+            <article id="test-alimentos" class="exam-card-unique img-left">
+                <div class="exam-img-unique"><img src="img/examenes/examen-cutaneo-alimentos.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Test cutáneo con alimentos frescos</h3>
-                    <p>Conocido en el ámbito médico como Prick-to-Prick Test, sirve principalmente para diagnosticar alergias alimentarias utilizando el alimento real en su estado natural, en lugar de los extractos comerciales purificados que se usan en el test cutáneo estándar. Diagnosticar alergias a alimentos con proteínas inestables. Confirmar alergias a alimentos poco comunes o procesados.</p>
+                    <p>Este examen Prick by prick o test cutáneo con alimentos frescos se realiza igual al test cutáneo, pero en vez de usar extractos alergénicos estandarizados, se aplican alimentos frescos. Esto es relevante sobretodo para el estudio de alergias a frutas y verduras, pues en la elaboración de los extractos comerciales, varias de sus proteínas se pierden, y al aplicar el alimento fresco, mejoramos la capacidad del examen de detectar la sensibilidad.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-right">
-                <div class="exam-img-unique"><img src="img/examenes/prueba-parches.jpg" alt="Examen"></div>
+            <article id="patch-test" class="exam-card-unique img-right">
+                <div class="exam-img-unique"><img src="img/examenes/examen-parche.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Prueba de parche (Patch Test) para alergias alimentarias</h3>
-                    <p>Sirve principalmente para diagnosticar reacciones alérgicas tardías o no mediadas por anticuerpos IgE a ciertos alimentos. A diferencia del Prick Test (que busca reacciones inmediatas como ronchas o anafilaxia en minutos), la prueba de parche evalúa la respuesta del sistema inmunitario celular (células T), la cual se manifiesta horas o días después de haber ingerido el alimento.</p>
+                    <p>A veces las alergias alimentarias no se manifiestan en el mismo momento de ingerir el alimento, si no que varias horas después. Estas se denominan alergias de tipo retardado. Este tipo de sensibilización alimentaria puede ser evaluada a través de la prueba de parche a alimentos.Esta consiste en la aplicación en la espalda de parches con celdillas que contienen los diferentes alimentos a testear en su forma natural. Los parches deben permanecer en contacto con la piel durante dos días. A las 48 horas se retiran y se observa la reacción en el lugar, y luego se vuelve a evaluar a las 72 horas. Durante estos 4 días, la persona no puede mojarse ni aplicarse ningún tipo de producto en esa zona. El resultado de este examen debe ser siempre interpretado por el médico tratante en correlación con la historia clínica, ya que el solo hecho de una prueba positiva no es diagnóstica de alergia: puede tratarse solo de una sensibilización sin necesariamente provocar síntomas. Frecuentemente este test debe complementarse con pruebas de tolerancia oral.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-left">
-                <div class="exam-img-unique"><img src="img/examenes/test-parche-dermatitis.jpg" alt="Examen"></div>
+            <article id="dermatitis" class="exam-card-unique img-left">
+                <div class="exam-img-unique"><img src="img/examenes/examen-parche-dermatitis.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Test de Parche para Dermatitis de Contacto</h3>
-                    <p>Sirve principalmente para identificar qué sustancias químicas u objetos cotidianos provocan una reacción alérgica en la piel al entrar en contacto directo con ella. A diferencia de las pruebas de punción rápida (Prick Test), este test evalúa la hipersensibilidad tipo IV (o tardía), que es una respuesta inmunitaria celular que tarda entre 24 y 72 horas en manifestarse en forma de eccema, enrojecimiento o descamación.</p>
+                    <p>Este Test de Parche para Dermatitis de Contacto es útil en el diagnóstico de las dermatitis de contacto alérgicas. Esta es una enfermedad en la que el sistema inmune se sensibiliza a algún elemento, y luego al contacto de éste con la piel se vuelven a producir los mismos síntomas. Este es un problema frecuente; se estima que aproximadamente el 20% de la población presenta esta reacción a por lo menos un alérgeno. Los principales causantes son metales, perfumes, ingredientes de productos de tocador, cosméticos, tinturas, detergentes, gomas, entre otros. La prueba consiste en la aplicación en la espalda de parches con celdillas que contienen los diferentes elementos a testear a bajas concentraciones, no irritantes. Los parches deben permanecer en contacto con la piel durante dos días. A las 48 horas se retiran y se observa la reacción en el lugar, y luego se vuelve a evaluar a las 96 horas. El tiempo que dura el examen la persona no puede mojarse ni aplicarse ningún tipo de producto en esa zona. Una persona puede tener una reacción a uno o varios alergenos. El resultado siempre debe ser interpretado por el médico tratante que solicitó el examen. Se recomienda el uso de series estándar de alérgenos, ya que incluyen aquellos más comunes e importantes que causan dermatitis. También se puede personalizar, adicionando los productos de uso habitual el del paciente, o alguno que haya notado que podrían producir síntomas.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-right">
-                <div class="exam-img-unique"><img src="img/examenes/test-cubo-hielo.jpg" alt="Examen"></div>
+            <article id="hielo" class="exam-card-unique img-right">
+                <div class="exam-img-unique"><img src="img/examenes/examen-cubo-hielo.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Test de cubo de hielo para urticaria por frío</h3>
-                    <p>El Test del Cubo de Hielo sirve principalmente para confirmar el diagnóstico de urticaria por frío, un tipo de urticaria física en la que la piel reacciona con ronchas, hinchazón y picazón al exponerse a bajas temperaturas. Es una prueba diagnóstica muy sencilla y rápida que se realiza directamente en el consultorio</p>
+                    <p>La urticaria inducida por frío es un tipo de urticaria crónica en donde el frío es el estímulo que gatilla la aparición de ronchas y picazón en el cuerpo. Puede ocurrir por ejemplo en relación con la exposición a agua o viento helado. En algunas ocasiones incluso se pueden producir reacciones alérgicas generalizadas. El test de cubo de hielo intenta reproducir ese estímulo, para apoyar el diagnóstico de esta condición. La prueba consiste en aplicar un cubo de hielo en la superficie del antebrazo, durante unos 5- 10 minutos. Luego de eso, se espera unos minutos, y se evalúa la aparición de ronchas y su tamaño. La prueba será positiva si aparece una reacción de tipo enrojecimiento y un habón o roncha en el lugar de la aplicación del frío con el hielo.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-left">
-                <div class="exam-img-unique"><img src="img/examenes/test-suero.jpg" alt="Examen"></div>
+            <article id="suero" class="exam-card-unique img-left">
+                <div class="exam-img-unique"><img src="img/examenes/examen-suero.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Test de suero autólogo para urticaria crónica</h3>
-                    <p>El Test de Suero Autólogo (ASST, por sus siglas en inglés) sirve principalmente para detectar si una urticaria crónica espontánea tiene un origen autoinmune. Es la prueba in vivo de referencia para identificar a aquellos pacientes cuyos propios anticuerpos están activando por error a las células de la piel, provocando la liberación constante de histamina.</p>
+                    <p>Este examen se solicita en pacientes con diagnóstico de urticaria crónica y con sospecha de ser una urticaria autoinmune. Permite evaluar la presencia (o ausencia) de auto-anticuerpos en la sangre del paciente, los que son los responsables de generar las ronchas características de esta patología. Consiste en inyectar una pequeña cantidad de suero autólogo (propio del paciente) dentro de la piel (de manera intradérmica). A los 20 minutos se realiza la lectura de la prueba, evaluando cuánto ha crecido la roncha inicial. Si el resultado es positivo, nos orienta a una causa autoinmune como base de la urticaria crónica y nos permite ajustar el tratamiento.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-right">
-                <div class="exam-img-unique"><img src="img/examenes/test-alergias-medicamentos.jpg" alt="Examen"></div>
+            <article id="medicamentos" class="exam-card-unique img-right">
+                <div class="exam-img-unique"><img src="img/examenes/examen-medicamentos.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Alergia a los medicamentos</h3>
-                    <p>La Prueba de Alergia a los Medicamentos sirve principalmente para confirmar o descartar de forma segura si un fármaco específico es el responsable de una reacción adversa en el organismo. Es una herramienta diagnóstica fundamental porque las sospechas de alergia a fármacos suelen ser muy comunes, pero en la gran mayoría de los casos (cerca del 90%), las pruebas demuestran que el paciente no es realmente alérgico y puede seguir usando el medicamento.</p>
+                    <p>Ésta se puede presentar inmediatamente después de tomar o inyectar el medicamento, durante el tratamiento, e incluso un par de semanas después de suspendido el fármacos. Por esto, la sintomatología es muy diversa, destacando la aparición súbita de ronchas, picazón, enrojecimiento de la piel, aumento de volumen de los labios, párpados, lengua, dificultad respiratoria, aumento de la frecuencia cardiaca e incluso pérdida de conciencia en los casos más graves. Pero en otros casos, se presentarán síntomas más tardíos como: fiebre, compromiso de mucosas (oral, genital, ocular), aparición de ampollas e inflamación de los ganglios. En los casos más complejos puede observarse falla en algún órgano, como el hígado o riñones. Siempre que se haya tenido una reacción adversa alérgica a un medicamento, se debe consultar con el especialista.</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
 
-            <article class="exam-card-unique img-left">
-                <div class="exam-img-unique"><img src="img/examenes/prueba-tolerancia-oral.jpg" alt="Examen"></div>
+            <article id="tolerancia" class="exam-card-unique img-left">
+                <div class="exam-img-unique"><img src="img/examenes/examen-oral-alergia.jpg" alt="Examen"></div>
                 <div class="exam-content-unique">
                     <h3>Prueba de tolerancia oral para alergias</h3>
-                    <p>La Prueba de Tolerancia Oral (PTO), también conocida en el ámbito médico como Prueba de Provocación Oral o Oral Food Challenge, sirve principalmente para confirmar de forma definitiva si una persona es alérgica o tolerante a un alimento o medicamento específico. Es considerada el estándar de oro (la prueba más confiable y exacta) en la alergología, ya que es la única capaz de demostrar clínicamente si la exposición directa a la sustancia genera síntomas o no.</p>
+                    <p>La Prueba de tolerancia oral para alergias consiste en administrar un alimento o un medicamento por via oral, para completar el estudio alergológico. En el caso de los medicamentos, pueden darse dos situaciones: primero que todos los exámenes previos (sangre, pruebas cutáneas y de parche) sean negativos, y necesitamos descartar que el fármacos sospechoso sea el culpable de la reacción; ó que los exámenes previos sean positivos y necesitamos comprobar que el fármaco alternativo que vamos a proponer es de uso seguro. En el caso de los alimentos, esta prueba se realiza para confirmar el diagnóstico de alergia alimentaria, cuando no tenemos resultados concluyentes en el estudio previo, pero también cuando necesitamos evaluar si el paciente ya ha superado su alergia alimentaria. En ambos casos, se realiza una observación de signos vitales y examen cardiopulmonar continuo durante toda la duración del examen (60 a 120 minutos).</p>
                     <a href="#" class="btn-agendar-unique">Agendar cita</a>
                 </div>
             </article>
@@ -213,22 +221,15 @@ FOOTER (PIE DE PÁGINA)
     </div>
 </div>
 
-        <!-- Columna 2: Información de Contacto -->
+<!-- Columna 2: Información de Contacto -->
 <div class="footer-column footer-contact">
     <h3>Contacto</h3>
-    
-    <!-- Enlace a Google Maps -->
-    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📍 Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, Torre Medica II 6to piso consultorio #608 Guayaquil-Ecuador
     </a>
-    
-    <!-- Enlace directo a WhatsApp -->
-    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📞 +593 98 103 6255
     </a>
-    
     <p>✉ contacto@consultorio.com</p>
 </div>
 

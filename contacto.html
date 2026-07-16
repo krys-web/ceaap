@@ -45,17 +45,24 @@
 <nav>
 
 <ul>
-
-<li><a href="index.html">Inicio</a></li>
-
-<li><a href="enfermedades.html">Enfermedades</a></li>
-
-<li><a href="examenes.html">Exámenes</a></li>
-
-<li><a href="telemedicina.html">Telemedicina</a></li>
-
-<li><a href="contacto.html">Contacto</a></li>
-
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="enfermedades.html">Enfermedades</a></li>
+    <li class="has-submenu">
+        <a href="examenes.html">Exámenes ▾</a>
+        <ul class="submenu">
+            <li><a href="examenes.html#inmunoterapia">Inmunoterapia Alergeno Específica</a></li>
+            <li><a href="examenes.html#test-cutaneo">Test Cutáneo para Alergias</a></li>
+            <li><a href="examenes.html#test-alimentos">Test cutáneo con alimentos frescos</a></li>
+            <li><a href="examenes.html#patch-test">Prueba de parche (Patch Test)</a></li>
+            <li><a href="examenes.html#dermatitis">Test de Parche para Dermatitis de Contacto</a></li>
+            <li><a href="examenes.html#hielo">Test de cubo de hielo para urticaria por frío</a></li>
+            <li><a href="examenes.html#suero">Test de suero autólogo para urticaria crónica</a></li>
+            <li><a href="examenes.html#medicamentos">Alergia a los medicamentos</a></li>
+            <li><a href="examenes.html#tolerancia">Prueba de tolerancia oral para alergias</a></li>
+        </ul>
+    </li>
+    <li><a href="telemedicina.html">Telemedicina</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
 </ul>
 
 </nav>
@@ -80,7 +87,7 @@ Agendar cita
 
 </header>
 
-<section class="contacto-section" style="padding: 100px 0; background: var(--bg-body);">
+<section class="contacto-section" style="padding: 100px 0; background: var(--bg-body); margin-top: 150px;">
     <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
         
         <!-- Formulario de Contacto -->
@@ -99,7 +106,10 @@ Agendar cita
         <!-- Información y Ubicación del Negocio -->
         <div class="contacto-info">
             <h2>Contáctanos</h2>
-            <p>Teléfono: +593 98 103 6255</p>
+            <p>Teléfono fijo: 1: 04 600 3672</p>
+            <p>Celular 1: +593 98 103 6255</p>
+            <p>Celular 2: +593 98 019 0654</p>
+            <p>Celular 3: +593 96 950 5956</p>
             <p>Correo: info@consultorio.com</p>
             <p>Dirección: Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, 090513 Guayaquil</p>
             <h3 style="margin-top: 30px;">Ubicación</h3>
@@ -153,22 +163,15 @@ FOOTER (PIE DE PÁGINA)
     </div>
 </div>
 
-        <!-- Columna 2: Información de Contacto -->
+<!-- Columna 2: Información de Contacto -->
 <div class="footer-column footer-contact">
     <h3>Contacto</h3>
-    
-    <!-- Enlace a Google Maps -->
-    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📍 Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, Torre Medica II 6to piso consultorio #608 Guayaquil-Ecuador
     </a>
-    
-    <!-- Enlace directo a WhatsApp -->
-    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📞 +593 98 103 6255
     </a>
-    
     <p>✉ contacto@consultorio.com</p>
 </div>
 

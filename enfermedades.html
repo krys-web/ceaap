@@ -45,17 +45,24 @@
 <nav>
 
 <ul>
-
-<li><a href="index.html">Inicio</a></li>
-
-<li><a href="enfermedades.html">Enfermedades</a></li>
-
-<li><a href="examenes.html">Exámenes</a></li>
-
-<li><a href="telemedicina.html">Telemedicina</a></li>
-
-<li><a href="contacto.html">Contacto</a></li>
-
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="enfermedades.html">Enfermedades</a></li>
+    <li class="has-submenu">
+        <a href="examenes.html">Exámenes ▾</a>
+        <ul class="submenu">
+            <li><a href="examenes.html#inmunoterapia">Inmunoterapia Alergeno Específica</a></li>
+            <li><a href="examenes.html#test-cutaneo">Test Cutáneo para Alergias</a></li>
+            <li><a href="examenes.html#test-alimentos">Test cutáneo con alimentos frescos</a></li>
+            <li><a href="examenes.html#patch-test">Prueba de parche (Patch Test)</a></li>
+            <li><a href="examenes.html#dermatitis">Test de Parche para Dermatitis de Contacto</a></li>
+            <li><a href="examenes.html#hielo">Test de cubo de hielo para urticaria por frío</a></li>
+            <li><a href="examenes.html#suero">Test de suero autólogo para urticaria crónica</a></li>
+            <li><a href="examenes.html#medicamentos">Alergia a los medicamentos</a></li>
+            <li><a href="examenes.html#tolerancia">Prueba de tolerancia oral para alergias</a></li>
+        </ul>
+    </li>
+    <li><a href="telemedicina.html">Telemedicina</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
 </ul>
 
 </nav>
@@ -89,111 +96,235 @@ Agendar cita
         
         <div class="section-header">
             <span class="section-subtitle">Nuestras Especialidades</span>
-            <h1 class="section-title">Enfermedades y Condiciones Tratadas</h1>
-            <p>Ofrecemos diagnóstico avanzado y tratamientos personalizados para restaurar el bienestar de tu sistema respiratorio, inmunológico y de la piel.</p>
+            <h1 class="section-title">Enfermedades alérgicas</h1>
+            <p>Enfermedades Alérgicas y Dermatológicas</p>
         </div>
 
         <div class="enfermedades-grid">
 
-            <!-- 1. Alergias Respiratorias -->
+            <!-- 1. Rinitis Alérgica -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/alergias-respiratorias.jpg" alt="Alergias Respiratorias">
+                    <img src="img/enfermedades/rinitis-alergica.jpg" alt="Rinitis Alérgica">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Alergias Respiratorias</h3>
-                    <p>Tratamiento especializado para rinitis alérgica, asma y afecciones bronquiales detonadas por factores ambientales.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Rinitis alérgica</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 2. Alergias Ojos -->
+            <!-- 2. Conjuntivitis alérgica -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/alergias-ojos.jpg" alt="Alergias en los Ojos">
+                    <img src="img/enfermedades/conjuntivitis-alergica.jpg" alt="Conjuntivitis alérgica">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Alergias Ojos</h3>
-                    <p>Diagnóstico de conjuntivitis alérgica, picazón, lagrimeo y enrojecimiento causados por alérgenos estacionales o crónicos.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Conjuntivitis alérgica</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+            
+            <!-- 3. Asma bronquial -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/asma-bronquial.jpg" alt="Asma bronquial">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Asma bronquial</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 3. Alergias Alimentarias -->
+            <!-- 4. Alergia alimentaria -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/alergias-alimentarias.jpg" alt="Alergias Alimentarias">
+                    <img src="img/enfermedades/alergia-alimentaria.jpg" alt="Alergia alimentaria">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Alergias Alimentarias</h3>
-                    <p>Pruebas de exclusión y manejo de reacciones adversas a proteínas de la leche, huevo, mariscos, frutos secos y más.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Alergia alimentaria</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 4. Alergias en Piel -->
+            <!-- 5. Alergia a las abejas y avispas -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/alergias-piel.jpg" alt="Alergias en Piel">
+                    <img src="img/enfermedades/alergia-abejas.jpg" alt="Alergia a las abejas y avispas">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Alergias en Piel</h3>
-                    <p>Atención integral para dermatitis de contacto, urticaria crónica y brotes alérgicos persistentes por contacto directo.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Alergia a las abejas y avispas</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 5. Urgencias Alérgicas -->
+            <!-- 6. Alergia a medicamentos -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/urgencias-alergicas.jpg" alt="Urgencias Alérgicas">
+                    <img src="img/enfermedades/alergia-medicamentos1.jpg" alt="Alergia a medicamentos">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Urgencias Alérgicas</h3>
-                    <p>Prevención, planes de acción rápida y pautas críticas ante crisis de anafilaxia y reacciones agudas graves.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Alergia a medicamentos</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 6. Alergia a Medicamentos -->
+            <!-- 7. Dermatittis atópica -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/alergia-medicamentos.jpg" alt="Alergia a Medicamentos">
+                    <img src="img/enfermedades/dermatitis-atopica.jpg" alt="Dermatittis atópica">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Alergia a Medicamentos</h3>
-                    <p>Estudio y desensibilización controlada ante reacciones adversas por antibióticos, analgésicos u otros fármacos.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Dermatittis atópica</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 7. Defensas -->
+            <!-- 8. Urticaria y angioedema -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/defensas.jpg" alt="Evaluación de Defensas">
+                    <img src="img/enfermedades/urticaria-angioedema.jpg" alt="Urticaria y angioedema">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Defensas</h3>
-                    <p>Evaluación clínica del sistema inmunitario en pacientes con infecciones recurrentes o sospecha de inmunodeficiencias.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Urticaria y angioedema</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
-            <!-- 8. Dermatología -->
+            <!-- 9. Defensas bajas -->
             <article class="enfermedad-card">
                 <div class="enfermedad-img">
-                    <img src="img/enfermedades/dermatologia.jpg" alt="Dermatología y Cuidado de la Piel">
+                    <img src="img/enfermedades/defensas-bajas.jpg" alt="Defensas bajas">
                 </div>
                 <div class="enfermedad-content">
-                    <h3>Dermatología</h3>
-                    <p>Tratamiento especializado de afecciones cutáneas como dermatitis atópica, psoriasis y cuidado clínico de la barrera dérmica.</p>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Consultar</a>
+                    <h3>Defensas bajas</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 10. Inmunoterapia alergeno-específica -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/inmunoterapia.jpg" alt="Inmunoterapia alergeno-específica">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Inmunoterapia alergeno-específica</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 11. Alergia a mascotas -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/alergias-mascotas.jpg" alt="Alergia a mascotas">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Alergia a mascotas</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 12. Anafilaxia -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/anafilaxia.jpg" alt="Anafilaxia">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Anafilaxia</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 13. Síndrome oral -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/sindrome-oral.jpg" alt="Síndrome oral">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Síndrome oral</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 14. Alergia al látex -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/alergia-latex.jpg" alt="Alergia al látex">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Alergia al látex</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 15. Dermatitis palpebral -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/dermatitis-palpebral.jpg" alt="Dermatitis palpebral">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Dermatitis palpebral</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 16. Dermatitis de contacto -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/dermatitis-contacto.jpg" alt="Dermatitis de contacto">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Dermatitis de contacto</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                </div>
+            </article>
+
+            <!-- 17. Alergia alimentaria a la soya -->
+            <article class="enfermedad-card">
+                <div class="enfermedad-img">
+                    <img src="img/enfermedades/alergia-soya.jpg" alt="Alergia alimentaria a la soya">
+                </div>
+                <div class="enfermedad-content">
+                    <h3>Alergia alimentaria a la soya</h3>
+                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
                 </div>
             </article>
 
         </div>
     </div>
 </main>
+
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">FAQS</h2>
+        <div class="faq-container">
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+                <button class="faq-question">¿Qué tipo de enfermedades aborda el Centro de Espacialidades?<span>+</span></button>
+                <div class="faq-answer"><p>Alergias respiratorias, alimentarias, a insectos, así como patologías con compromiso cutáneo, inmunológicas y reacciones a medicamentos.</p></div>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+                <button class="faq-question">¿Por qué es importante consultar especialistas en alergias?<span>+</span></button>
+                <div class="faq-answer"><p>Porque muchas enfermedades se confunden entre sí. En Alergomed hacemos diagnóstico preciso para evitar tratamientos incorrectos.</p></div>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo se diagnostican estas enfermedades?<span>+</span></button>
+                <div class="faq-answer"><p>Con historia clínica, pruebas cutáneas, test de parche, IgE específicas y estudios avanzados. Alergomed ofrece todas estas pruebas.</p></div>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="faq-item">
+                <button class="faq-question">¿Qué tratamientos existen?<span>+</span></button>
+                <div class="faq-answer"><p> Inmunoterapia, manejo farmacológico, educación ambiental y nutricional. En el Centro de Espacialidades diseñamos un plan según tu condición.</p></div>
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="faq-item">
+                <button class="faq-question">¿Cuándo debo consultar a un especialista?<span>+</span></button>
+                <div class="faq-answer"><p>Cuando los síntomas son repetitivos, crónicos o afectan tu calidad de vida. En Alergomed ayudamos a recuperar el bienestar.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- ======================================================
@@ -236,22 +367,15 @@ FOOTER (PIE DE PÁGINA)
     </div>
 </div>
 
-        <!-- Columna 2: Información de Contacto -->
+<!-- Columna 2: Información de Contacto -->
 <div class="footer-column footer-contact">
     <h3>Contacto</h3>
-    
-    <!-- Enlace a Google Maps -->
-    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://maps.app.goo.gl/WHLWAKr8DHBqHDux6" target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📍 Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, Torre Medica II 6to piso consultorio #608 Guayaquil-Ecuador
     </a>
-    
-    <!-- Enlace directo a WhatsApp -->
-    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." 
-       target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block; margin-bottom: 10px;">
+    <a href="https://wa.me/593981036255?text=Hola,%20quisiera%20más%20información." target="_blank" rel="noopener noreferrer" class="footer-link-hover">
         📞 +593 98 103 6255
     </a>
-    
     <p>✉ contacto@consultorio.com</p>
 </div>
 
