@@ -191,7 +191,7 @@ async function cargarDetalle() {
         if (enf) {
             document.title = `${enf.titulo} | Consultorio Médico`;
             document.getElementById('titulo-enfermedad').innerText = enf.titulo;
-            document.getElementById('desc-enfermedad').innerText = enf.descripcion;
+            //document.getElementById('desc-enfermedad').innerText = enf.descripcion;
             document.getElementById('img-enfermedad').src = enf.imagen;
             document.getElementById('trat-enfermedad').innerText = "" + enf.tratamiento;
 
