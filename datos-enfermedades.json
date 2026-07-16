@@ -1,0 +1,30 @@
+{
+  "rinitis": {
+    "titulo": "Rinitis alérgica",
+    "imagen": "img/enfermedades/rinitis-alergica.jpg",
+    "seo_keywords": "rinitis alergica, tratamiento alergias, alergologo guayaquil, estornudos frecuentes",
+    "descripcion": "La rinitis alérgica es una inflamación de la mucosa nasal que ocurre cuando el sistema inmunológico reacciona de forma exagerada a los alérgenos del entorno.",
+    "tratamiento": "El tratamiento incluye la evitación de alérgenos identificados, el uso de antihistamínicos orales, sprays nasales corticoides y, en casos específicos, inmunoterapia.",
+    "faqs": [
+      { "pregunta": "¿Es hereditaria la rinitis?", "respuesta": "Sí, existe un componente genético importante que predispone a padecerla." },
+      { "pregunta": "¿Diferencia entre rinitis y resfriado?", "respuesta": "La rinitis alérgica no presenta fiebre ni dolores musculares y suele durar más tiempo que un resfriado común." },
+      { "pregunta": "¿Cuánto dura el tratamiento?", "respuesta": "Depende de la severidad del caso y de la persistencia de los síntomas[cite: 1]." },
+      { "pregunta": "¿Puedo usar sprays nasales siempre?", "respuesta": "Solo bajo supervisión médica para evitar efectos secundarios[cite: 1]." },
+      { "pregunta": "¿Qué alérgenos son comunes?", "respuesta": "Ácaros del polvo, polen, caspa de mascotas y moho son los más frecuentes[cite: 1]." }
+    ]
+  },
+  "asma": {
+    "titulo": "Asma bronquial",
+    "imagen": "img/enfermedades/asma-bronquial.jpg",
+    "seo_keywords": "asma bronquial, dificultad respiratoria, control de asma, alergias respiratorias",
+    "descripcion": "El asma bronquial es una enfermedad crónica que inflama y estrecha las vías respiratorias, provocando episodios recurrentes de sibilancias y dificultad para respirar.",
+    "tratamiento": "El control se logra mediante el uso de inhaladores de rescate y mantenimiento, educación sobre desencadenantes y planes de acción personalizados.",
+    "faqs": [
+      { "pregunta": "¿El asma se cura?", "respuesta": "El asma es una condición crónica que se puede controlar efectivamente para llevar una vida normal[cite: 1]." },
+      { "pregunta": "¿Puedo hacer ejercicio con asma?", "respuesta": "Sí, con el tratamiento adecuado, el ejercicio es muy recomendado[cite: 1]." },
+      { "pregunta": "¿Qué es un ataque de asma?", "respuesta": "Es un episodio donde los síntomas se intensifican rápidamente, requiriendo atención inmediata[cite: 1]." },
+      { "pregunta": "¿El asma empeora con el clima?", "respuesta": "Ciertos cambios de temperatura o humedad pueden actuar como desencadenantes[cite: 1]." },
+      { "pregunta": "¿Qué inhaladores se usan?", "respuesta": "Existen inhaladores de rescate para emergencias y de mantenimiento para control a largo plazo[cite: 1]." }
+    ]
+  }
+}

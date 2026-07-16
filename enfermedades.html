@@ -40,7 +40,80 @@
 
 <ul>
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="enfermedades.html">Enfermedades</a></li>
+    <li class="has-submenu">
+    <a href="enfermedades.html">Enfermedades ▾</a>
+    <ul class="submenu">
+                <!-- Opción 1 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Alergias Respiratorias ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href="detalle.html?tipo=rinitis">Rinitis Alérgica</a></li>
+                        <li><a href=#>Asma Bronquial</a></li>
+                        <li><a href=#>Alergia a mascotas</a></li>
+                        <li><a href=#>Inmunoterapia</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 2 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Alergias Ojos ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Conjuntivitis Alérgica</a></li>
+                        <li><a href=#>Dermatitis palpebral</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 3 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Alergias Alimentarias ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Alergias Alimentaria</a></li>
+                        <li><a href=#>Alergia alimentaria a la soya</a></li>
+                        <li><a href=#>Síndrome de alergia oral</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 4 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Alergias en Piel ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Urticaria y Angioedema</a></li>
+                        <li><a href=#>Dermatitis de contacto</a></li>
+                        <li><a href=#>Dermatitis Atópica</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 5 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Urgencias Alérgicas ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Anafilaxia</a></li>
+                        <li><a href=#>Alergia a las Abejas y Avispas</a></li>
+                        <li><a href=#>Uso de Epipen</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 6 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Alergia a Medicamentos ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Exámenes de sangre</a></li>
+                        <li><a href=#>Alergia al látex</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 7 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Defensas ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Defensas Bajas</a></li>
+                    </ul>
+                </li>
+                <!-- Opción 8 -->
+                <li class="has-submenu-level2">
+                    <a href="#">Dermatología ‣</a>
+                    <ul class="submenu-level2">
+                        <li><a href=#>Acné</a></li>
+                        <li><a href=#>Psoriasis</a></li>
+                        <li><a href=#>Rosácea</a></li>
+                    </ul>
+                </li>
+    </ul>
+</li>
     <li class="has-submenu">
         <a href="examenes.html">Exámenes ▾</a>
         <ul class="submenu">
@@ -88,8 +161,13 @@ Agendar cita
 <main class="enfermedades-page" style="padding-top: 160px; padding-bottom: 80px;">
     <div class="container">
         
-        <div class="section-header">
+        <div class="section-header" style="position: relative; padding: 20px 0;">
             <span class="section-subtitle">Nuestras Especialidades</span>
+            
+            <div class="logo-left-container">
+                <img src="img/logo.png" alt="Logo" class="logo-header-large">
+            </div>
+
             <h1 class="section-title">Enfermedades alérgicas</h1>
             <p>Enfermedades Alérgicas y Dermatológicas</p>
         </div>
@@ -103,7 +181,7 @@ Agendar cita
                 </div>
                 <div class="enfermedad-content">
                     <h3>Rinitis alérgica</h3>
-                    <a class="service-btn" style="margin-top: 15px;" target="_blank">Saber más ...</a>
+                    <a href="detalle.html?tipo=rinitis" class="enfermedad-link">Saber mas..</a>
                 </div>
             </article>
 
