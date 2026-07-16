@@ -1,237 +1,182 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 1. Menú Hamburguesa
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav');
 
-    menuToggle.addEventListener('click', () => {
-        // Alterna la clase active en el nav para mostrarlo/ocultarlo
-        navMenu.classList.toggle('active');
-        
-        // Alterna la clase active en el botón para transformarlo en X o volver a hamburguesa
-        menuToggle.classList.toggle('active');
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
 
-    // Opcional: Cerrar el menú si el usuario hace clic en un enlace del menú
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            menuToggle.classList.remove('active');
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    }
+
+    // 2. Sistema de tarjetas (Tabs)
+    const tabButtons = document.querySelectorAll('.hero-tabs .tab-btn');
+    const heroCards = document.querySelectorAll('.hero-cards-wrapper .hero-card');
+    let autoChangeInterval;
+
+    function switchTab(targetTab) {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        heroCards.forEach(card => card.classList.remove('active'));
+
+        const activeBtn = document.querySelector(`.hero-tabs .tab-btn[data-tab="${targetTab}"]`);
+        const activeCard = document.getElementById(`tab-${targetTab}`);
+
+        if (activeBtn && activeCard) {
+            activeBtn.classList.add('active');
+            activeCard.classList.add('active');
+        }
+    }
+
+    function startAutoChange() {
+        autoChangeInterval = setInterval(() => {
+            const currentActiveBtn = document.querySelector('.hero-tabs .tab-btn.active');
+            if (!currentActiveBtn) return;
+
+            const currentTab = currentActiveBtn.getAttribute('data-tab');
+            const nextTab = (currentTab === 'respiratorio') ? 'nutricion' : 'respiratorio';
+            switchTab(nextTab);
+        }, 5000);
+    }
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            clearInterval(autoChangeInterval);
+            switchTab(button.getAttribute('data-tab'));
+            startAutoChange(); // Reiniciar el ciclo
         });
     });
-});
 
-// ===================================================
-// Sistema de intercambio de tarjetas (Manual + Automático)
-// ===================================================
-const tabButtons = document.querySelectorAll('.hero-tabs .tab-btn');
-const heroCards = document.querySelectorAll('.hero-cards-wrapper .hero-card');
+    if (tabButtons.length > 0) startAutoChange();
 
-let autoChangeInterval;
-const changeDelay = 5000; // Tiempo en milisegundos (5 segundos)
-
-// Función centralizada para cambiar a una pestaña específica
-function switchTab(targetTab) {
-    // Quitar estado activo de todos los botones y tarjetas
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    heroCards.forEach(card => card.classList.remove('active'));
-
-    // Activar el botón correspondiente y su tarjeta
-    const activeBtn = document.querySelector(`.hero-tabs .tab-btn[data-tab="${targetTab}"]`);
-    const activeCard = document.getElementById(`tab-${targetTab}`);
-
-    if (activeBtn && activeCard) {
-        activeBtn.classList.add('active');
-        activeCard.classList.add('active');
+    // 3. Animaciones con IntersectionObserver (Refactorizado para seguridad)
+    const observerOptions = { root: null, threshold: 0.15 };
+    
+    function createObserver(elements, className) {
+        return new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(className);
+                } else {
+                    entry.target.classList.remove(className);
+                }
+            });
+        }, observerOptions);
     }
-}
 
-// Intercambio automático
-function startAutoChange() {
-    autoChangeInterval = setInterval(() => {
-        // Encontrar cuál es la pestaña activa actual
-        const currentActiveBtn = document.querySelector('.hero-tabs .tab-btn.active');
-        if (!currentActiveBtn) return;
-
-        const currentTab = currentActiveBtn.getAttribute('data-tab');
-        
-        // Alternar de manera cíclica entre las dos tarjetas disponibles
-        const nextTab = (currentTab === 'respiratorio') ? 'nutricion' : 'respiratorio';
-        
-        switchTab(nextTab);
-    }, changeDelay);
-}
-
-// Detener el auto-intercambio cuando el usuario interactúe voluntariamente
-function stopAutoChange() {
-    clearInterval(autoChangeInterval);
-}
-
-// Asignar eventos de clic a los botones de pestañas
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetTab = button.getAttribute('data-tab');
-        
-        // Detiene el temporizador automático permanentemente para priorizar la voluntad del usuario
-        stopAutoChange(); 
-        
-        // Ejecuta el cambio manual
-        switchTab(targetTab);
-    });
-});
-
-// Iniciar la automatización al cargar la página
-startAutoChange();
-
-// ===================================================
-// Animación de la sección Hero al entrar en el Visor
-// ===================================================
-document.addEventListener('DOMContentLoaded', () => {
-    const heroSection = document.querySelector('.hero');
-    // Elementos dentro del hero que queremos animar progresivamente
-    const animatedElements = document.querySelectorAll('.hero-content h1, .hero-content p, .hero-stats, .hero-cards-wrapper');
-
-    const observerOptions = {
-        root: null, // Usa el viewport del navegador
-        threshold: 0.15 // Se activa cuando el 15% de la sección es visible
-    };
-
+    // Hero
+    const heroElements = document.querySelectorAll('.hero-content h1, .hero-content p, .hero-stats, .hero-cards-wrapper');
+    heroElements.forEach(el => el.classList.add('animate-prepare'));
     const heroObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // El usuario está viendo la sección: activamos las animaciones
-                animatedElements.forEach(el => el.classList.add('animate-visible'));
+                heroElements.forEach(el => el.classList.add('animate-visible'));
             } else {
-                // El usuario pasó la sección: reiniciamos el estado para que vuelva a animarse al regresar
-                animatedElements.forEach(el => el.classList.remove('animate-visible'));
+                heroElements.forEach(el => el.classList.remove('animate-visible'));
             }
         });
     }, observerOptions);
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) heroObserver.observe(heroSection);
 
-    if (heroSection) {
-        // Asignamos una clase inicial de preparación a los elementos
-        animatedElements.forEach(el => el.classList.add('animate-prepare'));
-        // Empezamos a observar la sección hero
-        heroObserver.observe(heroSection);
-    }
-});
-
-// ===================================================
-// Animación de la sección Servicios al entrar en el Visor
-// ===================================================
-document.addEventListener('DOMContentLoaded', () => {
-    const serviciosSection = document.querySelector('.servicios');
-    // Seleccionamos las tres tarjetas de servicios
+    // Servicios
     const serviceCards = document.querySelectorAll('.servicios .service-card');
-
-    const observerOptions = {
-        root: null,
-        threshold: 0.15 // Se activa cuando el 15% de la sección es visible
-    };
-
-    const serviciosObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // El usuario está viendo la sección: animamos las tarjetas en cascada
-                serviceCards.forEach(card => card.classList.add('animate-visible'));
-            } else {
-                // El usuario pasó la sección: reiniciamos para que vuelva a animarse al regresar
-                serviceCards.forEach(card => card.classList.remove('animate-visible'));
-            }
-        });
-    }, observerOptions);
-
-    if (serviciosSection) {
-        // Preparamos las tarjetas con el estado oculto inicial
-        serviceCards.forEach(card => card.classList.add('animate-prepare'));
-        // Empezamos a observar la sección de servicios
-        serviciosObserver.observe(serviciosSection);
-    }
-});
-
-// ===================================================
-// Animación de la sección Enfermedades al entrar en el Visor
-// ===================================================
-document.addEventListener('DOMContentLoaded', () => {
-    const enfermedadesSection = document.querySelector('.enfermedades');
-    const enfermedadCards = document.querySelectorAll('.enfermedades .enfermedad-card');
-
-    const observerOptions = {
-        root: null,
-        threshold: 0.1 // Se activa cuando el 10% de la sección es visible
-    };
-
-    const enfermedadesObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Activa la animación al entrar
-                enfermedadCards.forEach(card => card.classList.add('animate-visible'));
-            } else {
-                // Elimina la clase para permitir que se reinicie al volver a entrar
-                enfermedadCards.forEach(card => card.classList.remove('animate-visible'));
-            }
-        });
-    }, observerOptions);
-
-    if (enfermedadesSection) {
-        // Preparamos las tarjetas con el estado inicial oculto
-        enfermedadCards.forEach(card => card.classList.add('animate-prepare'));
-        enfermedadesObserver.observe(enfermedadesSection);
-    }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const examCards = document.querySelectorAll('.exam-card-unique');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Cuando entra en pantalla: quitamos 'prepare', ponemos 'visible'
-                entry.target.classList.remove('animate-prepare');
-                entry.target.classList.add('animate-visible');
-            } else {
-                // Cuando sale de pantalla: reiniciamos al estado inicial
-                entry.target.classList.remove('animate-visible');
-                entry.target.classList.add('animate-prepare');
-            }
-        });
-    }, { 
-        threshold: 0.1, // Se activa cuando al menos el 10% es visible
-        rootMargin: "0px 0px -50px 0px" // Ajuste fino para evitar disparos prematuros
-    });
-
-    examCards.forEach(card => {
-        // Estado inicial
+    const servObserver = createObserver(serviceCards, 'animate-visible');
+    serviceCards.forEach(card => {
         card.classList.add('animate-prepare');
-        observer.observe(card);
+        servObserver.observe(card);
     });
-});
 
+    // Enfermedades
+    const enfermedadCards = document.querySelectorAll('.enfermedades .enfermedad-card');
+    const enfObserver = createObserver(enfermedadCards, 'animate-visible');
+    enfermedadCards.forEach(card => {
+        card.classList.add('animate-prepare');
+        enfObserver.observe(card);
+    });
 
-function toggleDetail(element) {
-    // Busca el párrafo dentro de la tarjeta clicada
-    const detail = element.querySelector('.info-detail');
-    
-    // Alterna la visibilidad
-    if (detail.style.display === "none") {
-        detail.style.display = "block";
-    } else {
-        detail.style.display = "none";
-    }
-}
-
-/* animación para preguntas FAQS */
-
+    // 4. FAQ
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
         const answer = button.nextElementSibling;
-        const isOpen = answer.style.maxHeight !== '0px' && answer.style.maxHeight !== '';
+        const isOpen = button.classList.contains('active');
         
-        // Cerrar todas las demás respuestas
+        // Cierra todas las demás
         document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
         
-        // Abrir la seleccionada
+        // Abre la seleccionada si no estaba abierta
         if (!isOpen) {
             answer.style.maxHeight = answer.scrollHeight + "px";
+            button.classList.add('active');
         }
+    });
+});
+
+    // 5. Logo Animación
+    const logoImg = document.querySelector('.logo img');
+    if (logoImg) {
+        setTimeout(() => {
+            logoImg.classList.add('logo-animate');
+            setTimeout(() => logoImg.classList.remove('logo-animate'), 1000);
+        }, 300);
+    }
+
+    // 6. Submenú Responsive
+    const submenuLink = document.querySelector('.has-submenu > a');
+    if (submenuLink) {
+        submenuLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                document.querySelector('.submenu').classList.toggle('active');
+            }
+        });
+    }
+
+    // 7. Sección Nosotros (Corrección del error de null)
+    const textElement = document.querySelector('.scrolling-text'); // Asegúrate que el ID sea correcto en HTML
+    const toggleBtn = document.getElementById('toggle-animation');
+    const btnUp = document.getElementById('btn-up');
+    const btnDown = document.getElementById('btn-down');
+    let position = 0;
+
+    if (textElement && toggleBtn && btnUp && btnDown) {
+        const updatePosition = () => { textElement.style.transform = `translateY(${position}px)`; };
+
+        toggleBtn.addEventListener('click', () => {
+            textElement.classList.toggle('paused');
+            const computedStyle = window.getComputedStyle(textElement);
+            position = new WebKitCSSMatrix(computedStyle.transform).f;
+            updatePosition();
+        });
+
+        btnUp.addEventListener('click', () => {
+            textElement.classList.add('paused');
+            position -= 30;
+            updatePosition();
+        });
+
+        btnDown.addEventListener('click', () => {
+            textElement.classList.add('paused');
+            position += 30;
+            updatePosition();
+        });
+    }
+});
+
+// FORZADO DE VISIBILIDAD PARA DEPURACIÓN
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.enfermedad-card');
+    cards.forEach(card => {
+        card.style.opacity = "1";
+        /*card.style.display = "block"; // o "flex", según sea tu grid*/
     });
 });
