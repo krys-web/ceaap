@@ -170,6 +170,69 @@ document.querySelectorAll('.faq-question').forEach(button => {
             updatePosition();
         });
     }
+
+    // Añadir esto dentro de DOMContentLoaded en js/main.js
+const path = window.location.pathname;
+
+if (path.includes('detalle.html')) {
+    cargarDetalle();
+}
+
+async function cargarDetalle() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tipo = urlParams.get('tipo');
+    if (!tipo) return;
+
+    try {
+        const response = await fetch('datos-enfermedades.json');
+        const data = await response.json();
+        const enf = data[tipo];
+
+        if (enf) {
+            document.title = `${enf.titulo} | Consultorio Médico`;
+            document.getElementById('titulo-enfermedad').innerText = enf.titulo;
+            document.getElementById('desc-enfermedad').innerText = enf.descripcion;
+            document.getElementById('img-enfermedad').src = enf.imagen;
+            document.getElementById('trat-enfermedad').innerText = "" + enf.tratamiento;
+
+            // Inyectar botón de acción
+            const btnContainer = document.getElementById('boton-container');
+            btnContainer.innerHTML = `<a href="${enf.link_boton}" class="enfermedad-link">${enf.texto_boton}</a>`;
+
+            // Generar FAQs
+            const faqContainer = document.getElementById('faq-container');
+            faqContainer.innerHTML = enf.faqs.map(item => `
+                <div class="faq-item">
+                    <button class="faq-question">${item.pregunta}<span>+</span></button>
+                    <div class="faq-answer"><p>${item.respuesta}</p></div>
+                </div>
+            `).join('');
+
+            // Re-vincular eventos de FAQ después de inyectar HTML
+            initFaqLogic();
+        }
+    } catch (error) {
+        console.error("Error cargando el JSON:", error);
+    }
+}
+
+function initFaqLogic() {
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            const isOpen = button.classList.contains('active');
+            
+            document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
+            document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
+            
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                button.classList.add('active');
+            }
+        });
+    });
+}
+
 });
 
 // FORZADO DE VISIBILIDAD PARA DEPURACIÓN
