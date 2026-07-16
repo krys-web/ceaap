@@ -152,101 +152,31 @@ Agendar cita
 
 </header>
 
-    <main class="enfermedades-page" style="padding-top: 150px; padding-bottom: 80px;">
-        <div class="container">
-            <!-- Contenido Principal -->
-            <div class="detalle-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
-                <div class="detalle-img">
-                    <img id="img-enfermedad" src="" alt="Enfermedad" style="border-radius: 20px; width: 100%;">
-                </div>
-                <div class="detalle-content">
-                    <h1 id="titulo-enfermedad" class="section-title" style="text-align: left; margin-top: 0;"></h1>
-                    <p id="desc-enfermedad" style="font-size: 1.1rem; margin-bottom: 20px;"></p>
-                    <div class="description-box">
-                        <p id="trat-enfermedad"></p>
-                    </div>
-                </div>
+<!-- detalle.html (Limpiado) -->
+<main class="enfermedades-page" style="padding-top: 150px; padding-bottom: 80px;">
+    <div class="container">
+        <div class="detalle-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+            <div class="detalle-img">
+                <img id="img-enfermedad" src="" alt="Enfermedad" style="border-radius: 20px; width: 100%;">
             </div>
-
-            <!-- Sección de FAQs generada dinámicamente -->
-            <section class="faq-section">
-                <h2 class="section-title">Preguntas Frecuentes</h2>
-                <div id="faq-container" class="faq-container">
-                    <!-- El JS inyectará las preguntas aquí -->
+            <div class="detalle-content">
+                <h1 id="titulo-enfermedad" class="section-title" style="text-align: left; margin-top: 0;"></h1>
+                <p id="desc-enfermedad" style="font-size: 1.1rem; margin-bottom: 20px;"></p>
+                <div class="description-box">
+                    <p id="trat-enfermedad"></p>
                 </div>
-            </section>
+                <div id="boton-container"></div>
+            </div>
         </div>
-    </main>
 
-    <script>
-        async function cargarDetalle() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const tipo = urlParams.get('tipo');
-            
-            try {
-                const response = await fetch('datos-enfermedades.json');
-                const data = await response.json();
-                const enf = data[tipo];
-
-                if (enf) {
-                    // Actualizar Títulos y SEO
-                    document.title = enf.titulo + " | Consultorio Médico";
-                    document.getElementById('titulo-enfermedad').innerText = enf.titulo;
-                    document.getElementById('desc-enfermedad').innerText = enf.descripcion;
-                    document.getElementById('img-enfermedad').src = enf.imagen;
-                    document.getElementById('trat-enfermedad').innerText = "Tratamiento: " + enf.tratamiento;
-
-                    // Inyectar Keywords SEO
-                    const meta = document.createElement('meta');
-                    meta.name = "keywords";
-                    meta.content = enf.seo_keywords;
-                    document.head.appendChild(meta);
-
-                    // Generar FAQs dinámicas
-                    const faqContainer = document.getElementById('faq-container');
-                    faqContainer.innerHTML = enf.faqs.map(item => `
-                        <div class="faq-item">
-                            <button class="faq-question">${item.pregunta}<span>+</span></button>
-                            <div class="faq-answer"><p>${item.respuesta}</p></div>
-                        </div>
-                    `).join('');
-
-                    // Reinicializar lógica de acordeón (para que los nuevos elementos funcionen)
-                    initFaqLogic();
-                }
-            } catch (error) {
-                console.error("Error cargando el JSON:", error);
-            }
-        }
-
-        // Lógica para que el acordeón de FAQs funcione después de cargar
-        function initFaqLogic() {
-            document.querySelectorAll('.faq-question').forEach(button => {
-                button.addEventListener('click', () => {
-                    const answer = button.nextElementSibling;
-                    const isOpen = button.classList.contains('active');
-                    document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
-                    document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
-                    if (!isOpen) {
-                        answer.style.maxHeight = answer.scrollHeight + "px";
-                        button.classList.add('active');
-                    }
-                });
-            });
-        }
-        
-        cargarDetalle();
+        <section class="faq-section">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div id="faq-container" class="faq-container"></div>
+        </section>
+    </div>
+</main>
 
 
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const tipoEnfermedad = urlParams.get('tipo'); 
-
-    if (tipoEnfermedad) {
-        console.log("Cargando contenido para: " + tipoEnfermedad);
-    
-    }
-
-    </script>
+<script src="js/main.js"></script>
 </body>
 </html>

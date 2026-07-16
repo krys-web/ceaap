@@ -3,14 +3,16 @@
     "titulo": "Rinitis alérgica",
     "imagen": "img/enfermedades/rinitis-alergica.jpg",
     "seo_keywords": "rinitis alergica, tratamiento alergias, alergologo guayaquil, estornudos frecuentes",
-    "descripcion": "La rinitis alérgica es una inflamación de la mucosa nasal que ocurre cuando el sistema inmunológico reacciona de forma exagerada a los alérgenos del entorno.",
-    "tratamiento": "El tratamiento incluye la evitación de alérgenos identificados, el uso de antihistamínicos orales, sprays nasales corticoides y, en casos específicos, inmunoterapia.",
+    "descripcion": "Este cuadro se caracteriza por  picazón de la nariz, con ataques de estornudos y mucosidad nasal abundantes, Se acompaña con congestión nasal que en algunos casos puede ser severa y afecta la calidad del sueño y las actividades diarias. Hay mucha conciencia de este problema en primavera, donde personas habitualmente sanas, presentan en forma aguda estos síntomas cuando comienza la temporada de pólenes.",
+    "tratamiento": "Algunos pacientes tienen mayores complicaciones, presentando conjuntivitis o asma asociadas, y en otros su alergia se complica con una mayor frecuencia de infecciones respiratorias.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
     "faqs": [
-      { "pregunta": "¿Es hereditaria la rinitis?", "respuesta": "Sí, existe un componente genético importante que predispone a padecerla." },
-      { "pregunta": "¿Diferencia entre rinitis y resfriado?", "respuesta": "La rinitis alérgica no presenta fiebre ni dolores musculares y suele durar más tiempo que un resfriado común." },
-      { "pregunta": "¿Cuánto dura el tratamiento?", "respuesta": "Depende de la severidad del caso y de la persistencia de los síntomas[cite: 1]." },
-      { "pregunta": "¿Puedo usar sprays nasales siempre?", "respuesta": "Solo bajo supervisión médica para evitar efectos secundarios[cite: 1]." },
-      { "pregunta": "¿Qué alérgenos son comunes?", "respuesta": "Ácaros del polvo, polen, caspa de mascotas y moho son los más frecuentes[cite: 1]." }
+      { "pregunta": "¿Cuáles son los síntomas de la rinitis alérgica?", "respuesta": "Estornudos frecuentes, congestión o goteo nasal, mucosidad nasal abundante, picazón en nariz y paladar y sensación de nariz tapada. En el Centro de Especialidades realizamos estudios completos para identificar el alérgeno responsable." },
+      { "pregunta": "¿Cuáles son los medicamentos más comúnmente asociados?", "respuesta": "La causa suele ser la exposición a pólenes, ácaros del polvo, animales u hongos en un paciente alérgico a algunos de éstos. En el Centro de Especialidades determinamos con precisión a qué estás sensibilizado mediante pruebas cutáneas y de sangre." },
+      { "pregunta": "¿Cómo se diagnostica la rinitis alérgica?", "respuesta": "Combinamos historia clínica con prick tests, IgE específicas y, si es necesario, estudios moleculares. En el Centro de Especialidades aseguramos un diagnóstico certero para un tratamiento efectivo." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "La terapia incluye el uso de lavados nasales, antihistamínicos, corticoides nasales, terapia nasal combinada, medidas ambientales e inmunoterapia. En el Centro de Especialidades personalizamos el manejo según tus síntomas y estilo de vida." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los síntomas son frecuentes, afectan tu sueño o actividad diaria, o responden mal a tratamientos comunes. En el Centro de Especialidades te ofrecemos una evaluación integra" }
     ]
   },
   "asma": {
@@ -18,7 +20,9 @@
     "imagen": "img/enfermedades/asma-bronquial.jpg",
     "seo_keywords": "asma bronquial, dificultad respiratoria, control de asma, alergias respiratorias",
     "descripcion": "El asma bronquial es una enfermedad crónica que inflama y estrecha las vías respiratorias, provocando episodios recurrentes de sibilancias y dificultad para respirar.",
-    "tratamiento": "El control se logra mediante el uso de inhaladores de rescate y mantenimiento, educación sobre desencadenantes y planes de acción personalizados.",
+    "tratamiento": "El control se logra mediante el uso de inhaladores de rescate y mantenimiento, educación sobre desencenderes y planes de acción personalizados.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
     "faqs": [
       { "pregunta": "¿El asma se cura?", "respuesta": "El asma es una condición crónica que se puede controlar efectivamente para llevar una vida normal[cite: 1]." },
       { "pregunta": "¿Puedo hacer ejercicio con asma?", "respuesta": "Sí, con el tratamiento adecuado, el ejercicio es muy recomendado[cite: 1]." },
