@@ -180,3 +180,20 @@ document.addEventListener('DOMContentLoaded', () => {
         /*card.style.display = "block"; // o "flex", según sea tu grid*/
     });
 });
+
+// Manejo de submenús en dispositivos móviles
+document.querySelectorAll('.has-submenu > a, .has-submenu-level2 > a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        // Solo aplicar este comportamiento en pantallas pequeñas
+        if (window.innerWidth <= 992) {
+            e.preventDefault(); // Evita que el enlace redirija
+            e.stopPropagation(); // Evita que se cierre el menú padre
+            
+            // Alterna la clase 'active' en el submenú correspondiente
+            const submenu = link.nextElementSibling;
+            if (submenu && (submenu.classList.contains('submenu') || submenu.classList.contains('submenu-level2'))) {
+                submenu.classList.toggle('active');
+            }
+        }
+    });
+});
