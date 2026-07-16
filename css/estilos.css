@@ -128,6 +128,37 @@ img {
 article {
     scroll-margin-top: 150px;
 }
+/* SECCIÓN SUBMENUS ENFERMEDADES */
+/* Nivel 2: Posicionamiento a la derecha del submenú principal */
+.has-submenu-level2 {
+    position: relative;
+}
+
+.submenu-level2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Desplaza el menú a la derecha */
+    background: var(--white);
+    min-width: 200px;
+    box-shadow: var(--shadow-md);
+    border-radius: 8px;
+    padding: 10px 0;
+    list-style: none;
+}
+
+/* Mostrar el sub-submenú al pasar el mouse */
+.has-submenu-level2:hover .submenu-level2 {
+    display: block;
+}
+
+/* Ajuste de enlaces en niveles profundos */
+.submenu-level2 li a {
+    padding: 8px 15px;
+    display: block;
+    color: var(--text-title);
+    font-size: 0.75rem;
+}
 
 /*************************/
 .has-submenu {
@@ -648,6 +679,54 @@ nav ul li a:hover { color: var(--color-secondary); }
     background: var(--bg-light);
 }
 
+.enfermedad-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-primary); /* Usa tu color definido en :root */
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.enfermedad-link:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.4);
+}
+
+.enfermedad-link:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title-with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-left-container {
+    position: absolute;
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    z-index: 10;
+}
+
+.logo-header-large {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
 .section-header { text-align: center; margin-bottom: 60px; }
 .section-title { 
     font-size: 2.5rem; 
@@ -669,7 +748,7 @@ nav ul li a:hover { color: var(--color-secondary); }
     background: var(--white);
     border-radius: 24px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra más sutil */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
     transition: all 0.4s ease;
     border: 1px solid var(--gray-100);
     text-align: center;
@@ -697,7 +776,7 @@ nav ul li a:hover { color: var(--color-secondary); }
 
 .service-card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15); /* Efecto al pasar el mouse */
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15); 
 }
 
 .service-icon {
@@ -718,7 +797,7 @@ nav ul li a:hover { color: var(--color-secondary); }
     list-style: none;
     margin: 20px 0;
     text-align: left;
-    display: inline-block; /* Centra la lista manteniendo el texto alineado */
+    display: inline-block;
 }
 
 .service-list li {
@@ -997,6 +1076,15 @@ nav ul li a:hover { color: var(--color-secondary); }
     }
     .booking-grid { grid-template-columns: 1fr; }
     .booking-image { order: -1; }
+
+    .logo-left-container {
+        position: relative; 
+        left: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1011,7 +1099,14 @@ nav ul li a:hover { color: var(--color-secondary); }
         border-radius: 15px;
      }
     .tab-btn { font-size: 0.8rem; padding: 10px 5px; }
-    
+
+    .title-with-logo {
+        flex-direction: column; /* Apila el logo y título si hay poco espacio */
+        gap: 5px;
+    }
+    .title-with-logo img {
+        height: 40px; /* Logo más pequeño en móviles */
+    }
 }
 
 @media (max-width: 480px) {
