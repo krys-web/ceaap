@@ -271,8 +271,13 @@ nav ul li a:hover { color: var(--color-secondary); }
     position: relative;
     padding-top: 150px; 
     padding-bottom: 80px;
-    background: linear-gradient(rgba(9,45,88,.78), rgba(13,110,253,.68)), url("../img/hero.jpg") center center / cover no-repeat;
+    background: linear-gradient(rgba(238, 245, 253, 0.78), rgba(209, 210, 211, 0.68)), url("../img/hero.jpg") center center / cover no-repeat;
     min-height: auto
+}
+
+.hero-text-blue {
+    color: var(--color-primary) !important;
+    font-weight: 500; 
 }
 
 .hero-grid {
