@@ -189,10 +189,7 @@ header.scrolled {
 }
 
 .header-container {
-    width: 100%;
-    max-width: 100vw;
-    margin: auto;
-    padding: 10px 15px;
+    padding: 15px 15px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,7 +198,7 @@ header.scrolled {
 }
 
 .logo img {
-    height: 130px;
+    height: 200px;
     width: auto;
     transition: transform 0.8s ease-in-out;
     display: block;
@@ -272,7 +269,7 @@ nav ul li a:hover { color: var(--color-secondary); }
    =================================================== */
 .hero {
     position: relative;
-    padding-top: 220px; 
+    padding-top: 250px; 
     padding-bottom: 80px;
     background: linear-gradient(rgba(9,45,88,.78), rgba(13,110,253,.68)), url("../img/hero.jpg") center center / cover no-repeat;
     min-height: auto
@@ -996,12 +993,16 @@ nav ul li a:hover { color: var(--color-secondary); }
 }
 
 @media (max-width: 480px) {
-
+    .hero {
+        padding-top: 150px; /* Ajuste específico para móvil */
+    }
     .hero h1 { font-size: 2rem !important; }
     .container { width: 95%; }
     .doctor-image { height: 250px; }
     .servicios, .enfermedades, .booking-section { padding: 40px 0; }
-    .logo img { height: 60px; }
+    .logo img {
+        height: 80px; /* Tamaño reducido para móviles */
+    }
 }
 
 /* ===================================================
