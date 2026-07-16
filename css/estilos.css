@@ -197,13 +197,15 @@ header.scrolled {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    padding-left: 40px;
 }
 
 .logo img {
-    height: 100px; 
+    height: 130px;
     width: auto;
     transition: transform 0.8s ease-in-out;
     display: block;
+    margin-left: 20px;
 }
 
 .logo-animate {
@@ -213,13 +215,13 @@ header.scrolled {
 nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -270,10 +272,10 @@ nav ul li a:hover { color: var(--color-secondary); }
    =================================================== */
 .hero {
     position: relative;
-    padding-top: 180px;
-    padding-bottom: 80px; /* Reducido para mejor control */
+    padding-top: 220px; 
+    padding-bottom: 80px;
     background: linear-gradient(rgba(9,45,88,.78), rgba(13,110,253,.68)), url("../img/hero.jpg") center center / cover no-repeat;
-    min-height: auto;
+    min-height: auto
 }
 
 .hero-grid {
@@ -913,6 +915,34 @@ nav ul li a:hover { color: var(--color-secondary); }
 /* ===================================================
    6. RESPONSIVIDAD (MEDIA QUERIES)
    =================================================== */
+/* Cambia el breakpoint en la sección 6 (Media Queries) */
+@media (max-width: 1100px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        z-index: 1001; 
+    }
+    nav { 
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        width: 100%; 
+        background: var(--white); 
+        padding: 20px; 
+        box-shadow: var(--shadow-md); 
+    }
+    nav.active { display: block; }
+}
+
 @media (max-width: 992px) {
     .header-container {
         display: flex;
