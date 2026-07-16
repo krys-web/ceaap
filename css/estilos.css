@@ -269,7 +269,7 @@ nav ul li a:hover { color: var(--color-secondary); }
    =================================================== */
 .hero {
     position: relative;
-    padding-top: 250px; 
+    padding-top: 150px; 
     padding-bottom: 80px;
     background: linear-gradient(rgba(9,45,88,.78), rgba(13,110,253,.68)), url("../img/hero.jpg") center center / cover no-repeat;
     min-height: auto
@@ -296,6 +296,28 @@ nav ul li a:hover { color: var(--color-secondary); }
 .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 25px; }
 .hero p { font-size: 1.1rem; color: rgba(255,255,255,.92); margin-bottom: 30px; }
 
+.hero-logo {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+.hero-logo img {
+    height: 200px; 
+    width: auto;
+}
+.hero-logo-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.hero-logo-centered img {
+    height: 400px !important; 
+    width: auto !important;   
+    max-width: 100% !important;
+    object-fit: contain;      
+    display: block;
+}
 .doctor-card {
     background: rgba(255,255,255,.95);
     border-radius: 25px;
@@ -972,11 +994,6 @@ nav ul li a:hover { color: var(--color-secondary); }
     .booking-image { order: -1; }
 }
 
-@media (max-width: 768px) {
-    .services-grid, .enfermedades-grid { grid-template-columns: 1fr; }
-    .topbar { display: none; }
-}
-
 @media (max-width: 600px) {
     .services-grid, 
     .enfermedades-grid { 
@@ -1177,6 +1194,11 @@ nav ul li a:hover { color: var(--color-secondary); }
 @media (max-width: 768px) {
     .exam-card-unique, .exam-card-unique.img-right { flex-direction: column; text-align: center; }
     .exam-content-unique { align-items: center; }
+    .services-grid, .enfermedades-grid { grid-template-columns: 1fr; }
+    .topbar { display: none; }
+    .hero-logo-centered img {
+        height: 120px;      
+    }
 }
 
 /* ===================================================
