@@ -14,19 +14,19 @@
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los síntomas son frecuentes, afectan tu sueño o actividad diaria, o responden mal a tratamientos comunes. En el Centro de Especialidades te ofrecemos una evaluación integra" }
     ]
   },
-  "asma": {
+  "asmabronquial": {
     "titulo": "Asma bronquial",
     "imagen": "img/enfermedades/asma-bronquial.jpg",
     "seo_keywords": "asma bronquial, dificultad respiratoria, control de asma, alergias respiratorias",
-    "tratamiento": "El control se logra mediante el uso de inhaladores de rescate y mantenimiento, educación sobre desencenderes y planes de acción personalizados.",
+    "tratamiento": "En esta enfermedad, se produce una inflamación de los bronquios, que es reversible en forma espontánea o con tratamiento. Su severidad es muy variable: desde crisis esporádicas hasta obstrucción permanente. Existen múltiples gatillantes  de estas crisis, pero las alergias respiratorias son una causa importante, sobre todo en primavera, y generalmente acompañadas de rinitis.",
     "texto_boton": "Agendar cita",
     "link_boton": "#",
     "faqs": [
-      { "pregunta": "¿El asma se cura?", "respuesta": "El asma es una condición crónica que se puede controlar efectivamente para llevar una vida normal[cite: 1]." },
-      { "pregunta": "¿Puedo hacer ejercicio con asma?", "respuesta": "Sí, con el tratamiento adecuado, el ejercicio es muy recomendado[cite: 1]." },
-      { "pregunta": "¿Qué es un ataque de asma?", "respuesta": "Es un episodio donde los síntomas se intensifican rápidamente, requiriendo atención inmediata[cite: 1]." },
-      { "pregunta": "¿El asma empeora con el clima?", "respuesta": "Ciertos cambios de temperatura o humedad pueden actuar como desencadenantes[cite: 1]." },
-      { "pregunta": "¿Qué inhaladores se usan?", "respuesta": "Existen inhaladores de rescate para emergencias y de mantenimiento para control a largo plazo[cite: 1]." }
+      { "pregunta": "¿Cuáles son los síntomas del Asma bronquial?", "respuesta": "Silbidos al respirar, tos, sensación de pecho apretado y dificultad respiratoria. En el Centro de Especialidades evaluamos si tu asma tiene un origen alérgico." },
+      { "pregunta": "¿Cuál es la causa más frecuente del asma alérgico?", "respuesta": "La sensibilización a ácaros, pólenes, animales u hongos. En el Centro de Especialidades lo estudiamos mediante pruebas cutáneas, sangre y espirometría." },
+      { "pregunta": "¿Cómo se diagnostica Asma bronquial?", "respuesta": "Con espirometría, pruebas broncodilatadoras y estudio de alergias. En el Centro de Especialidades contamos con un diagnóstico completo en una sola consulta" },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Incluyen inhaladores de control, de rescate, medidas ambientales, terapias biológicas e inmunoterapia. En el Centro de Especialidades ajustamos el tratamiento según la severidad." },
+      { "pregunta": "¿Cuándo consultar a un especialista?", "respuesta": "Cuando tienes crisis frecuentes, usas demasiado tu inhalador de rescate o tus síntomas limitan tu vida diaria y tu dormir. En el Centro de Especialidades ayudamos a controlar y prevenir las crisis." }
     ]
   }
 }
