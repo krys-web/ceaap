@@ -58,5 +58,35 @@
       { "pregunta": "¿Qué tratamientos existen?", "respuesta": "En el Centro de Especialidades tenemos disponible tanto la inmunoterapia subcutánea (inyecciones) como la sublingual (gotas/tabletas). En el Centro de Especialidades personalizamos el formato según tus necesidades." },
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si tus alergias interfieren con tu vida cotidiana y tu sueño, si necesitas fármacos en forma constante o tienes crisis repetidas. En el Centro de Especialidades diseñamos un plan de inmunoterapia personalizado." }
     ]
+  },
+    "conjuntivitis": {
+    "titulo": "Conjuntivitis Alérgica",
+    "imagen": "img/enfermedades/conjuntivitis-alergica.jpg",
+    "seo_keywords": "conjuntivitis, alergologo guayaquil, ojos, rinitis alérgicas, lagrimeo, ojo rojo, rascarse los ojos",
+    "tratamiento": "Generalmente asociada a las rinitis alérgicas de primavera, este problema se caracteriza por intensa picazón de ojos, con lagrimeo y ojo rojo, y no es infrecuente que este síntoma sea más molesto que la rinitis e impida la realización de actividades al aire libre. Siempre debe ser tratado, sobretodo en aquellos pacientes que no logran evitar rascarse los ojos: si esto no se hace, pueden desarrollar complicaciones en la córnea.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la conjuntivitis alergica?", "respuesta": "Ojos rojos, picazón intensa, lagrimeo, sensación de arenilla y párpados inflamados. En el Centro de Especialidades evaluamos si se asocia a la rinitis alérgica o es una entidad aislada." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Generalmente pólenes, ácaros o mascotas. En el Centro de Especialidades realizamos estudios para determinar el alérgeno responsable." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Por la clínica, estudio de alergias y evaluación oftalmológica si es necesario. En el Centro de Especialidades te guiamos según tu caso." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Lágrimas artificiales, colirios que contienen antihistamínicos, estabilizadores de los mastocitos, corticoides tópicos controlados y manejo de la alergia de base. En el Centro de Especialidades diseñamos el plan para aliviar los síntomas rápidamente." },
+      { "pregunta": "¿Cuándo consultar?", "respuesta": "Si los síntomas son intensos o frecuentes. En el Centro de Especialidades prevenimos complicaciones y controlamos la alergia de forma duradera." }
+    ]
+  },
+    "dermatitis": {
+    "titulo": "Dermatitis palpebral",
+    "imagen": "img/enfermedades/dermatitis-palpebral.jpg",
+    "seo_keywords": "dermatitis, alergologo guayaquil, parpado, agentes irritantes, alérgenicos, edema, inflamación, niquel",
+    "tratamiento": "El párpado es especialmente susceptible a la acción de agentes irritantes y/o alergénicos. Esto se debe, en parte, a la delgadez de la piel que lo recubre (hasta cuatro veces más fina que la piel del resto de la cara), lo cual facilita la aparición de edema e inflamación y, por otro lado, el fácil contacto de los ojos con los dedos, los cuáles se encuentran constantemente expuestos a múltiples sustancias, incrementando la sintomatología. La dermatitis palpebral corresponde a una inflamación de la piel alrededor de los ojos, que se caracteriza por irritación y dolor/ardor periocular. En muchos casos, se puede asociar a engrosamiento de los párpados, enrojecimiento, picazón y descamación. Existen diferentes causas de dermatitis del párpado, como la dermatitis seborreica, dermatitis irritativa, eccema atópico, dermatitis de contacto alérgica, entre otras. Se describe a la dermatitis de contacto alérgica como la más frecuente (entre 45-75% de los casos). El níquel es el contactante más frecuentemente involucrado. El estudio correcto de esta patología permitirá determinar la causa, instaurándose un adecuado tratamiento.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de esta dermatitis?", "respuesta": "Párpados rojos, descamados, picazón, ardor, hinchazón y sensibilidad local. En el Centro de Especialidades evaluamos causas alérgicas y no alérgicas." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Cosméticos, cremas antiarrugas, esmaltes de uñas, perfumes, sombras, lentes de contacto o alergias ambientales. En el Centro de Especialidades usamos test de parche para determinar el producto responsable." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con examen clínico y parches para alérgenos de cosmética. En el Centro de Especialidades integramos alergología y dermatología en una sola evaluación." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Suspender productos irritantes, corticoides suaves y evitar alérgenos. En el Centro de Especialidades diseñamos un plan de cuidado seguro para la piel sensible del párpado." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si el problema es recurrente o afecta tu calidad de vida. En el Centro de Especialidades resolvemos dermatitis palpebral de origen alérgico." }
+    ]
   }
 }
