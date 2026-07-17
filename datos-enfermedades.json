@@ -17,7 +17,7 @@
   "asmabronquial": {
     "titulo": "Asma bronquial",
     "imagen": "img/enfermedades/asma-bronquial.jpg",
-    "seo_keywords": "asma bronquial, dificultad respiratoria, control de asma, alergias respiratorias",
+    "seo_keywords": "asma bronquial, inflamacion, bronquios, obstruccion, alergologo guayaquil",
     "tratamiento": "En esta enfermedad, se produce una inflamación de los bronquios, que es reversible en forma espontánea o con tratamiento. Su severidad es muy variable: desde crisis esporádicas hasta obstrucción permanente. Existen múltiples gatillantes  de estas crisis, pero las alergias respiratorias son una causa importante, sobre todo en primavera, y generalmente acompañadas de rinitis.",
     "texto_boton": "Agendar cita",
     "link_boton": "#",
@@ -27,6 +27,36 @@
       { "pregunta": "¿Cómo se diagnostica Asma bronquial?", "respuesta": "Con espirometría, pruebas broncodilatadoras y estudio de alergias. En el Centro de Especialidades contamos con un diagnóstico completo en una sola consulta" },
       { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Incluyen inhaladores de control, de rescate, medidas ambientales, terapias biológicas e inmunoterapia. En el Centro de Especialidades ajustamos el tratamiento según la severidad." },
       { "pregunta": "¿Cuándo consultar a un especialista?", "respuesta": "Cuando tienes crisis frecuentes, usas demasiado tu inhalador de rescate o tus síntomas limitan tu vida diaria y tu dormir. En el Centro de Especialidades ayudamos a controlar y prevenir las crisis." }
+    ]
+  },
+    "alergiamascotas": {
+    "titulo": "Alergia a mascotas",
+    "imagen": "img/enfermedades/alergias-mascotas.jpg",
+    "seo_keywords": "alergia, alergologo guayaquil, rinoconjuntivitis, urticaria, perros, gatos, hamster, conejos, caballo",
+    "tratamiento": "Este problema en general se manifiesta con rinoconjuntivitis o urticaria al exponerse a la caspa de perros y gatos, pero también de hámster, conejo o caballo. El problema mayor es para aquellos pacientes que pueden tener crisis de asma con esta exposición, que, en el caso de los alérgicos al gato, pueden ser crisis severas. Es sobre todo en estos pacientes que es indispensable realizar una inmunoterapia.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de alergia a mascotas?", "respuesta": "Picazón nasal y ocular, estornudos, congestión, tos o crisis de asma después del contacto con perros o gatos. También puede observarse síntomas cutáneos al contacto con la saliva o pelaje del animal. En el Centro de Especialidades realizamos pruebas específicas para confirmarlo." },
+      { "pregunta": "Qué causa la Alergia a Mascotas?", "respuesta": "La alergia es causada por algunas proteínas presentes en la saliva, orina, piel y pelo de las mascotas. En el Centro de Especialidades medimos IgE específicas contra estos alérgenos." },
+      { "pregunta": "¿Cómo se diagnostica la Alergia a Mascotas​?", "respuesta": "Mediante historia clínica, prick test, IgE específicas e incluso pruebas moleculares. En el Centro de Especialidades ofrecemos un diagnóstico certero y rápido." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Medidas ambientales, antihistamínicos, inhaladores si corresponde e inmunoterapia. En el Centro de Especialidades tiene protocolos específicos para pacientes que no pueden separar su mascota." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los síntomas empeoran en casa o al estar cerca de animales. En el Centro de Especialidades podemos confirmarlo y entregarte un plan sin necesidad de “despedirte” de tu mascota." }
+    ]
+  },
+  "inmunoterapia": {
+    "titulo": "Inmunoterapia Alergeno Específica",
+    "imagen": "img/enfermedades/inmunoterapia.jpg",
+    "seo_keywords": "inmunoterapia, alergologo guayaquil, alergias, control alergias",
+    "tratamiento": "La inmunoterapia es una opción de tratamiento avanzada y efectiva para diversas alergias. En el Centro de Especialidades, nos especializamos en proporcionar soluciones personalizadas para nuestros pacientes, garantizando una mejora significativa en su calidad de vida. Este artículo te proporcionará una visión detallada sobre la inmunoterapia, sus beneficios y cómo puede ayudarte a controlar tus alergias.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas que indican que podría beneficiarme de inmunoterapia?", "respuesta": "Rinitis, conjuntivitis, asma alérgica, alergia a ácaros, pólenes, mascotas o insectos, que no responden bien a medicamentos o requieren tratamientos continuos. En el Centro de Especialidades evaluamos si eres candidato." },
+      { "pregunta": "¿Cuál es la causa más común para indicar inmunoterapia?", "respuesta": "Alergia comprobada mediante diferentes tests (IgE, prick test) a un alérgeno que no se puede evitar fácilmente, como pólenes, ácaros, mascotas u hongos. En el Centro de Especialidades confirmamos la indicación con estudios precisos." },
+      { "pregunta": "¿Cómo se evalúa la necesidad de inmunoterapia?​?", "respuesta": "Con una historia clínica detallada y pruebas cutáneas o moleculares. En el Centro de Especialidades determinamos si tu alergia es apta para este tratamiento" },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "En el Centro de Especialidades tenemos disponible tanto la inmunoterapia subcutánea (inyecciones) como la sublingual (gotas/tabletas). En el Centro de Especialidades personalizamos el formato según tus necesidades." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si tus alergias interfieren con tu vida cotidiana y tu sueño, si necesitas fármacos en forma constante o tienes crisis repetidas. En el Centro de Especialidades diseñamos un plan de inmunoterapia personalizado." }
     ]
   }
 }
