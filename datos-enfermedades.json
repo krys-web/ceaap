@@ -88,5 +88,21 @@
       { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Suspender productos irritantes, corticoides suaves y evitar alérgenos. En el Centro de Especialidades diseñamos un plan de cuidado seguro para la piel sensible del párpado." },
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si el problema es recurrente o afecta tu calidad de vida. En el Centro de Especialidades resolvemos dermatitis palpebral de origen alérgico." }
     ]
+  },
+    "alergialimentaria": {
+    "titulo": "Alergia alimentaria",
+    "imagen": "img/enfermedades/alergia-alimentaria.jpg",
+    "seo_keywords": "alergia alimentaria, alergologo guayaquil, frecuente en niños, inmunológica, piel",
+    "tratamiento": "La alergia alimentaria se puede manifestar a lo largo de toda la vida, sin embargo, es más frecuente en niños. Corresponde a una reacción inmunológica asociada a la ingesta de un alimento, que se puede presentar de manera inmediata o retardada, con manifestaciones clínicas diversas en la piel, a nivel digestivo y también respiratorio. La alergia al maní es una causa frecuente de anafilaxia. Otros alimentos usualmente involucrados son la lecha de vaca, trigo, soya, huevo, así como los pescados y mariscos.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la alergia alimentaria?", "respuesta": "Pueden aparecer ronchas, vómitos, diarrea, inflamación de labios, dificultad respiratoria o anafilaxia minutos después de ingerir un alimento. En el Centro de Especialidades evaluamos tanto reacciones inmediatas como retardadas." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La sensibilización a proteínas de alimentos como leche, huevo, maní, frutos secos, mariscos, trigo o soya. En el Centro de Especialidades usamos prick tests, prick by prick, IgE específicas y pruebas moleculares para detectarlas." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con historia clínica detallada, pruebas cutáneas, IgE específicas y, cuando es necesario, prueba de tolerancia oral, el estándar más fiable. En el Centro de Especialidades realizamos este procedimiento de forma segura." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitación del alimento gatillante, planes nutricionales equilibrados e inmunoterapia oral en casos seleccionados. El Centro de Especialidades ofrece acompañamiento médico y nutricional para minimizar restricciones." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si sospechas que un alimento provoca síntomas, especialmente si son repetitivos. En el Centro de Especialidades evitamos diagnósticos erróneos y restricciones alimentarias innecesarias." }
+    ]
   }
+  
 }
