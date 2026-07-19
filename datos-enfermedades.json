@@ -103,6 +103,51 @@
       { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitación del alimento gatillante, planes nutricionales equilibrados e inmunoterapia oral en casos seleccionados. El Centro de Especialidades ofrece acompañamiento médico y nutricional para minimizar restricciones." },
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si sospechas que un alimento provoca síntomas, especialmente si son repetitivos. En el Centro de Especialidades evitamos diagnósticos erróneos y restricciones alimentarias innecesarias." }
     ]
+  },
+    "alergiasoya": {
+    "titulo": "Alergia alimentaria a la soya",
+    "imagen": "img/enfermedades/alergia-soya.jpg",
+    "seo_keywords": "alergia soya, alergologo guayaquil, oleoginosas, síntomas gastrointestinales, vómitos, distensión abdominal, diarreas, sangre en las deposiciones, urticaria, angioedema, dermatitis",
+    "tratamiento": "La soya es un alimento de origen asiático que posee muchas proteínas, pertenece al grupo de las leguminosas (como los porotos) y por su alto contenido de aceite es parte de las oleoginosas (al igual que el maní). Se ha asociado con alergia alimentaria tanto en niños como en adultos: se puede presentar con síntomas gastrointestinales como vómitos, dolor y distensión abdominal, diarrea y sangre en las deposiciones, en la piel con urticaria, angioedema o dermatitis. En menor frecuencia puede ser causa de obstrucción bronquial, asma y/o rinitis (congestión y picazón nasal y estornudos).",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la Alergia alimentaria a la soya", "respuesta": "Ronchas, vómitos, diarrea, inflamación o dificultad respiratoria minutos después de consumir soya o sus derivados. En el Centro de Especialidades diferenciamos alergia inmediata de intolerancias." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La sensibilización a proteínas específicas de la soya. En el Centro de Especialidades podemos estudiar componentes moleculares para determinar el riesgo real de reacciones graves." },
+      { "pregunta": "¿Cómo se diagnostica la alergia a la soya?", "respuesta": "Con pruebas cutáneas, prick-by-prick con alimentos frescos, IgE específicas y paneles moleculares. En el Centro de Especialidades usamos métodos de alta precisión." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitación del alimento, educación en lectura de etiquetas y, en algunos casos, reintroducción controlada. En el Centro de Especialidades te acompañamos con apoyo nutricional para evitar carencias." },
+      { "pregunta": "¿Cuándo consultar?", "respuesta": "Si presentas síntomas tras consumir productos con soya. En el Centro de Especialidades confirmamos el diagnóstico y evitamos dietas innecesariamente restrictivas." }
+    ]
+  },
+    "alergiaoral": {
+    "titulo": "Síndrome de alergia oral",
+    "imagen": "img/enfermedades/sindrome-oral.jpg",
+    "seo_keywords": "alergia, oral, alergologo guayaquil, tipo alérgica, boca, garganta, frutas, verduras, manzana, durazno, apio, zanahoria",
+    "tratamiento": "El Sindrome de Alergia Oral (SAO) corresponde a una reacción de tipo alérgica que se produce posterior al contacto de la boca y la garganta con frutas o verduras crudas. Los síntomas característicos incluyen picazón e hinchazón de labios, lengua y garganta y se desencadenan, por lo general, inmediatamente posterior a la ingesta. El SAO es considerado una forma leve de alergia alimentaria y se asocia generalmente a rinitis alérgica polínica, observándose en el 50-75% de los adultos alérgicos al polen de abedul, aunque también se presenta en los alérgicos a los pastos, artemisa, ambrosia, etc. Esta reacción se produce porque las proteínas que se encuentran en algunas frutas y verduras son muy similares a las que se encuentran en el polen, lo que se denomina reactividad cruzada. Los alimentos con mayor frecuencia involucrados son la manzana, durazno, apio, zanahoria.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas del síndrome de alergia oral?", "respuesta": "Picazón en boca, labios, lengua o garganta al comer frutas o verduras frescas, que puede ir asociado además con aumento de volumen de labios. En el Centro de Especialidades confirmamos el diagnóstico mediante prick-by-prick." },
+      { "pregunta": "¿Qué causa este síndrome?", "respuesta": "La reactividad cruzada entre pólenes y proteínas de alimentos vegetales. En el Centro de Especialidades identificamos qué tipo de polen está involucrado." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con pruebas cutáneas, prick-by-prick y estudio molecular. En el Centro de Especialidades realizamos el enfoque completo." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitar alimentos desencadenantes, consumirlos cocidos y considerar inmunoterapia para la alergia respiratoria subyacente. En el Centro de Especialidades te guiamos en la reintroducción segura." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Cuando presentas síntomas al comer frutas o verduras, especialmente si empeoran. En el Centro de Especialidades diferenciamos alergia verdadera de reactividad cruzada." }
+    ]
+  },
+    "alergiaurticaria": {
+    "titulo": "Urticaria y Angioedema",
+    "imagen": "img/enfermedades/urticaria-angioedema.jpg",
+    "seo_keywords": "urticaria, angioedema, alergologo guayaquil, habones, ronchas, angioedema, aumento volumen, labios, lengua, párpados, orejas, pies, picazón intensa, urticaria aguda, crónica",
+    "tratamiento": "La urticaria se define como la aparición repentina de habones (ronchas), los que en algunos casos se acompaña de angioedema (aumento de volumen de labios, lengua, párpados, orejas, pies, etc). La duración de cada roncha es generalmente menor a 24 horas y se asocia con frecuencia a picazón intensa. Según su persistencia en el tiempo las podemos clasificar en urticaria aguda y crónica; si dura más de 6 semanas corresponde a una urticaria crónica. Una alergia alimentaria, a un medicamento, a una picadura de insecto y algunas infecciones son las causas más frecuentes de las urticarias agudas. Por su parte, las urticarias crónicas rara vez son de origen alérgico y se asocian principalmente a estímulos físicos o presencia de auto-anticuerpos. Un estudio acabado resulta fundamental para poder conocer la causa, lo que permite un adecuado tratamiento.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la Urticaria y Angioedema​", "respuesta": "Ronchas, picazón intensa, hinchazón de labios o párpados. En el Centro de Especialidades evaluamos si es aguda o crónica, además de su origen" },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Cuando es alérgica suele ser por alimentos, fármacos o picaduras de insectos.  En la mayoría de los casos de urticaria crónica, ésta es de origen desconocido. En el Centro de Especialidades contamos con el test de suero autólogo y pruebas cutáneas para aclararlo." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con historia clínica, pruebas de alergia, diversos exámenes de sangre y test de suero autólogo. En el Centro de Especialidades realizamos un enfoque completo." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Antihistamínicos, control de gatillantes, tratamientos biológicos como el omalizumab o inmunosupresores como la ciclosporina A. En el Centro de Especialidades personalizamos el tratamiento según la severidad." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los episodios son frecuentes, intensos o afectan tu vida diaria. En el Centro de Especialidades te ayudamos a controlarlo de forma segura." }
+    ]
   }
   
 }
