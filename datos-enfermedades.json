@@ -148,6 +148,74 @@
       { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Antihistamínicos, control de gatillantes, tratamientos biológicos como el omalizumab o inmunosupresores como la ciclosporina A. En el Centro de Especialidades personalizamos el tratamiento según la severidad." },
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los episodios son frecuentes, intensos o afectan tu vida diaria. En el Centro de Especialidades te ayudamos a controlarlo de forma segura." }
     ]
+  },
+    "alergiadermatitis": {
+    "titulo": "Dermatitis de contacto",
+    "imagen": "img/enfermedades/dermatitis-contacto.jpg",
+    "seo_keywords": "dermatitis, alergologo guayaquil, dermatitis de contacto, inflamación, piel, alérgica, irritativa, dermatitis irritativa, ácidos, sustancias alcalinas como jabones y detergentes, disolventes, químicos",
+    "tratamiento": "La dermatitis de contacto es una inflamación de la piel causada por el contacto directo de ésta con una sustancia que causa una reacción alérgica o irritativa. La dermatitis irritativa es el tipo más común de dermatitis de contacto e implica una inflamación secundaria al contacto con ácidos, sustancias alcalinas como jabones y detergentes, disolventes u otros químicos. La reacción se asemeja a una quemadura. Por su parte, esta dermatitis alérgica es la segunda entidad más común dentro de las dermatitis de contacto. En general, la erupción aparece de 24 a 48 horas post-exposición. Las lesiones varían desde una irritación leve y enrojecimiento, asociadas a vesículas, evolucionando con fisuras y engrosamiento cutáneo. Los alergenos más comunes asociadas con la dermatitis de contacto son: plantas, níquel y otros metales, medicamentos tópicos (como algunos antibióticos), látex, cosméticos y perfumes. El diagnóstico se basa en una historia clínica y examen físico acucioso, asociado a un estudio con test de parches para lograr identificar el alergeno implicado.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de esta dermatitis?​", "respuesta": "Enrojecimiento, picazón intensa, ardor, descamación y aparición de lesiones en las zonas que estuvieron en contacto con un producto o material. En el Centro de Especialidades realizamos test de parche para identificar el causante." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La exposición a metales, cosméticos, jabones, perfumes, gomas o detergentes. En el Centro de Especialidades usamos baterías estándar y personalizadas para detectarlas." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con historia clínica y test de parche (patch test). En el Centro de Especialidades hacemos lecturas profesionales para asegurar un diagnóstico certero." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitar el alérgeno, corticoides tópicos, hidratación intensiva y medidas de protección. En el Centro de Especialidades te guiamos en reemplazar productos y prevenir recaídas." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los brotes se repiten o no sabes qué lo gatilla. En el Centro de Especialidades identificamos la causa exacta para detener el ciclo." }
+    ]
+  },
+    "dermatitisatopica": {
+    "titulo": "Dermatitis Atópica",
+    "imagen": "img/enfermedades/dermatitis-atopica.jpg",
+    "seo_keywords": "dermatitis, alergologo guayaquil, dermatitis de contacto, inflamación, piel, alérgica, irritativa, dermatitis irritativa, ácidos, sustancias alcalinas como jabones y detergentes, disolventes, químicos",
+    "tratamiento": "La Dermatitis Atópica es una enfermedad inflamatoria de la piel muy frecuente en la infancia, pero también se puede ver en adultos con historia personal o familiar de alergia. Se presenta de manera recurrente con picazón, sequedad, enrojecimiento y descamación de la piel. Sobretodo en niños con dermatitis extensas, esta enfermedad puede ser gatillada por una alergia alimentaria.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la Dermatitis Atópica​?", "respuesta": "Piel seca, picazón intensa, brotes recurrentes, enrojecimiento y eccema. En el Centro de Especialidades manejamos casos leves a severos." },
+      { "pregunta": "¿Cuál es la causa más común de la Dermatitis Atópica?", "respuesta": "Factores genéticos y disfunción de la barrera cutánea, a veces asociados a alergias. En el Centro de Especialidades estudiamos alergias ambientales y alimentarias cuando corresponde." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Clínicamente y con estudio alergológico según los síntomas. En el Centro de Especialidades definimos si es necesario realizar pruebas cutáneas o test de parches." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Hidratación intensiva, corticoides tópicos, inhibidores de calcineurina, fototerapia y terapias avanzadas. En el Centro de Especialidades personalizamos tu tratamiento para prevenir recaídas." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los brotes afectan tu sueño o no mejoran con tratamientos habituales. En el Centro de Especialidades ofrecemos control especializado." }
+    ]
+  },
+    "anafilaxia": {
+    "titulo": "Anafilaxia",
+    "imagen": "img/enfermedades/anafilaxia.jpg",
+    "seo_keywords": "alergia, alergologo guayaquil, picazón, ronchas, obstrucción respiratoria, taquicardia, baja de presión, shock anafiláctico, alergias a medicamento, alergias alimentarias, picaduras de abeja y avispa",
+    "tratamiento": "Esta es la reacción alérgica más severa que se puede llegar a tener: en forma brusca aparece picazón y ronchas, seguido de obstrucción respiratoria, taquicardia y baja de presión, a veces con diarrea. En los casos más graves, esta reacción puede terminar en un shock anafiláctico, culminando en un paro cardio respiratorio. Las causas más frecuentes de este tipo de reacciones son las alergias a medicamento, las alergias alimentarias y las picaduras de abeja y avispa. Todo paciente que haya tenido un cuadro anafiláctico, debe ser estudiado por un especialista, para definir claramente la causa de la reacción, establecer un plan de manejo en caso de un nuevo episodio, ser entrenado en el uso de adrenalina autoinyectable, buscar alternativas de tratamiento en el caso de alergia a medicamentos, ser informado de dietas específicas en el caso de alergias alimentarias o recibir inmunoterapia específica en el caso de picadura de abeja o avispa.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la Anafilaxia?", "respuesta": "Dificultad respiratoria, hinchazón de labios, párpados, orejas, ronchas generalizadas, hipotensión, vómitos o mareos, etc. En el Centro de Especialidades educamos en manejo y prevención." },
+      { "pregunta": "¿Cuál es la causa más común de Anafilaxia?", "respuesta": "Alimentos, medicamentos y picaduras de insectos. En el Centro de Especialidades realizamos estudios para identificar el agente exacto." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con historia clínica, pruebas de IgE, tests cutáneos y pruebas controladas. En el Centro de Especialidades manejamos casos complejos." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Adrenalina autoinyectable, antihistamínicos, corticoides e inmunoterapia en casos específicos. En el Centro de Especialidades te enseñamos su uso correcto." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Siempre después de una reacción grave o sospechosa de anafilaxia. En el Centro de Especialidades hacemos estudio urgente y plan de prevención." }
+    ]
+  },
+    "alergiabejas": {
+    "titulo": "Alergia a las Abejas y Avispas​.",
+    "imagen": "img/enfermedades/alergia-abejas.jpg",
+    "seo_keywords": "alergia, alergologo guayaquil, picar, reacción, shock anafiláctico, autoinyectores de adrenalina",
+    "tratamiento": "Alergia a las Abejas y Avispas​, se deben al veneno que inoculan al picar. Lo más frecuente es que se manifieste como un cuadro leve (reacción local en el sitio de la picadura), pero hasta el 7% de los adultos pueden tener una reacción generalizada (ronchas a distancia del sitio de picadura). La reacción más temida y potencialmente fatal es el shock anafiláctico, para lo cual los pacientes deben ser entrenados en el uso de autoinyectores de adrenalina y ser tratados con inmunoterapia específica.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la alergia al veneno de abejas y avispas?", "respuesta": "Desde hinchazón local exagerada hasta anafilaxia. En el Centro de Especialidades diagnosticamos si tu reacción fue alérgica o tóxica." },
+      { "pregunta": "¿Qué causa la alergia al veneno de abejas y avispas?", "respuesta": "La sensibilización al veneno de abejas o avispas. En el Centro de Especialidades realizamos IgE específicas y estudios moleculares para detectarlas." },
+      { "pregunta": "¿Cómo se diagnostica Alergia a las Abejas y Avispas​.​?", "respuesta": "Mediante prick tests, intradermorreacciones y exámenes de sangre. En el Centro de Especialidades definimos si necesitas inmunoterapia" },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Inmunoterapia con veneno, adrenalina autoinyectable y educación preventiva. el Centro de Especialidades ofrece protocolos completos." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si has tenido una reacción sistémica, es decir, que afectó más allá que el sitio de picadura o si tienes dudas sobre tu sensibilidad. En el Centro de Especialidades evaluamos riesgo y tratamiento." }
+    ]
+  },
+    "epipen": {
+    "titulo": "Uso de Epipen",
+    "imagen": "img/enfermedades/epipen.jpg",
+    "seo_keywords": "alergia, alergologo guayaquil, picar, reacción, shock anafiláctico, autoinyectores de adrenalina",
+    "tratamiento": "La anafilaxia es una reacción alérgica severa, caracterizada por la aparición de síntomas respiratorios y cardiovasculares que pueden comprometer la vida.\n\nEsta emergencia alérgica puede ser causada por picaduras de insectos, alimentos, medicamentos, ejercicio o causas desconocidas.\n\nEl tratamiento indicado para contrarrestar esta reacción es el uso a tiempo y de forma adecuada de adrenalina autoinyectable o Epipen ®️.\n\n En caso de una sospecha de anafilaxia esta es la primera acción a realizar, que no debe ser retrasada por llamar a unidades de emergencia o usar otros medicamentos. Cómo administrar:\n\n 1) Empuñe firme el autoinyector y retire la tapa de seguridad de atrás.\n\n2) Coloque la pierna inmóvil y presione firmemente la punta contra la cara exterior del muslo.\n\n3) Continúe presionando hasta que oiga un “click” y mantenga por 3-5 segundos.\n\n4) Retirar el autoinyector y masajear suavemente el sitio de inyección.\n\n5) llame a una ambulancia o trasládese al servicio de urgencia más cercano.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#"
   }
   
 }
