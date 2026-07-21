@@ -209,6 +209,21 @@
       { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si has tenido una reacción sistémica, es decir, que afectó más allá que el sitio de picadura o si tienes dudas sobre tu sensibilidad. En el Centro de Especialidades evaluamos riesgo y tratamiento." }
     ]
   },
+    "alergiamedicamentos": {
+    "titulo": "Alergia a los medicamentos",
+    "imagen": "img/enfermedades/alergia-medicamentos.jpg",
+    "seo_keywords": "alergia, alergologo guayaquil, tomar, inyectar, ronchas, picazón, enrojecimiento de la piel, aumento de volumen de los labios, párpados, lengua",
+    "tratamiento": "Ésta se puede presentar inmediatamente después de tomar o inyectar el medicamento, durante el tratamiento, e incluso un par de semanas después de suspendido el fármacos. Por esto, la sintomatología es muy diversa, destacando la aparición súbita de ronchas, picazón, enrojecimiento de la piel, aumento de volumen de los labios, párpados, lengua, dificultad respiratoria, aumento de la frecuencia cardiaca e incluso pérdida de conciencia en los casos más graves. Pero en otros casos, se presentarán síntomas más tardíos como: fiebre, compromiso de mucosas (oral, genital, ocular), aparición de ampollas e inflamación de los ganglios. En los casos más complejos puede observarse falla en algún órgano, como el hígado o riñones. Siempre que se haya tenido una reacción adversa alérgica a un medicamento, se debe consultar con el especialista.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Qué síntomas sugieren alergia a los medicamentos?", "respuesta": "Ronchas, inflamación, picazón, dificultad respiratoria, pérdida de conciencia o reacciones tardías, como rash cutáneo, luego de tomar un fármaco. En el Centro de Especialidades evaluamos estos casos con prioridad." },
+      { "pregunta": "¿Cuáles son los medicamentos más comúnmente asociados?", "respuesta": "Penicilinas y antiinflamatorios son los más frecuentes, pero cualquier fármaco puede producir alergia. En el Centro de Especialidades realizamos estudios completos." },
+      { "pregunta": "¿Cómo se diagnostica la alergia a medicamentos?", "respuesta": "Combinamos historia clínica, IgE específicas, prick tests, intradermorreacciones y pruebas de provocación controlada. El Centro de Especialidades sigue protocolos internacionales." },
+      { "pregunta": "¿Cómo se lleva a cabo?", "respuesta": "En el Centro de Especialidades podemos realizar pruebas supervisadas o buscar alternativas seguras" },
+      { "pregunta": "¿Cuándo debo consultar?", "respuesta": "Ante cualquier reacción cutánea, respiratoria, cardiovascular o gastrointestinal que se relacione con la administración de un fármaco. En el Centro de Especialidades ofrecemos estudio completo y seguro." }
+    ]
+  },
     "epipen": {
     "titulo": "Uso de Epipen",
     "imagen": "img/enfermedades/epipen.jpg",
@@ -216,6 +231,89 @@
     "tratamiento": "La anafilaxia es una reacción alérgica severa, caracterizada por la aparición de síntomas respiratorios y cardiovasculares que pueden comprometer la vida.\n\nEsta emergencia alérgica puede ser causada por picaduras de insectos, alimentos, medicamentos, ejercicio o causas desconocidas.\n\nEl tratamiento indicado para contrarrestar esta reacción es el uso a tiempo y de forma adecuada de adrenalina autoinyectable o Epipen ®️.\n\n En caso de una sospecha de anafilaxia esta es la primera acción a realizar, que no debe ser retrasada por llamar a unidades de emergencia o usar otros medicamentos. Cómo administrar:\n\n 1) Empuñe firme el autoinyector y retire la tapa de seguridad de atrás.\n\n2) Coloque la pierna inmóvil y presione firmemente la punta contra la cara exterior del muslo.\n\n3) Continúe presionando hasta que oiga un “click” y mantenga por 3-5 segundos.\n\n4) Retirar el autoinyector y masajear suavemente el sitio de inyección.\n\n5) llame a una ambulancia o trasládese al servicio de urgencia más cercano.",
     "texto_boton": "Agendar cita",
     "link_boton": "#"
+  },
+    "examenesangre": {
+    "titulo": "Exámenes de Sangre para Alergias",
+    "imagen": "img/enfermedades/examenes-sangre.jpg",
+    "seo_keywords": "examenes, alergologo guayaquil, sangre, evaluación, pacientes, toma de muestras, enfermedades inmunológicas, estudio de alergias, inmunodeficiencias",
+    "tratamiento": "Para optimizar la evaluación de los pacientes que recibimos, tenemos el servicio de toma de muestras, enfocado al estudio de alergias, enfermedades inmunológicas y de inmunodeficiencias.\n\nPara esto, derivamos las muestras a tres laboratorios especializados y de toda nuestra confianza:\n\nPara el estudio de las alergias contamos con aproximadamente 300 IgE especificas individuales (alergenos del ambiente, alimentarios, medicamentos, aditivos y algunos alergenos moleculares) y otros exámenes específicos como triptasa y leucotrienos, los cuales derivamos al laboratorio de Alergia e Inmunología (LAI).También disponemos del estudio de alergias por tecnología de microarray, que permite con una sola muestra de sangre medir IgE total, e IgE especificas a 295 extractos alergénicos y alergenos moleculares, conocida como ALEX2.En el estudio de inmunodeficiencias, derivamos las subpoblaciones de linfocitos al laboratorio Biosoluciones de la UDD.\n\nPara el estudio de inmunodeficiencias humorales y otras enfermedades inmunológicas contamos con medición de inhibidor de C1, inmunoglobulinas y subclases de IgG, autoanticuerpos, además de algunos exámenes generales, todos ellos derivados al laboratorio LAI.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Qué alergias pueden detectarse en la sangre?", "respuesta": "Pueden medirse IgE específicas (anticuerpos) a pólenes, ácaros, alimentos, medicamentos y proteínas diversas. En el Centro de Especialidades contamos con más de 300 determinaciones." },
+      { "pregunta": "¿Qué tecnología utiliza el Centro de Especialidades?", "respuesta": "Derivamos muestras a laboratorios de referencia, incluyendo microarrays de alta resolución como el test de ALEX-2. Esto permite identificar perfiles moleculares completos." },
+      { "pregunta": "¿Cuándo se recomienda un examen de sangre?", "respuesta": "Cuando no puede suspender antihistamínicos, existe dermatitis extensa o cuando necesitamos un estudio amplio y/o molecular. En el Centro de Especialidades definimos la mejor estrategia combinada." },
+      { "pregunta": "¿Son mejores que los prick tests?", "respuesta": "Son complementarios. Los test cutáneos detectan rápidamente las sensibilidades, en 15 minutos ya se tiene una idea general de la causa de la alergia. mientras que los análisis de sangre nos permite un análisis más amplio y/o en épocas en que no se pueden suspender los antialégicos. En el Centro de Especialidades usamos ambos según el caso." },
+      { "pregunta": "¿Necesitan preparación previa?", "respuesta": "No requieren ayuno ni suspensión de medicamentos. En el Centro de Especialidades te damos indicaciones personalizadas." }
+    ]
+  },
+    "alergialatex": {
+    "titulo": "Alergia al látex",
+    "imagen": "img/enfermedades/alergia-latex.jpg",
+    "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
+    "tratamiento": "El látex es un componente frecuente en diversos insumos médicos, como guantes, cánulas para las vías aéreas y venas, jeringas, estetoscopios, catéteres, ropas y vendajes. Además, el látex también es encontrado en numerosos objetos cotidianos, como condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas, etc.\n\nLos guantes de látex frecuentemente también producen reacciones alérgicas debido al contacto repetido de la piel con este o por la inhalación de partículas del látex absorbidas en el polvo suavizante contenido en los guantes.\n\nLos síntomas tras la exposición al látex son generalmente de inicio súbito y pueden simular una rinitis alérgica o asma bronquial, con síntomas de congestión nasal, ronchas o dificultad para respirar. Los casos más graves pueden producir anafilaxia, vale decir, progresan rápidamente y pueden acompañarse de una caída de la presión arterial, enrojecimiento de la piel, dificultad respiratoria, inflamación de la laringe, lengua como también de pérdida de conciencia. Es importante recibir atención médica inmediata, ante los primeros síntomas de una reacción anafiláctica.\n\nPor su parte, los problemas cutáneos producidos como consecuencia del uso de guantes de látex son frecuentemente confundidos con la alergia al látex. La dermatitis de contacto es un problema frecuente entre las personas que utilizan guantes de goma y esta puede ser debida a una dermatitis de contacto irritante producida por el continuo lavado de las manos, uso de detergentes, abrasiones cutáneas al poner y quitar los guantes de forma continua y maceración de la piel al estar cubierta por una barrera impermeable. La dermatitis también puede ser debida a una hipersensibilidad a sustancias químicas, añadidas al látex durante su proceso de fabricación.\n\nDebe ser estudiada mediante prick test y/o test de parches.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de la Alergia al látex?", "respuesta": "icazón local, dermatitis de contacto, urticaria, congestión nasal, dificultad respiratoria e incluso anafilaxia. En el Centro de Especialidades confirmamos el diagnóstico." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Proteínas presentes en el látex natural. En el Centro de Especialidades estudiamos reactividad cruzada con frutas" },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Mediante prick tests, IgE específicas y test de parches según el tipo de reacción. En el Centro de Especialidades realizamos ambos tipos de pruebas." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Evitar látex, reemplazar productos y usar adrenalina en casos severos. En algunos casos existe la opción de inmunoterapia alergeno-específca. En el Centro de Especialidades entregamos indicaciones personalizadas." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si reaccionas con guantes, globos, condones u objetos médicos. En el Centro de Especialidades identificamos alternativas seguras." }
+    ]
+  },
+    "defensasbajas": {
+    "titulo": "Defensas Bajas",
+    "imagen": "img/enfermedades/defensas-bajas.jpg",
+    "seo_keywords": "infecciones, alergologo guayaquil, deficiencias, inmunodeficiencias primaras y secundarias, hereditarios, genéticos",
+    "tratamiento": "Las infecciones recurrentes son un motivo de preocupación frecuente. Nuestro sistema inmune está permanentemente combatiendo a los gérmenes que nos infectan, y eventuales deficiencias en él nos dejan expuestos a sufrir infecciones más frecuentemente. Las causas son múltiples, y se dividen en inmunodeficiencias primaras y secundarias. Las inmunodeficiencias secundarias son el resultado de una enfermedad u otros factores ambientales que llevan al debilitamiento del sistema inmune, como malnutrición, enfermedades crónicas, enfermedades oncológicas, o fármacos inmunosupresores. Las inmunodeficiencias primarias son un grupo de más de 400 enfermedades descritas, poco frecuentes, en los que parte del sistema inmunológico falta o no funciona correctamente. Son causadas por defectos hereditarios o genéticos y, aunque algunos trastornos se presentan al nacer o en la primera infancia, pueden diagnosticarse a toda edad.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#"
+  },
+    "acne": {
+    "titulo": "Acné",
+    "imagen": "img/enfermedades/acne.jpg",
+    "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
+    "tratamiento": "El acné es una condición que afecta a millones de personas en todo el mundo, especialmente durante la adolescencia, es por eso que existe el Tratamiento del Acné en el Centro de Especialidades\n\nAunque a menudo se asocia con esta etapa de la vida, no todas las personas que padecen acné son adolescentes, y no todos los adolescentes desarrollan acné.\n\nEsta condición es causada principalmente por el efecto de las hormonas en las glándulas sebáceas de la piel, pero también pueden influir factores como la alimentación y el estrés.\n\nCausas del Acné:\n\nLa principal causa del acné es la influencia de las hormonas sobre las glándulas sebáceas, lo que lleva a la producción excesiva de sebo. Este exceso, combinado con células muertas de la piel, puede obstruir los poros y dar lugar a comedones, más comúnmente conocidos como puntos negros y espinillas.\n\nImportancia del Tratamiento Temprano\n\nEs fundamental iniciar el tratamiento del acné tan pronto como aparezcan los primeros signos, como los comedones. Un tratamiento temprano y adecuado puede prevenir la formación de cicatrices y controlar los síntomas. Se recomienda consultar a un dermatólogo para adaptar el tratamiento a las necesidades específicas de tu piel a lo largo del tiempo.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas del acné?", "respuesta": "Espinillas, puntos negros, pápulas inflamadas, quistes o cicatrices. En el Centro de Especialidades evaluamos tu tipo de acné antes de tratar." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": " Exceso de sebo, bacterias, inflamación, hormonas y genética. En el Centro de Especialidades manejamos acné adolescente y adulto." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Con examen dermatológico para identificar la severidad. En el Centro de Especialidades definimos si necesitas tratamiento tópico, oral o ambos." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Cremas medicadas, antibióticos, retinoides, peelings y manejo de cicatrices. En el Centro de Especialidades creamos un plan personalizado." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si hay dolor, cicatrices o no respondes a productos de farmacia. En el Centro de Especialidades puedes acceder a tratamientos avanzados como isotretinoína." }
+    ]
+  },
+    "psoriasis": {
+    "titulo": "Tratamiento efectivo de la psoriasis",
+    "imagen": "img/enfermedades/psoriasis.jpg",
+    "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
+    "tratamiento": "La psoriasis es una enfermedad crónica, que afecta alrededor del 2% de la población. Es más común en adultos, pero puede presentarse a cualquier edad. Aunque existen varios genes relacionados con esta enfermedad, muchos pacientes no tienen antecedentes familiares conocidos de psoriasis.\n\nLa manifestación clásica es la aparición de placas rojas y escamosas en áreas donde la piel se “maltrata” más, como codos y rodillas. Sin embargo, puede presentarse de formas diversas: sin descamación, sólo como piel gruesa, seca, “partida”, o también comprometer otras partes del cuerpo, como cuero cabelludo, palmas, plantas, genitales e incluso las uñas, causando incomodidad, picazón o dolor.\n\nLa psoriasis también puede afectar a las articulaciones, provocando dolor, rigidez o inflamación evidente de los dedos, muñecas, rodillas, columna entre otras.\n\nPor estas diversas formas y sitios de presentación, el diagnóstico de la psoriasis no siempre es fácil, y puede requerir la evaluación de médicos especialistas.\n\nEl objetivo del Tratamiento efectivo de la psoriasis es lograr el menor impacto posible de la psoriasis en la calidad de vida de quien la padece, existiendo la opción de cremas para uso localizado en las lesiones, fototerapia para tratar lesiones específicas o toda la piel, y tratamientos sistémicos orales e inyectables para los casos más extensos, graves o con compromiso articular. El tratamiento de la psoriasis ha tenido un importante desarrollo en las últimas dácadas, y contamos cada vez con alternativas más seguras y eficientes para las formas severas de la enfermedad.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas?", "respuesta": "Presencia de placas rojas con escamas, piel engrosada, picazón, dolor o compromiso de uñas y/o articulaciones. En el Centro de Especialidades confirmamos la forma clínica y severidad." },
+      { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Es una enfermedad inflamatoria crónica con base inmune y predisposición genética. En el Centro de Especialidades orientamos sobre factores que la gatillan." },
+      { "pregunta": "¿Cómo se diagnostica?", "respuesta": "Por examen clínico y, en casos dudosos, biopsia. En el Centro de Especialidades identificamos el tipo específico (guttata, invertida, palmoplantar, etc.)." },
+      { "pregunta": "¿Qué tratamientos existen?", "respuesta": "Cremas, fototerapia, tratamientos sistémicos y terapias biológicas. En el Centro de Especialidades seleccionamos la opción más segura según tu caso." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si los síntomas afectan tu vida diaria o sospechas psoriasis en uñas o cuero cabelludo. En el Centro de Especialidades ofrecemos manejo integral." }
+    ]
+  },
+    "rosacea": {
+    "titulo": "Rosácea: Control de Crisis y Tratamientos",
+    "imagen": "img/enfermedades/rosacea.jpg",
+    "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
+    "tratamiento": "La rosácea es una afección muy común en adultos, aunque también puede presentarse en niños y adolescentes. Se caracteriza por eritema (rojez) facial que aumenta con ciertos estímulos como la exposición a temperaturas altas o bajas, alimentos picantes y bebidas alcohólicas. En algunas personas además pueden aparecer “espinillas” o también puede comprometer los ojos, con sensación de ojo seco y con ojos rojos.\n\nLa rosácea es una condición crónica, que generalmente pasa por períodos estables y otros de exacerbación o “crisis” en los que los síntomas pueden ser muy molestos y notorios. El tratamiento si bien, no produce una cura definitiva, es útil para manejar y evitar las “crisis”, pudiendo hacerla casi imperceptible.",
+    "texto_boton": "Agendar cita",
+    "link_boton": "#",
+    "faqs": [
+      { "pregunta": "¿Cuáles son los síntomas de Rosácea?", "respuesta": "Enrojecimiento persistente, calor facial, vasos dilatados, granitos o sensibilidad facial. En el Centro de Especialidades diferenciamos rosácea de alergias o dermatitis." },
+      { "pregunta": "¿Cuál es la causa más común de la Rosácea?", "respuesta": "Hipersensibilidad vascular, factores ambientales, alteración de la microbiota cutánea y factores genéticos. En el Centro de Especialidades evaluamos tus gatillantes personales." },
+      { "pregunta": "¿Cómo se diagnostica la Rosácea?", "respuesta": "Clínicamente, según tipo de rosácea. En el Centro de Especialidades realizamos una evaluación dermatológica experta." },
+      { "pregunta": "¿Qué tratamientos existen para la Rosácea?", "respuesta": "Cremas antiinflamatorias, antibióticos tópicos u orales, láser vascular y control de gatillantes. En el Centro de Especialidades personalizamos tu tratamiento." },
+      { "pregunta": "¿Cuándo debo consultar a un especialista?", "respuesta": "Si tienes brotes frecuentes, ardor facial o enrojecimiento persistente. En el Centro de Especialidades ofrecemos manejo avanzado para rosácea." }
+    ]
   }
   
 }
