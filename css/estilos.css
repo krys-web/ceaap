@@ -575,7 +575,12 @@ nav ul li a:hover { color: var(--color-secondary); }
     margin-bottom: 40px; /* Espacio entre el título y el grid */
 }
 
-.nosotros-section { padding: 80px 0; background: var(--bg-light); }
+.nosotros-section { 
+    width: 100%;
+    overflow-x: hidden;
+    padding: 80px 0; 
+    background: var(--bg-light); 
+}
 .nosotros-grid { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -590,7 +595,16 @@ nav ul li a:hover { color: var(--color-secondary); }
     display: block;
 }
 
+.separador-nosotros {
+    border: none;
+    border-top: 2px dashed var(--gray-200);
+    margin: 20px 0;
+    width: 100%;
+}
+
 .scrolling-text-container {
+    width: 100%;
+    max-width: 100%;
     height: 600px; 
     overflow-y: auto;
     position: relative;
@@ -599,6 +613,9 @@ nav ul li a:hover { color: var(--color-secondary); }
     background: white;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .scrolling-text {
@@ -617,6 +634,12 @@ nav ul li a:hover { color: var(--color-secondary); }
 .scrolling-text-container::-webkit-scrollbar-thumb {
     background: var(--color-primary);
     border-radius: 10px;
+}
+
+.scrolling-text .info-item {
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word; 
 }
 
 @keyframes scroll-up {
@@ -1297,8 +1320,136 @@ nav ul li a:hover { color: var(--color-secondary); }
     .exam-content-unique { align-items: center; }
     .services-grid, .enfermedades-grid { grid-template-columns: 1fr; }
     .topbar { display: none; }
-    .hero-logo-centered img {
-        height: 120px;      
+.hero {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-logo img {
+        height: auto;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-description-box {
+        padding: 15px;
+    }
+
+    .hero-description-box p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-cta a {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .hero-cards-wrapper {
+        min-height: auto;
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .hero-card {
+        position: relative; 
+        top: 0;
+        display: none;
+    }
+
+    .hero-card.active {
+        display: block;
+    }
+
+    .doctor-image {
+        width: 100%;
+        max-width: 260px;
+        height: 240px;
+    }
+
+    .doctor-card {
+        padding: 15px;
+    }
+
+    .doctor-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .hero-tabs {
+        flex-direction: row;
+        border-radius: 30px;
+    }
+
+    .tab-btn {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+
+
+    /* --- SECCIÓN NOSOTROS --- */
+    .nosotros-section {
+        padding: 40px 0;
+    }
+
+    .nosotros-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .nosotros-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .scrolling-text-container {
+        height: 380px;
+        padding: 15px;
+    }
+
+.pildora-principal {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+        max-width: 90%;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: normal; 
+    }
+
+    .pildora-doctor {
+        font-size: 0.95rem;
+        padding: 4px 12px;
+        white-space: normal;
+        display: inline-block;
+        max-width: 100%;
     }
 }
 
