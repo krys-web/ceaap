@@ -1,24 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Menú Hamburguesa
+
+    // ==========================================
+    // 1. MENÚ HAMBURGUESA Y SUBMENÚS MÓVILES
+    // ==========================================
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav');
 
     if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             navMenu.classList.toggle('active');
             menuToggle.classList.toggle('active');
         });
-
-        const navLinks = document.querySelectorAll('nav ul li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
     }
 
-    // 2. Sistema de tarjetas (Tabs)
+    // Control unificado para submenús Nivel 1 y Nivel 2
+    const submenuParents = document.querySelectorAll('.has-submenu > a, .has-submenu-level2 > a');
+
+    submenuParents.forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                const targetSubmenu = link.nextElementSibling;
+
+                if (targetSubmenu && (targetSubmenu.classList.contains('submenu') || targetSubmenu.classList.contains('submenu-level2'))) {
+                    e.preventDefault(); // Previene la navegación/recarga
+                    e.stopPropagation(); // Detiene la propagación para que no se cierre el menú padre
+
+                    // Alternar la clase active solo del submenú seleccionado
+                    targetSubmenu.classList.toggle('active');
+                }
+            }
+        });
+    });
+
+    // Cerrar el menú principal solo al hacer clic en enlaces finales (hojas)
+    const finalLinks = document.querySelectorAll('nav ul li a:not(.has-submenu > a):not(.has-submenu-level2 > a)');
+    
+    finalLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 992 && navMenu) {
+                navMenu.classList.remove('active');
+                if (menuToggle) menuToggle.classList.remove('active');
+            }
+        });
+    });
+
+
+    // ==========================================
+    // 2. SISTEMA DE TARJETAS (TABS)
+    // ==========================================
     const tabButtons = document.querySelectorAll('.hero-tabs .tab-btn');
     const heroCards = document.querySelectorAll('.hero-cards-wrapper .hero-card');
     let autoChangeInterval;
@@ -51,13 +81,16 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             clearInterval(autoChangeInterval);
             switchTab(button.getAttribute('data-tab'));
-            startAutoChange(); // Reiniciar el ciclo
+            startAutoChange();
         });
     });
 
     if (tabButtons.length > 0) startAutoChange();
 
-    // 3. Animaciones con IntersectionObserver (Refactorizado para seguridad)
+
+    // ==========================================
+    // 3. ANIMACIONES CON INTERSECTION OBSERVER
+    // ==========================================
     const observerOptions = { root: null, threshold: 0.15 };
     
     function createObserver(elements, className) {
@@ -72,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, observerOptions);
     }
 
-    // Hero
+    // Hero Observer
     const heroElements = document.querySelectorAll('.hero-content h1, .hero-content p, .hero-stats, .hero-cards-wrapper');
     heroElements.forEach(el => el.classList.add('animate-prepare'));
     const heroObserver = new IntersectionObserver((entries) => {
@@ -103,25 +136,16 @@ document.addEventListener('DOMContentLoaded', () => {
         enfObserver.observe(card);
     });
 
-    // 4. FAQ
-document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        const isOpen = button.classList.contains('active');
-        
-        // Cierra todas las demás
-        document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
-        document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
-        
-        // Abre la seleccionada si no estaba abierta
-        if (!isOpen) {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-            button.classList.add('active');
-        }
-    });
-});
 
-    // 5. Logo Animación
+    // ==========================================
+    // 4. PREGUNTAS FRECUENTES (FAQ)
+    // ==========================================
+    initFaqLogic();
+
+
+    // ==========================================
+    // 5. ANIMACIÓN LOGO
+    // ==========================================
     const logoImg = document.querySelector('.logo img');
     if (logoImg) {
         setTimeout(() => {
@@ -130,19 +154,11 @@ document.querySelectorAll('.faq-question').forEach(button => {
         }, 300);
     }
 
-    // 6. Submenú Responsive
-    const submenuLink = document.querySelector('.has-submenu > a');
-    if (submenuLink) {
-        submenuLink.addEventListener('click', (e) => {
-            if (window.innerWidth <= 992) {
-                e.preventDefault();
-                document.querySelector('.submenu').classList.toggle('active');
-            }
-        });
-    }
 
-    // 7. Sección Nosotros (Corrección del error de null)
-    const textElement = document.querySelector('.scrolling-text'); // Asegúrate que el ID sea correcto en HTML
+    // ==========================================
+    // 6. SECCIÓN NOSOTROS (SCROLLING TEXT)
+    // ==========================================
+    const textElement = document.querySelector('.scrolling-text');
     const toggleBtn = document.getElementById('toggle-animation');
     const btnUp = document.getElementById('btn-up');
     const btnDown = document.getElementById('btn-down');
@@ -171,92 +187,69 @@ document.querySelectorAll('.faq-question').forEach(button => {
         });
     }
 
-    // Añadir esto dentro de DOMContentLoaded en js/main.js
-const path = window.location.pathname;
 
-if (path.includes('detalle.html')) {
-    cargarDetalle();
-}
-
-async function cargarDetalle() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const tipo = urlParams.get('tipo');
-    if (!tipo) return;
-
-    try {
-        const response = await fetch('datos-enfermedades.json');
-        const data = await response.json();
-        const enf = data[tipo];
-
-        if (enf) {
-            document.title = `${enf.titulo} | Consultorio Médico`;
-            document.getElementById('titulo-enfermedad').innerText = enf.titulo;
-            //document.getElementById('desc-enfermedad').innerText = enf.descripcion;
-            document.getElementById('img-enfermedad').src = enf.imagen;
-            document.getElementById('trat-enfermedad').innerText = "" + enf.tratamiento;
-
-            // Inyectar botón de acción
-            const btnContainer = document.getElementById('boton-container');
-            btnContainer.innerHTML = `<a href="${enf.link_boton}" class="enfermedad-link">${enf.texto_boton}</a>`;
-
-            // Generar FAQs
-            const faqContainer = document.getElementById('faq-container');
-            faqContainer.innerHTML = enf.faqs.map(item => `
-                <div class="faq-item">
-                    <button class="faq-question">${item.pregunta}<span>+</span></button>
-                    <div class="faq-answer"><p>${item.respuesta}</p></div>
-                </div>
-            `).join('');
-
-            // Re-vincular eventos de FAQ después de inyectar HTML
-            initFaqLogic();
-        }
-    } catch (error) {
-        console.error("Error cargando el JSON:", error);
+    // ==========================================
+    // 7. CARGA DINÁMICA DE DETALLES
+    // ==========================================
+    if (window.location.pathname.includes('detalle.html')) {
+        cargarDetalle();
     }
-}
 
-function initFaqLogic() {
-    document.querySelectorAll('.faq-question').forEach(button => {
-        button.addEventListener('click', () => {
-            const answer = button.nextElementSibling;
-            const isOpen = button.classList.contains('active');
-            
-            document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
-            document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
-            
-            if (!isOpen) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                button.classList.add('active');
+    async function cargarDetalle() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tipo = urlParams.get('tipo');
+        if (!tipo) return;
+
+        try {
+            const response = await fetch('datos-enfermedades.json');
+            const data = await response.json();
+            const enf = data[tipo];
+
+            if (enf) {
+                document.title = `${enf.titulo} | Consultorio Médico`;
+                document.getElementById('titulo-enfermedad').innerText = enf.titulo;
+                document.getElementById('img-enfermedad').src = enf.imagen;
+                document.getElementById('trat-enfermedad').innerText = enf.tratamiento;
+
+                const btnContainer = document.getElementById('boton-container');
+                if(btnContainer) {
+                    btnContainer.innerHTML = `<a href="${enf.link_boton}" class="enfermedad-link">${enf.texto_boton}</a>`;
+                }
+
+                const faqContainer = document.getElementById('faq-container');
+                if(faqContainer) {
+                    faqContainer.innerHTML = enf.faqs.map(item => `
+                        <div class="faq-item">
+                            <button class="faq-question">${item.pregunta}<span>+</span></button>
+                            <div class="faq-answer"><p>${item.respuesta}</p></div>
+                        </div>
+                    `).join('');
+                    initFaqLogic();
+                }
             }
-        });
-    });
-}
-
-});
-
-// FORZADO DE VISIBILIDAD PARA DEPURACIÓN
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.enfermedad-card');
-    cards.forEach(card => {
-        card.style.opacity = "1";
-        /*card.style.display = "block"; // o "flex", según sea tu grid*/
-    });
-});
-
-// Manejo de submenús en dispositivos móviles
-document.querySelectorAll('.has-submenu > a, .has-submenu-level2 > a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Solo aplicar este comportamiento en pantallas pequeñas
-        if (window.innerWidth <= 992) {
-            e.preventDefault(); // Evita que el enlace redirija
-            e.stopPropagation(); // Evita que se cierre el menú padre
-            
-            // Alterna la clase 'active' en el submenú correspondiente
-            const submenu = link.nextElementSibling;
-            if (submenu && (submenu.classList.contains('submenu') || submenu.classList.contains('submenu-level2'))) {
-                submenu.classList.toggle('active');
-            }
+        } catch (error) {
+            console.error("Error cargando el JSON:", error);
         }
-    });
+    }
+
+    function initFaqLogic() {
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = button.classList.contains('active');
+                
+                document.querySelectorAll('.faq-answer').forEach(item => item.style.maxHeight = '0px');
+                document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
+                
+                if (!isOpen && answer) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    button.classList.add('active');
+                }
+            });
+        });
+    }
+
+    // Asegurar visibilidad de tarjetas
+    const cards = document.querySelectorAll('.enfermedad-card');
+    cards.forEach(card => card.style.opacity = "1");
 });
