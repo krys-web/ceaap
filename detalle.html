@@ -152,28 +152,29 @@ Agendar cita
 
 </header>
 
-<!-- detalle.html (Limpiado) -->
-<main class="enfermedades-page" style="padding-top: 150px; padding-bottom: 80px;">
+<main class="detalle-page">
     <div class="container">
-        <div class="detalle-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+        
+        <div class="detalle-grid">
             <div class="detalle-img">
-                <img id="img-enfermedad" src="" alt="Enfermedad" style="border-radius: 20px; width: 100%;">
+                <img id="img-enfermedad" src="" alt="Enfermedad">
             </div>
 
-                <div class="detalle-content">
-                    <h1 id="titulo-enfermedad" class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 15px;"></h1>
-                    <div class="description-box" style="margin-top: 10px; padding: 15px; border: 1px solid #ccc; border-radius: 8px; text-align: justify;">
-                        <p id="trat-enfermedad" style="margin: 0;"></p>
-                    </div>
-                    
-                    <div id="boton-container" style="margin-top: 20px;"></div>
+            <div class="detalle-content">
+                <h1 id="titulo-enfermedad" class="detalle-title"></h1>
+                <div class="description-box detalle-desc">
+                    <p id="trat-enfermedad"></p>
                 </div>
+                
+                <div id="boton-container" class="detalle-btn-wrapper"></div>
+            </div>
         </div>
 
         <section class="faq-section">
             <h2 class="section-title">Preguntas Frecuentes</h2>
             <div id="faq-container" class="faq-container"></div>
         </section>
+
     </div>
 </main>
 
