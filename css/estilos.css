@@ -63,7 +63,7 @@ img {
    =================================================== */
 .btn-whatsapp {
     position: fixed;
-    bottom: 25px;
+    bottom: 95px; 
     right: 25px;
     width: 60px;
     height: 60px;
@@ -88,6 +88,11 @@ img {
     width: 34px;
     height: 34px;
     fill: #ffffff;
+}
+
+.btn-whatsapp-secondary {
+    bottom: 25px; 
+    background-color: #128C7E;
 }
 
 /* ===================================================
@@ -510,14 +515,14 @@ nav ul li a:hover { color: var(--color-secondary); }
 .stat-number {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--white);
+    color: black;
     display: block;
     transition: transform 0.3s ease;
 }
 
 .stat-label {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
