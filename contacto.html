@@ -154,35 +154,35 @@ Agendar cita
 
 </header>
 
-<section class="contacto-section" style="padding: 100px 0; background: var(--bg-body); margin-top: 150px;">
-    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+<section class="contacto-section">
+    <div class="container contacto-grid">
         
         <!-- Formulario de Contacto -->
-        <div class="contacto-form" style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md);">
-            <h2 style="margin-bottom: 25px;">Envíanos un mensaje</h2>
+        <div class="contacto-form">
+            <h2>Envíanos un mensaje</h2>
             <form action="tu_script_de_envio.php" method="POST">
-                <input type="text" name="nombre" placeholder="Nombre completo" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray-200); border-radius: 8px;">
-                <input type="text" name="ruc" placeholder="Teléfono o RUC" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray-200); border-radius: 8px;">
-                <input type="email" name="correo" placeholder="Correo electrónico" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray-200); border-radius: 8px;">
-                <input type="text" name="asunto" placeholder="Asunto" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray-200); border-radius: 8px;">
-                <textarea name="mensaje" placeholder="Detalle del mensaje" rows="5" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray-200); border-radius: 8px; height: 150px; resize: none;"></textarea>
-                <button type="submit" style="width: 100%; padding: 15px; background: var(--color-primary); color: white; border: none; border-radius: 50px; cursor: pointer;">Enviar mensaje</button>
+                <input type="text" name="nombre" placeholder="Nombre completo" required class="form-input">
+                <input type="text" name="ruc" placeholder="Teléfono o RUC" required class="form-input">
+                <input type="email" name="correo" placeholder="Correo electrónico" required class="form-input">
+                <input type="text" name="asunto" placeholder="Asunto" required class="form-input">
+                <textarea name="mensaje" placeholder="Detalle del mensaje" rows="5" required class="form-textarea"></textarea>
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
             </form>
         </div>
 
         <!-- Información y Ubicación del Negocio -->
         <div class="contacto-info">
             <h2>Contáctanos</h2>
-            <p>Teléfono fijo: 1: 04 600 3672</p>
-            <p>Celular 1: +593 98 103 6255</p>
-            <p>Celular 2: +593 98 019 0654</p>
-            <p>Celular 3: +593 96 950 5956</p>
-            <p>Correo: info@consultorio.com</p>
-            <p>Dirección: Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, 090513 Guayaquil</p>
-            <h3 style="margin-top: 30px;">Ubicación</h3>
-            <!-- Placeholder para el mapa -->
-            <div class="mapa" style="width: 100%; height: 300px; background: var(--gray-200); border-radius: 20px; margin-top: 15px; display: flex; align-items: center; justify-content: center;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51083.32997551782!2d-79.9634743!3d-2.1568877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dbc9007335d%3A0xe8c9b7784a350a73!2sOmni%20Hospital!5e1!3m2!1ses-419!2sec!4v1783725141755!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <p><strong>Teléfono fijo:</strong> 04 600 3672</p>
+            <p><strong>Celular 1:</strong> +593 98 103 6255</p>
+            <p><strong>Celular 2:</strong> +593 98 019 0654</p>
+            <p><strong>Celular 3:</strong> +593 96 950 5956</p>
+            <p><strong>Correo:</strong> info@consultorio.com</p>
+            <p><strong>Dirección:</strong> Omni Hospital, Av. Juan Tanca Marengo y Calle 13E NE, 090513 Guayaquil</p>
+            
+            <h3>Ubicación</h3>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51083.32997551782!2d-79.9634743!3d-2.1568877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dbc9007335d%3A0xe8c9b7784a350a73!2sOmni%20Hospital!5e1!3m2!1ses-419!2sec!4v1783725141755!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </div>
 
