@@ -1850,3 +1850,154 @@ nav ul li a:hover { color: var(--color-secondary); }
         text-align: left;
     }
 }
+
+/*  BOTON SIGUIENTE EN AGENDA DE CITAS */
+/* Estado del botón Siguiente cuando está inhabilitado (mantiene el mismo estilo visual) */
+.btn-next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    /* Mantiene sus colores base para no perder la línea gráfica */
+}
+
+/* Resaltado de inputs en rojo cuando el valor es inválido */
+.form-input.input-error {
+    border-color: #dc2626 !important;
+    background-color: #fef2f2 !important;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+/* Opcional: borde verde cuando el campo ya está correcto */
+.form-input.input-success {
+    border-color: #16a34a !important;
+    background-color: #f0fdf4 !important;
+}
+
+/* DISEÑO DE LOS BOTONES - AREA DE AGENDAMIENTO DE CITAS */
+/* ==========================================
+   CONTENEDOR Y BOTONES DE NAVEGACIÓN (WIZARD)
+   ========================================== */
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Estilos Base para Todos los Botones */
+.buttons-container button,
+#btnNext,
+#btnPrev {
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    outline: none;
+    user-select: none;
+}
+
+/* --- BOTÓN ANTERIOR (Estilo Secundario/Outline) --- */
+#btnPrev {
+    background-color: #f8fafc;
+    color: #475569;
+    border: 1.5px solid #e2e8f0;
+}
+
+#btnPrev:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+}
+
+#btnPrev:active {
+    transform: translateY(0);
+    background-color: #e2e8f0;
+}
+
+/* --- BOTÓN SIGUIENTE / CONFIRMAR (Estilo Primario) --- */
+#btnNext {
+    background-color: #2563eb; /* Cambia al color principal de tu marca */
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    margin-left: auto; /* Empuja el botón a la derecha si no hay botón Anterior */
+}
+
+#btnNext:hover:not(:disabled) {
+    background-color: #1d4ed8;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+    transform: translateY(-2px);
+}
+
+#btnNext:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+/* --- BOTÓN SIGUIENTE CUANDO ESTÁ INHABILITADO --- */
+#btnNext:disabled {
+    background-color: #2563eb; /* Mantiene exactamente el mismo color de marca */
+    color: #ffffff;
+    opacity: 0.45; /* Apariencia atenuada sin cambiar de color */
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+    filter: grayscale(10%);
+}
+
+/* ==========================================
+   ESTILOS PARA BOTONES DE SLOTS (PASO 4: HORARIOS)
+   ========================================== */
+
+.time-slot {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #e2e8f0;
+    background-color: #ffffff;
+    color: #334155;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-slot:hover:not(:disabled) {
+    border-color: #2563eb;
+    color: #2563eb;
+    background-color: #eff6ff;
+    transform: scale(1.02);
+}
+
+/* Horario Seleccionado */
+.time-slot.selected {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    font-weight: 600;
+}
+
+/* Horario Ocupado / Reservado */
+.time-slot.slot-ocupado,
+.time-slot:disabled {
+    background-color: #f1f5f9 !important;
+    color: #94a3b8 !important;
+    border-color: #e2e8f0 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
