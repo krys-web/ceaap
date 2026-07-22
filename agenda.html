@@ -348,22 +348,22 @@ Agendar cita
                 
                 <!-- PASO 1: Datos Personales -->
                 <div class="step-content active" id="step-1">
-                    <h3 class="section-title" style="margin-top:0; margin-bottom:20px;">Paso 1: Datos Personales</h3>
+                    <h3 class="section-title" style="margin-top:0; margin-bottom:20px;">Paso 1: Datos Personales del paciente</h3>
                     <div class="form-group">
-                        <label>Nombre Completo *</label>
-                        <input type="text" id="nombre" class="form-input" required placeholder="Ej: Juan Pérez">
+                        <label>Nombres completos del paciente *</label>
+                        <input type="text" id="nombre" class="form-input" required placeholder="Ej: Juan Pérez" required>
                     </div>
                     <div class="form-group">
                         <label>Cédula / Pasaporte *</label>
-                        <input type="text" id="cedula" class="form-input" required placeholder="Ej: 0987654321">
+                        <input type="text" id="cedula" class="form-input" required placeholder="Ej: 0987654321" required>
                     </div>
                     <div class="form-group">
                         <label>Teléfono Celular (WhatsApp) *</label>
-                        <input type="tel" id="celular" class="form-input" required placeholder="Ej: 0991234567">
+                        <input type="tel" id="celular" class="form-input" required placeholder="Ej: 0991234567" required>
                     </div>
                     <div class="form-group">
                         <label>Correo Electrónico *</label>
-                        <input type="email" id="correo" class="form-input" required placeholder="ejemplo@correo.com">
+                        <input type="email" id="correo" class="form-input" required placeholder="ejemplo@correo.com" required>
                     </div>
                 </div>
 
@@ -447,13 +447,14 @@ Agendar cita
                         <p><strong>Fecha y Hora:</strong> <span id="sumFechaHora"></span></p>
                     </div>
 
-                    <p style="font-size:0.85rem; color:var(--gray-600);">* Al hacer clic en "Confirmar Cita", la solicitud se notificará vía correo electrónico al centro médico, a tu buzón personal y se abrirá WhatsApp con el resumen de la reserva.</p>
+                    <p style="font-size:0.85rem; color:var(--gray-600);">* Al hacer clic en "Confirmar Cita", la solicitud se notificará vía correo electrónico al Centro de Especialidades, a tu buzón personal y se abrirá WhatsApp con el resumen de la reserva.</p>
                 </div>
 
                 <!-- Botones de Navegación -->
-                <div class="wizard-buttons">
-                    <button type="button" class="btn-prev" id="btnPrev" onclick="changeStep(-1)" style="display:none;">Anterior</button>
-                    <button type="button" class="btn-next" id="btnNext" onclick="changeStep(1)">Siguiente</button>
+                <div class="buttons-container">
+                    <button type="button" id="btnPrev" style="display: none;" onclick="changeStep(-1)">Anterior</button>
+                    <!-- Botón deshabilitado por defecto -->
+                    <button type="button" id="btnNext" disabled onclick="changeStep(1)">Siguiente</button>
                 </div>
 
             </form>
@@ -541,6 +542,6 @@ Agendar cita
 <!-- EmailJS SDK para envío de correos desde Frontend sin backend PHP -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/agenda.js"></script>
+<script type="module" src="js/agenda.js"></script>
 </body>
 </html>

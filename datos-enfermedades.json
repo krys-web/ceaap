@@ -5,7 +5,7 @@
     "seo_keywords": "rinitis alergica, tratamiento alergias, alergologo guayaquil, estornudos frecuentes",
     "tratamiento": "Este cuadro se caracteriza por  picazón de la nariz, con ataques de estornudos y mucosidad nasal abundantes, Se acompaña con congestión nasal que en algunos casos puede ser severa y afecta la calidad del sueño y las actividades diarias. Hay mucha conciencia de este problema en primavera, donde personas habitualmente sanas, presentan en forma aguda estos síntomas cuando comienza la temporada de pólenes. Algunos pacientes tienen mayores complicaciones, presentando conjuntivitis o asma asociadas, y en otros su alergia se complica con una mayor frecuencia de infecciones respiratorias.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la rinitis alérgica?", "respuesta": "Estornudos frecuentes, congestión o goteo nasal, mucosidad nasal abundante, picazón en nariz y paladar y sensación de nariz tapada. En el Centro de Especialidades realizamos estudios completos para identificar el alérgeno responsable." },
       { "pregunta": "¿Cuáles son los medicamentos más comúnmente asociados?", "respuesta": "La causa suele ser la exposición a pólenes, ácaros del polvo, animales u hongos en un paciente alérgico a algunos de éstos. En el Centro de Especialidades determinamos con precisión a qué estás sensibilizado mediante pruebas cutáneas y de sangre." },
@@ -20,7 +20,7 @@
     "seo_keywords": "asma bronquial, inflamacion, bronquios, obstruccion, alergologo guayaquil",
     "tratamiento": "En esta enfermedad, se produce una inflamación de los bronquios, que es reversible en forma espontánea o con tratamiento. Su severidad es muy variable: desde crisis esporádicas hasta obstrucción permanente. Existen múltiples gatillantes  de estas crisis, pero las alergias respiratorias son una causa importante, sobre todo en primavera, y generalmente acompañadas de rinitis.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas del Asma bronquial?", "respuesta": "Silbidos al respirar, tos, sensación de pecho apretado y dificultad respiratoria. En el Centro de Especialidades evaluamos si tu asma tiene un origen alérgico." },
       { "pregunta": "¿Cuál es la causa más frecuente del asma alérgico?", "respuesta": "La sensibilización a ácaros, pólenes, animales u hongos. En el Centro de Especialidades lo estudiamos mediante pruebas cutáneas, sangre y espirometría." },
@@ -35,7 +35,7 @@
     "seo_keywords": "alergia, alergologo guayaquil, rinoconjuntivitis, urticaria, perros, gatos, hamster, conejos, caballo",
     "tratamiento": "Este problema en general se manifiesta con rinoconjuntivitis o urticaria al exponerse a la caspa de perros y gatos, pero también de hámster, conejo o caballo. El problema mayor es para aquellos pacientes que pueden tener crisis de asma con esta exposición, que, en el caso de los alérgicos al gato, pueden ser crisis severas. Es sobre todo en estos pacientes que es indispensable realizar una inmunoterapia.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de alergia a mascotas?", "respuesta": "Picazón nasal y ocular, estornudos, congestión, tos o crisis de asma después del contacto con perros o gatos. También puede observarse síntomas cutáneos al contacto con la saliva o pelaje del animal. En el Centro de Especialidades realizamos pruebas específicas para confirmarlo." },
       { "pregunta": "Qué causa la Alergia a Mascotas?", "respuesta": "La alergia es causada por algunas proteínas presentes en la saliva, orina, piel y pelo de las mascotas. En el Centro de Especialidades medimos IgE específicas contra estos alérgenos." },
@@ -50,7 +50,7 @@
     "seo_keywords": "inmunoterapia, alergologo guayaquil, alergias, control alergias",
     "tratamiento": "La inmunoterapia es una opción de tratamiento avanzada y efectiva para diversas alergias. En el Centro de Especialidades, nos especializamos en proporcionar soluciones personalizadas para nuestros pacientes, garantizando una mejora significativa en su calidad de vida. Este artículo te proporcionará una visión detallada sobre la inmunoterapia, sus beneficios y cómo puede ayudarte a controlar tus alergias.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas que indican que podría beneficiarme de inmunoterapia?", "respuesta": "Rinitis, conjuntivitis, asma alérgica, alergia a ácaros, pólenes, mascotas o insectos, que no responden bien a medicamentos o requieren tratamientos continuos. En el Centro de Especialidades evaluamos si eres candidato." },
       { "pregunta": "¿Cuál es la causa más común para indicar inmunoterapia?", "respuesta": "Alergia comprobada mediante diferentes tests (IgE, prick test) a un alérgeno que no se puede evitar fácilmente, como pólenes, ácaros, mascotas u hongos. En el Centro de Especialidades confirmamos la indicación con estudios precisos." },
@@ -65,7 +65,7 @@
     "seo_keywords": "conjuntivitis, alergologo guayaquil, ojos, rinitis alérgicas, lagrimeo, ojo rojo, rascarse los ojos",
     "tratamiento": "Generalmente asociada a las rinitis alérgicas de primavera, este problema se caracteriza por intensa picazón de ojos, con lagrimeo y ojo rojo, y no es infrecuente que este síntoma sea más molesto que la rinitis e impida la realización de actividades al aire libre. Siempre debe ser tratado, sobretodo en aquellos pacientes que no logran evitar rascarse los ojos: si esto no se hace, pueden desarrollar complicaciones en la córnea.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la conjuntivitis alergica?", "respuesta": "Ojos rojos, picazón intensa, lagrimeo, sensación de arenilla y párpados inflamados. En el Centro de Especialidades evaluamos si se asocia a la rinitis alérgica o es una entidad aislada." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Generalmente pólenes, ácaros o mascotas. En el Centro de Especialidades realizamos estudios para determinar el alérgeno responsable." },
@@ -80,7 +80,7 @@
     "seo_keywords": "dermatitis, alergologo guayaquil, parpado, agentes irritantes, alérgenicos, edema, inflamación, niquel",
     "tratamiento": "El párpado es especialmente susceptible a la acción de agentes irritantes y/o alergénicos. Esto se debe, en parte, a la delgadez de la piel que lo recubre (hasta cuatro veces más fina que la piel del resto de la cara), lo cual facilita la aparición de edema e inflamación y, por otro lado, el fácil contacto de los ojos con los dedos, los cuáles se encuentran constantemente expuestos a múltiples sustancias, incrementando la sintomatología. La dermatitis palpebral corresponde a una inflamación de la piel alrededor de los ojos, que se caracteriza por irritación y dolor/ardor periocular. En muchos casos, se puede asociar a engrosamiento de los párpados, enrojecimiento, picazón y descamación. Existen diferentes causas de dermatitis del párpado, como la dermatitis seborreica, dermatitis irritativa, eccema atópico, dermatitis de contacto alérgica, entre otras. Se describe a la dermatitis de contacto alérgica como la más frecuente (entre 45-75% de los casos). El níquel es el contactante más frecuentemente involucrado. El estudio correcto de esta patología permitirá determinar la causa, instaurándose un adecuado tratamiento.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de esta dermatitis?", "respuesta": "Párpados rojos, descamados, picazón, ardor, hinchazón y sensibilidad local. En el Centro de Especialidades evaluamos causas alérgicas y no alérgicas." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Cosméticos, cremas antiarrugas, esmaltes de uñas, perfumes, sombras, lentes de contacto o alergias ambientales. En el Centro de Especialidades usamos test de parche para determinar el producto responsable." },
@@ -95,7 +95,7 @@
     "seo_keywords": "alergia alimentaria, alergologo guayaquil, frecuente en niños, inmunológica, piel",
     "tratamiento": "La alergia alimentaria se puede manifestar a lo largo de toda la vida, sin embargo, es más frecuente en niños. Corresponde a una reacción inmunológica asociada a la ingesta de un alimento, que se puede presentar de manera inmediata o retardada, con manifestaciones clínicas diversas en la piel, a nivel digestivo y también respiratorio. La alergia al maní es una causa frecuente de anafilaxia. Otros alimentos usualmente involucrados son la lecha de vaca, trigo, soya, huevo, así como los pescados y mariscos.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la alergia alimentaria?", "respuesta": "Pueden aparecer ronchas, vómitos, diarrea, inflamación de labios, dificultad respiratoria o anafilaxia minutos después de ingerir un alimento. En el Centro de Especialidades evaluamos tanto reacciones inmediatas como retardadas." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La sensibilización a proteínas de alimentos como leche, huevo, maní, frutos secos, mariscos, trigo o soya. En el Centro de Especialidades usamos prick tests, prick by prick, IgE específicas y pruebas moleculares para detectarlas." },
@@ -110,7 +110,7 @@
     "seo_keywords": "alergia soya, alergologo guayaquil, oleoginosas, síntomas gastrointestinales, vómitos, distensión abdominal, diarreas, sangre en las deposiciones, urticaria, angioedema, dermatitis",
     "tratamiento": "La soya es un alimento de origen asiático que posee muchas proteínas, pertenece al grupo de las leguminosas (como los porotos) y por su alto contenido de aceite es parte de las oleoginosas (al igual que el maní). Se ha asociado con alergia alimentaria tanto en niños como en adultos: se puede presentar con síntomas gastrointestinales como vómitos, dolor y distensión abdominal, diarrea y sangre en las deposiciones, en la piel con urticaria, angioedema o dermatitis. En menor frecuencia puede ser causa de obstrucción bronquial, asma y/o rinitis (congestión y picazón nasal y estornudos).",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la Alergia alimentaria a la soya", "respuesta": "Ronchas, vómitos, diarrea, inflamación o dificultad respiratoria minutos después de consumir soya o sus derivados. En el Centro de Especialidades diferenciamos alergia inmediata de intolerancias." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La sensibilización a proteínas específicas de la soya. En el Centro de Especialidades podemos estudiar componentes moleculares para determinar el riesgo real de reacciones graves." },
@@ -125,7 +125,7 @@
     "seo_keywords": "alergia, oral, alergologo guayaquil, tipo alérgica, boca, garganta, frutas, verduras, manzana, durazno, apio, zanahoria",
     "tratamiento": "El Sindrome de Alergia Oral (SAO) corresponde a una reacción de tipo alérgica que se produce posterior al contacto de la boca y la garganta con frutas o verduras crudas. Los síntomas característicos incluyen picazón e hinchazón de labios, lengua y garganta y se desencadenan, por lo general, inmediatamente posterior a la ingesta. El SAO es considerado una forma leve de alergia alimentaria y se asocia generalmente a rinitis alérgica polínica, observándose en el 50-75% de los adultos alérgicos al polen de abedul, aunque también se presenta en los alérgicos a los pastos, artemisa, ambrosia, etc. Esta reacción se produce porque las proteínas que se encuentran en algunas frutas y verduras son muy similares a las que se encuentran en el polen, lo que se denomina reactividad cruzada. Los alimentos con mayor frecuencia involucrados son la manzana, durazno, apio, zanahoria.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas del síndrome de alergia oral?", "respuesta": "Picazón en boca, labios, lengua o garganta al comer frutas o verduras frescas, que puede ir asociado además con aumento de volumen de labios. En el Centro de Especialidades confirmamos el diagnóstico mediante prick-by-prick." },
       { "pregunta": "¿Qué causa este síndrome?", "respuesta": "La reactividad cruzada entre pólenes y proteínas de alimentos vegetales. En el Centro de Especialidades identificamos qué tipo de polen está involucrado." },
@@ -140,7 +140,7 @@
     "seo_keywords": "urticaria, angioedema, alergologo guayaquil, habones, ronchas, angioedema, aumento volumen, labios, lengua, párpados, orejas, pies, picazón intensa, urticaria aguda, crónica",
     "tratamiento": "La urticaria se define como la aparición repentina de habones (ronchas), los que en algunos casos se acompaña de angioedema (aumento de volumen de labios, lengua, párpados, orejas, pies, etc). La duración de cada roncha es generalmente menor a 24 horas y se asocia con frecuencia a picazón intensa. Según su persistencia en el tiempo las podemos clasificar en urticaria aguda y crónica; si dura más de 6 semanas corresponde a una urticaria crónica. Una alergia alimentaria, a un medicamento, a una picadura de insecto y algunas infecciones son las causas más frecuentes de las urticarias agudas. Por su parte, las urticarias crónicas rara vez son de origen alérgico y se asocian principalmente a estímulos físicos o presencia de auto-anticuerpos. Un estudio acabado resulta fundamental para poder conocer la causa, lo que permite un adecuado tratamiento.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la Urticaria y Angioedema​", "respuesta": "Ronchas, picazón intensa, hinchazón de labios o párpados. En el Centro de Especialidades evaluamos si es aguda o crónica, además de su origen" },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Cuando es alérgica suele ser por alimentos, fármacos o picaduras de insectos.  En la mayoría de los casos de urticaria crónica, ésta es de origen desconocido. En el Centro de Especialidades contamos con el test de suero autólogo y pruebas cutáneas para aclararlo." },
@@ -155,7 +155,7 @@
     "seo_keywords": "dermatitis, alergologo guayaquil, dermatitis de contacto, inflamación, piel, alérgica, irritativa, dermatitis irritativa, ácidos, sustancias alcalinas como jabones y detergentes, disolventes, químicos",
     "tratamiento": "La dermatitis de contacto es una inflamación de la piel causada por el contacto directo de ésta con una sustancia que causa una reacción alérgica o irritativa. La dermatitis irritativa es el tipo más común de dermatitis de contacto e implica una inflamación secundaria al contacto con ácidos, sustancias alcalinas como jabones y detergentes, disolventes u otros químicos. La reacción se asemeja a una quemadura. Por su parte, esta dermatitis alérgica es la segunda entidad más común dentro de las dermatitis de contacto. En general, la erupción aparece de 24 a 48 horas post-exposición. Las lesiones varían desde una irritación leve y enrojecimiento, asociadas a vesículas, evolucionando con fisuras y engrosamiento cutáneo. Los alergenos más comunes asociadas con la dermatitis de contacto son: plantas, níquel y otros metales, medicamentos tópicos (como algunos antibióticos), látex, cosméticos y perfumes. El diagnóstico se basa en una historia clínica y examen físico acucioso, asociado a un estudio con test de parches para lograr identificar el alergeno implicado.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de esta dermatitis?​", "respuesta": "Enrojecimiento, picazón intensa, ardor, descamación y aparición de lesiones en las zonas que estuvieron en contacto con un producto o material. En el Centro de Especialidades realizamos test de parche para identificar el causante." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "La exposición a metales, cosméticos, jabones, perfumes, gomas o detergentes. En el Centro de Especialidades usamos baterías estándar y personalizadas para detectarlas." },
@@ -170,7 +170,7 @@
     "seo_keywords": "dermatitis, alergologo guayaquil, dermatitis de contacto, inflamación, piel, alérgica, irritativa, dermatitis irritativa, ácidos, sustancias alcalinas como jabones y detergentes, disolventes, químicos",
     "tratamiento": "La Dermatitis Atópica es una enfermedad inflamatoria de la piel muy frecuente en la infancia, pero también se puede ver en adultos con historia personal o familiar de alergia. Se presenta de manera recurrente con picazón, sequedad, enrojecimiento y descamación de la piel. Sobretodo en niños con dermatitis extensas, esta enfermedad puede ser gatillada por una alergia alimentaria.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la Dermatitis Atópica​?", "respuesta": "Piel seca, picazón intensa, brotes recurrentes, enrojecimiento y eccema. En el Centro de Especialidades manejamos casos leves a severos." },
       { "pregunta": "¿Cuál es la causa más común de la Dermatitis Atópica?", "respuesta": "Factores genéticos y disfunción de la barrera cutánea, a veces asociados a alergias. En el Centro de Especialidades estudiamos alergias ambientales y alimentarias cuando corresponde." },
@@ -185,7 +185,7 @@
     "seo_keywords": "alergia, alergologo guayaquil, picazón, ronchas, obstrucción respiratoria, taquicardia, baja de presión, shock anafiláctico, alergias a medicamento, alergias alimentarias, picaduras de abeja y avispa",
     "tratamiento": "Esta es la reacción alérgica más severa que se puede llegar a tener: en forma brusca aparece picazón y ronchas, seguido de obstrucción respiratoria, taquicardia y baja de presión, a veces con diarrea. En los casos más graves, esta reacción puede terminar en un shock anafiláctico, culminando en un paro cardio respiratorio. Las causas más frecuentes de este tipo de reacciones son las alergias a medicamento, las alergias alimentarias y las picaduras de abeja y avispa. Todo paciente que haya tenido un cuadro anafiláctico, debe ser estudiado por un especialista, para definir claramente la causa de la reacción, establecer un plan de manejo en caso de un nuevo episodio, ser entrenado en el uso de adrenalina autoinyectable, buscar alternativas de tratamiento en el caso de alergia a medicamentos, ser informado de dietas específicas en el caso de alergias alimentarias o recibir inmunoterapia específica en el caso de picadura de abeja o avispa.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la Anafilaxia?", "respuesta": "Dificultad respiratoria, hinchazón de labios, párpados, orejas, ronchas generalizadas, hipotensión, vómitos o mareos, etc. En el Centro de Especialidades educamos en manejo y prevención." },
       { "pregunta": "¿Cuál es la causa más común de Anafilaxia?", "respuesta": "Alimentos, medicamentos y picaduras de insectos. En el Centro de Especialidades realizamos estudios para identificar el agente exacto." },
@@ -200,7 +200,7 @@
     "seo_keywords": "alergia, alergologo guayaquil, picar, reacción, shock anafiláctico, autoinyectores de adrenalina",
     "tratamiento": "Alergia a las Abejas y Avispas​, se deben al veneno que inoculan al picar. Lo más frecuente es que se manifieste como un cuadro leve (reacción local en el sitio de la picadura), pero hasta el 7% de los adultos pueden tener una reacción generalizada (ronchas a distancia del sitio de picadura). La reacción más temida y potencialmente fatal es el shock anafiláctico, para lo cual los pacientes deben ser entrenados en el uso de autoinyectores de adrenalina y ser tratados con inmunoterapia específica.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la alergia al veneno de abejas y avispas?", "respuesta": "Desde hinchazón local exagerada hasta anafilaxia. En el Centro de Especialidades diagnosticamos si tu reacción fue alérgica o tóxica." },
       { "pregunta": "¿Qué causa la alergia al veneno de abejas y avispas?", "respuesta": "La sensibilización al veneno de abejas o avispas. En el Centro de Especialidades realizamos IgE específicas y estudios moleculares para detectarlas." },
@@ -215,7 +215,7 @@
     "seo_keywords": "alergia, alergologo guayaquil, tomar, inyectar, ronchas, picazón, enrojecimiento de la piel, aumento de volumen de los labios, párpados, lengua",
     "tratamiento": "Ésta se puede presentar inmediatamente después de tomar o inyectar el medicamento, durante el tratamiento, e incluso un par de semanas después de suspendido el fármacos. Por esto, la sintomatología es muy diversa, destacando la aparición súbita de ronchas, picazón, enrojecimiento de la piel, aumento de volumen de los labios, párpados, lengua, dificultad respiratoria, aumento de la frecuencia cardiaca e incluso pérdida de conciencia en los casos más graves. Pero en otros casos, se presentarán síntomas más tardíos como: fiebre, compromiso de mucosas (oral, genital, ocular), aparición de ampollas e inflamación de los ganglios. En los casos más complejos puede observarse falla en algún órgano, como el hígado o riñones. Siempre que se haya tenido una reacción adversa alérgica a un medicamento, se debe consultar con el especialista.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Qué síntomas sugieren alergia a los medicamentos?", "respuesta": "Ronchas, inflamación, picazón, dificultad respiratoria, pérdida de conciencia o reacciones tardías, como rash cutáneo, luego de tomar un fármaco. En el Centro de Especialidades evaluamos estos casos con prioridad." },
       { "pregunta": "¿Cuáles son los medicamentos más comúnmente asociados?", "respuesta": "Penicilinas y antiinflamatorios son los más frecuentes, pero cualquier fármaco puede producir alergia. En el Centro de Especialidades realizamos estudios completos." },
@@ -230,7 +230,7 @@
     "seo_keywords": "alergia, alergologo guayaquil, picar, reacción, shock anafiláctico, autoinyectores de adrenalina",
     "tratamiento": "La anafilaxia es una reacción alérgica severa, caracterizada por la aparición de síntomas respiratorios y cardiovasculares que pueden comprometer la vida.\n\nEsta emergencia alérgica puede ser causada por picaduras de insectos, alimentos, medicamentos, ejercicio o causas desconocidas.\n\nEl tratamiento indicado para contrarrestar esta reacción es el uso a tiempo y de forma adecuada de adrenalina autoinyectable o Epipen ®️.\n\n En caso de una sospecha de anafilaxia esta es la primera acción a realizar, que no debe ser retrasada por llamar a unidades de emergencia o usar otros medicamentos. Cómo administrar:\n\n 1) Empuñe firme el autoinyector y retire la tapa de seguridad de atrás.\n\n2) Coloque la pierna inmóvil y presione firmemente la punta contra la cara exterior del muslo.\n\n3) Continúe presionando hasta que oiga un “click” y mantenga por 3-5 segundos.\n\n4) Retirar el autoinyector y masajear suavemente el sitio de inyección.\n\n5) llame a una ambulancia o trasládese al servicio de urgencia más cercano.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#"
+    "link_boton": "agenda.html"
   },
     "examenesangre": {
     "titulo": "Exámenes de Sangre para Alergias",
@@ -238,7 +238,7 @@
     "seo_keywords": "examenes, alergologo guayaquil, sangre, evaluación, pacientes, toma de muestras, enfermedades inmunológicas, estudio de alergias, inmunodeficiencias",
     "tratamiento": "Para optimizar la evaluación de los pacientes que recibimos, tenemos el servicio de toma de muestras, enfocado al estudio de alergias, enfermedades inmunológicas y de inmunodeficiencias.\n\nPara esto, derivamos las muestras a tres laboratorios especializados y de toda nuestra confianza:\n\nPara el estudio de las alergias contamos con aproximadamente 300 IgE especificas individuales (alergenos del ambiente, alimentarios, medicamentos, aditivos y algunos alergenos moleculares) y otros exámenes específicos como triptasa y leucotrienos, los cuales derivamos al laboratorio de Alergia e Inmunología (LAI).También disponemos del estudio de alergias por tecnología de microarray, que permite con una sola muestra de sangre medir IgE total, e IgE especificas a 295 extractos alergénicos y alergenos moleculares, conocida como ALEX2.En el estudio de inmunodeficiencias, derivamos las subpoblaciones de linfocitos al laboratorio Biosoluciones de la UDD.\n\nPara el estudio de inmunodeficiencias humorales y otras enfermedades inmunológicas contamos con medición de inhibidor de C1, inmunoglobulinas y subclases de IgG, autoanticuerpos, además de algunos exámenes generales, todos ellos derivados al laboratorio LAI.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Qué alergias pueden detectarse en la sangre?", "respuesta": "Pueden medirse IgE específicas (anticuerpos) a pólenes, ácaros, alimentos, medicamentos y proteínas diversas. En el Centro de Especialidades contamos con más de 300 determinaciones." },
       { "pregunta": "¿Qué tecnología utiliza el Centro de Especialidades?", "respuesta": "Derivamos muestras a laboratorios de referencia, incluyendo microarrays de alta resolución como el test de ALEX-2. Esto permite identificar perfiles moleculares completos." },
@@ -253,7 +253,7 @@
     "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
     "tratamiento": "El látex es un componente frecuente en diversos insumos médicos, como guantes, cánulas para las vías aéreas y venas, jeringas, estetoscopios, catéteres, ropas y vendajes. Además, el látex también es encontrado en numerosos objetos cotidianos, como condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas, etc.\n\nLos guantes de látex frecuentemente también producen reacciones alérgicas debido al contacto repetido de la piel con este o por la inhalación de partículas del látex absorbidas en el polvo suavizante contenido en los guantes.\n\nLos síntomas tras la exposición al látex son generalmente de inicio súbito y pueden simular una rinitis alérgica o asma bronquial, con síntomas de congestión nasal, ronchas o dificultad para respirar. Los casos más graves pueden producir anafilaxia, vale decir, progresan rápidamente y pueden acompañarse de una caída de la presión arterial, enrojecimiento de la piel, dificultad respiratoria, inflamación de la laringe, lengua como también de pérdida de conciencia. Es importante recibir atención médica inmediata, ante los primeros síntomas de una reacción anafiláctica.\n\nPor su parte, los problemas cutáneos producidos como consecuencia del uso de guantes de látex son frecuentemente confundidos con la alergia al látex. La dermatitis de contacto es un problema frecuente entre las personas que utilizan guantes de goma y esta puede ser debida a una dermatitis de contacto irritante producida por el continuo lavado de las manos, uso de detergentes, abrasiones cutáneas al poner y quitar los guantes de forma continua y maceración de la piel al estar cubierta por una barrera impermeable. La dermatitis también puede ser debida a una hipersensibilidad a sustancias químicas, añadidas al látex durante su proceso de fabricación.\n\nDebe ser estudiada mediante prick test y/o test de parches.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de la Alergia al látex?", "respuesta": "icazón local, dermatitis de contacto, urticaria, congestión nasal, dificultad respiratoria e incluso anafilaxia. En el Centro de Especialidades confirmamos el diagnóstico." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Proteínas presentes en el látex natural. En el Centro de Especialidades estudiamos reactividad cruzada con frutas" },
@@ -268,7 +268,7 @@
     "seo_keywords": "infecciones, alergologo guayaquil, deficiencias, inmunodeficiencias primaras y secundarias, hereditarios, genéticos",
     "tratamiento": "Las infecciones recurrentes son un motivo de preocupación frecuente. Nuestro sistema inmune está permanentemente combatiendo a los gérmenes que nos infectan, y eventuales deficiencias en él nos dejan expuestos a sufrir infecciones más frecuentemente. Las causas son múltiples, y se dividen en inmunodeficiencias primaras y secundarias. Las inmunodeficiencias secundarias son el resultado de una enfermedad u otros factores ambientales que llevan al debilitamiento del sistema inmune, como malnutrición, enfermedades crónicas, enfermedades oncológicas, o fármacos inmunosupresores. Las inmunodeficiencias primarias son un grupo de más de 400 enfermedades descritas, poco frecuentes, en los que parte del sistema inmunológico falta o no funciona correctamente. Son causadas por defectos hereditarios o genéticos y, aunque algunos trastornos se presentan al nacer o en la primera infancia, pueden diagnosticarse a toda edad.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#"
+    "link_boton": "agenda.html"
   },
     "acne": {
     "titulo": "Acné",
@@ -276,7 +276,7 @@
     "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
     "tratamiento": "El acné es una condición que afecta a millones de personas en todo el mundo, especialmente durante la adolescencia, es por eso que existe el Tratamiento del Acné en el Centro de Especialidades\n\nAunque a menudo se asocia con esta etapa de la vida, no todas las personas que padecen acné son adolescentes, y no todos los adolescentes desarrollan acné.\n\nEsta condición es causada principalmente por el efecto de las hormonas en las glándulas sebáceas de la piel, pero también pueden influir factores como la alimentación y el estrés.\n\nCausas del Acné:\n\nLa principal causa del acné es la influencia de las hormonas sobre las glándulas sebáceas, lo que lleva a la producción excesiva de sebo. Este exceso, combinado con células muertas de la piel, puede obstruir los poros y dar lugar a comedones, más comúnmente conocidos como puntos negros y espinillas.\n\nImportancia del Tratamiento Temprano\n\nEs fundamental iniciar el tratamiento del acné tan pronto como aparezcan los primeros signos, como los comedones. Un tratamiento temprano y adecuado puede prevenir la formación de cicatrices y controlar los síntomas. Se recomienda consultar a un dermatólogo para adaptar el tratamiento a las necesidades específicas de tu piel a lo largo del tiempo.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas del acné?", "respuesta": "Espinillas, puntos negros, pápulas inflamadas, quistes o cicatrices. En el Centro de Especialidades evaluamos tu tipo de acné antes de tratar." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": " Exceso de sebo, bacterias, inflamación, hormonas y genética. En el Centro de Especialidades manejamos acné adolescente y adulto." },
@@ -291,7 +291,7 @@
     "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
     "tratamiento": "La psoriasis es una enfermedad crónica, que afecta alrededor del 2% de la población. Es más común en adultos, pero puede presentarse a cualquier edad. Aunque existen varios genes relacionados con esta enfermedad, muchos pacientes no tienen antecedentes familiares conocidos de psoriasis.\n\nLa manifestación clásica es la aparición de placas rojas y escamosas en áreas donde la piel se “maltrata” más, como codos y rodillas. Sin embargo, puede presentarse de formas diversas: sin descamación, sólo como piel gruesa, seca, “partida”, o también comprometer otras partes del cuerpo, como cuero cabelludo, palmas, plantas, genitales e incluso las uñas, causando incomodidad, picazón o dolor.\n\nLa psoriasis también puede afectar a las articulaciones, provocando dolor, rigidez o inflamación evidente de los dedos, muñecas, rodillas, columna entre otras.\n\nPor estas diversas formas y sitios de presentación, el diagnóstico de la psoriasis no siempre es fácil, y puede requerir la evaluación de médicos especialistas.\n\nEl objetivo del Tratamiento efectivo de la psoriasis es lograr el menor impacto posible de la psoriasis en la calidad de vida de quien la padece, existiendo la opción de cremas para uso localizado en las lesiones, fototerapia para tratar lesiones específicas o toda la piel, y tratamientos sistémicos orales e inyectables para los casos más extensos, graves o con compromiso articular. El tratamiento de la psoriasis ha tenido un importante desarrollo en las últimas dácadas, y contamos cada vez con alternativas más seguras y eficientes para las formas severas de la enfermedad.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas?", "respuesta": "Presencia de placas rojas con escamas, piel engrosada, picazón, dolor o compromiso de uñas y/o articulaciones. En el Centro de Especialidades confirmamos la forma clínica y severidad." },
       { "pregunta": "¿Cuál es la causa más común?", "respuesta": "Es una enfermedad inflamatoria crónica con base inmune y predisposición genética. En el Centro de Especialidades orientamos sobre factores que la gatillan." },
@@ -306,7 +306,7 @@
     "seo_keywords": "latex, alergologo guayaquil, insumos médicos, como guantes, condones, globos, neumáticos, elásticos para la ropa, juguetes de goma, tetinas",
     "tratamiento": "La rosácea es una afección muy común en adultos, aunque también puede presentarse en niños y adolescentes. Se caracteriza por eritema (rojez) facial que aumenta con ciertos estímulos como la exposición a temperaturas altas o bajas, alimentos picantes y bebidas alcohólicas. En algunas personas además pueden aparecer “espinillas” o también puede comprometer los ojos, con sensación de ojo seco y con ojos rojos.\n\nLa rosácea es una condición crónica, que generalmente pasa por períodos estables y otros de exacerbación o “crisis” en los que los síntomas pueden ser muy molestos y notorios. El tratamiento si bien, no produce una cura definitiva, es útil para manejar y evitar las “crisis”, pudiendo hacerla casi imperceptible.",
     "texto_boton": "Agendar cita",
-    "link_boton": "#",
+    "link_boton": "agenda.html",
     "faqs": [
       { "pregunta": "¿Cuáles son los síntomas de Rosácea?", "respuesta": "Enrojecimiento persistente, calor facial, vasos dilatados, granitos o sensibilidad facial. En el Centro de Especialidades diferenciamos rosácea de alergias o dermatitis." },
       { "pregunta": "¿Cuál es la causa más común de la Rosácea?", "respuesta": "Hipersensibilidad vascular, factores ambientales, alteración de la microbiota cutánea y factores genéticos. En el Centro de Especialidades evaluamos tus gatillantes personales." },
